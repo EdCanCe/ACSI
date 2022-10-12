@@ -1,0 +1,43 @@
+create database ACSI;
+use ACSI;
+
+create table Alumnos(
+NoControl bigint NOT NULL PRIMARY KEY,
+CURPAl char(18) NOT NULL,
+NombreAl varchar(30) NOT NULL,
+ApPaternoAl varchar(20) NOT NULL,
+ApMaternoAl varchar(20),
+TipoSangre char(2) default '--',
+Alergias varchar(100) default 'Ninguna.',
+FechaNacAl date);
+
+create table Medicina(
+MedicinaID int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+NombreMed varchar(20) NOT NULL,
+ComponenteAct varchar(50) NOT NULL,
+GramajeMed float NOT NULL,
+FotoMed longblob);
+
+create table Doctor(
+CedulaProf char(8) NOT NULL PRIMARY KEY,
+HoraEntrada time NOT NULL,
+HoraSalida time NOT NULL,
+InstitutoEgreso varchar(40) NOT NULL,
+Especialidad varchar(20) default 'Medico Cirujano',
+NombreDoc varchar(30) NOT NULL,
+ApPaternoDoc varchar(20) NOT NULL,
+ApMaternoDoc varchar(20));
+
+create table Receta(
+NoConsulta bigint NOT NULL AUTO_INCREMENT PRIMARY KEY,
+NoControlFK bigint,
+CedulaProfFK char(8),
+CONSTRAINT NoControlFK FOREIGN KEY (NoControlFK)
+REFERENCES Alumnos(NoControl),
+CONSTRAINT CedulaProfFK FOREIGN KEY (CedulaProfFK)
+REFERENCES Doctor(CedulaProf),
+Padecimientos text NOT NULL,
+TempPaciente float,
+Dosis text,
+Fecha TimeStamp NOT NULL,
+PesoPaciente float);

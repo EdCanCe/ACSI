@@ -32,6 +32,9 @@ create table Receta(
 NoConsulta bigint NOT NULL AUTO_INCREMENT PRIMARY KEY,
 NoControlFK bigint,
 CedulaProfFK char(8),
+MedicinaIDFK int,
+CONSTRAINT MedicinaIDFK FOREIGN KEY (MedicinaIDFK)
+REFERENCES Medicina(MedicinaID),
 CONSTRAINT NoControlFK FOREIGN KEY (NoControlFK)
 REFERENCES Alumnos(NoControl),
 CONSTRAINT CedulaProfFK FOREIGN KEY (CedulaProfFK)

@@ -9,6 +9,10 @@ ApPaternoAl varchar(20) NOT NULL,
 ApMaternoAl varchar(20),
 TipoSangre char(2) default '--',
 Alergias varchar(100) default 'Ninguna.',
+NombreTut varchar(30),
+ApPaternoTut varchar(20),
+ApMaternoTut varchar(20),
+NoTelefonoTut bigint,
 FechaNacAl date);
 
 create table Medicina(

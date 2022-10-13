@@ -7,7 +7,7 @@ $alumnos = "SELECT * FROM alumnos";
 <html lang="es">
 
 <head>
-	<title>INICIO</title>
+	<title>HISTORIAL DE ALUMNOS</title>
 	<meta charset="utf-8">
 	<meta name="author" content="Jorge Arturo Salgado Ceja, José Roberto García Correa, Edmundo Canedo Cervantes">
 	<meta name="description" content="Sistema para la gestión de enfermería, teniendo elaboración de recetas, vista de historial médico e inventario de medicinas">
@@ -32,37 +32,16 @@ $alumnos = "SELECT * FROM alumnos";
 	</div>
 
 	<div class="cuerpo">
-		<h1>ACSI</h1>
-		<div class="index_direccion">
-			<img src="">
-			<p>Domicilio:<br><br>Av Francisco I. Madero Ote 4923, Cd Industrial, 58200 Morelia, Mich. Junto al salón 11
-				en el edificio E
-			</p>
-		</div>
-		<div class="index_doctor">
-			<p id="Doc">Leticia Cisneros Lemus</p>
-			<p>7 AM - 2 PM</p>
-		</div>
-
-		<div class="index_doctor">
-			<p id="Doc2">Fabiola Saavedra Talavera</p>
-			<p>1 PM - 8 PM</p>
-		</div>
-
-		<div class="index_descripcion">
-			<p>Administracion de Centros de Salud Institucionales "ACSI", fue creado con la intencion de mejorar
-				el manejo de informacion de una enfermeria escolar, con el uso y manjo de diversas herramientas web
-				y el manejo de bases de datos. Mejorando asi aspectos como: el uso de inverntarios, implementando
-				historiales
-				personales a los alumnos.</p>
-		</div>
-
+        <table class="tabla_alumnos">
+            <?php $resultado = mysqli_query($conexion, $alumnos);
+                while($row=mysqli_fetch_assoc($resultado)) { ?>
+                <tr>
+                    <th><?php echo $row["NoControl"];?></th>
+                    <th> <?php echo $row["NombreAl"];?> <?php echo $row["ApPaternoAl"];?> <?php echo $row["ApMaternoAl"];?> </th>
+                    <th><a href="alumno.php?id=<?php echo $row["NoControl"];?>">Mostrar Historial</a></th>
+                </tr> <?php } ?>
+        </table>
 	</div>
 </body>
 
 </html>
-
-<!--
- id="container"
-box-text 
--->

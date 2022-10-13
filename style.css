@@ -68,6 +68,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 h1{
 	font-weight: bold;
 	margin-top:0;
+    text-align: center;
+    font-size: 3em;
 }
 
 .dropdown {
@@ -125,11 +127,81 @@ h1{
   margin-bottom: 2.5vh;
 }
 
+table{
+    width: 100%;
+}
+
+tbody{
+    width: 100%;
+}
+
+tr{
+    width: 100%;
+    display: flex;
+    background: var(--color_obscuro);
+    border: 3px double var(--color_principal);
+    border-radius: 0.2cm;
+    margin-bottom: 3px;
+    color: var(--color_fondos);
+}
+
+tr:nth-child(even){
+    background-image: url(imgs/oscurizador.png);
+    background-blend-mode: saturation;   
+}
+
+tr a{
+    display: block; 
+    background: var(--color_principal);
+    color: var(--color_fondos);
+    width: 100%;
+    border-radius: 0.2cm;
+    transition: background 0.2s, color 0.1s, box-shadow 0.5s;
+    text-decoration: none;
+    text-align: center;
+}
+
+tr a:hover, a:hover{
+    background: var(--color_fondos);   
+    color: var(--color_principal);
+    box-shadow: 0 0 0.1cm var(--color_principal); 
+}
+
+.boton_a{
+    display: block; 
+    background: var(--color_principal);
+    color: var(--color_fondos);
+    border-radius: 0.2cm;
+    transition: background 0.2s, color 0.1s, box-shadow 0.5s;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.2cm 3cm;
+    width: fit-content;
+}
+
+th{
+    display: block;
+    flex: 1;
+    padding: 2px;
+    text-align: left;
+}
+
 .inventario{
 	width: 100%;
 	display:flex;
 	flex-wrap: wrap;
 	margin-top: 10px;
+}
+
+.lectura{
+	margin-bottom: 10px;
+}
+
+.lectura{
+    display: inline-block;
+    width: 22%;
+    margin-left: 1%;
+    margin-right: 1%;
 }
 
 .objeto_inventario{

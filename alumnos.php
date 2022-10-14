@@ -1,6 +1,8 @@
 <?php
 include("conexion.php");
-$alumnos = "SELECT * FROM alumnos";
+include("variablesglobales.php");
+$alumnos = "SELECT * FROM alumnos where NoControl like '%%'";
+$id = '';
 ?>
 
 <!DOCTYPE html>
@@ -19,29 +21,37 @@ $alumnos = "SELECT * FROM alumnos";
 
 <body>
 
-	<div class="dropdown">
-		<button id="abrir-menu">☰</button>
-		<div class="dropdown-content">
-			<a href="index.php">Inicio</a>
-			<a href="inventario.php">Inventario</a>
-			<a href="consulta-inicio.php">Añadir Consulta</a>
-            <a href="consultas.php">Historial de Consultas</a>
-			<a href="alumnos.php">Historiales de Alumnos</a>
-			<a><input type="text" class="In-control" placeholder="Buscar Alumno por No.Control"></a>
-		</div>
-	</div>
+	<?php //ESTE HACE EL MENÚ DESPLEGABLE
+        echo $header;
+    ?>
 
 	<div class="cuerpo">
-        <table class="tabla_alumnos">
+        <h1>Historiales de Alumnos</h1>
+        <input type="text" class="buscador_principal" id="buscador_alumnos" onkeyup="buscar_alumnos()" placeholder="Número de Control del Alumno">
+        <center><a class="boton_a" href="crear_alumno.php?id=<?php echo $id;?>">REGISTRAR NUEVO ALUMNO</a></center>
+        <table class="tabla_alumnos" id="tabla_alumnado">
+            <tr>
+                <th>No Control</th>
+                <th>Nombre</th>
+                <th></th>
+            </tr>
             <?php $resultado = mysqli_query($conexion, $alumnos);
                 while($row=mysqli_fetch_assoc($resultado)) { ?>
                 <tr>
-                    <th><?php echo $row["NoControl"];?></th>
-                    <th> <?php echo $row["NombreAl"];?> <?php echo $row["ApPaternoAl"];?> <?php echo $row["ApMaternoAl"];?> </th>
-                    <th><a href="alumno.php?id=<?php echo $row["NoControl"];?>">Mostrar Historial</a></th>
+                    <td><?php echo $row["NoControl"];?></td>
+                    <td> <?php echo $row["NombreAl"];?> <?php echo $row["ApPaternoAl"];?> <?php echo $row["ApMaternoAl"];?> </td>
+                    <td><a href="alumno.php?id=<?php echo $row["NoControl"];?>">Mostrar Historial</a></td>
                 </tr> <?php } ?>
         </table>
 	</div>
+    <?php //ESTE HACE EL FOOTER
+        echo $footer;
+    ?>
 </body>
-
+<script>
+    function buscar_alumnos(){
+        var control = document.getElementById('buscador_alumnos').value;
+        
+    }
+</script>
 </html>

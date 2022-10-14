@@ -1,5 +1,7 @@
 <?php
 include("conexion.php");
+include("variablesglobales.php");
+$alumnos = "SELECT * FROM alumnos";
 $id = $_GET["id"];
 ?>
 
@@ -7,7 +9,7 @@ $id = $_GET["id"];
 <html lang="es">
 
 <head>
-	<title>CREAR ALUMNO</title>
+	<title>REGISTRAR ALUMNO</title>
 	<meta charset="utf-8">
 	<meta name="author" content="Jorge Arturo Salgado Ceja, José Roberto García Correa, Edmundo Canedo Cervantes">
 	<meta name="description" content="Sistema para la gestión de enfermería, teniendo elaboración de recetas, vista de historial médico e inventario de medicinas">
@@ -19,33 +21,35 @@ $id = $_GET["id"];
 
 <body>
 
-	<div class="dropdown">
-		<button id="abrir-menu">☰</button>
-		<div class="dropdown-content">
-			<a href="index.php">Inicio</a>
-			<a href="inventario.php">Inventario</a>
-			<a href="consulta-inicio.php">Añadir Consulta</a>
-            <a href="consultas.php">Historial de Consultas</a>
-			<a href="alumnos.php">Historiales de Alumnos</a>
-			<a><input type="text" class="In-control" placeholder="Buscar Alumno por No.Control"></a>
-		</div>
-	</div>
+	<?php //ESTE HACE EL MENÚ DESPLEGABLE
+        echo $header;
+    ?>
     
 	<div class="cuerpo">
         <h1>Creación de Alumno</h1>
         <form action="insertaralumno.php" method="post" class="registrardatos">
             <label class="lectura" for="">Nombre:</label>
-            <input name="nombre" class="lectura" type="text">
+            <input name="nombre" class="lectura" type="text" required>
             <label class="lectura" for="">Apellido Paterno:</label>
-            <input name="appaterno" class="lectura" type="text">
+            <input name="appaterno" class="lectura" type="text" required>
             <label class="lectura" for="">Apellido Materno:</label>
             <input name="apmaterno" class="lectura" type="text">
             <label class="lectura" for="">No. Control:</label>
-            <input name="nocontrol" class="lectura" type="number">
+            <input name="nocontrol" class="lectura" type="number" value="<?php echo $id;?>" required>
             <label class="lectura" for="">CURP:</label>
-            <input name="curp" class="lectura" type="text">
+            <input name="curp" class="lectura" type="text" required >
             <label class="lectura" for="">Tipo de sangre:</label>
-            <input name="sangre" class="lectura" type="text">
+            <select name="sangre" class="lectura">
+                <option value="--">--</option>
+                <option value="0-">0-</option>
+                <option value="0+">0+</option>
+                <option value="A-">A-</option>
+                <option value="A+">A+</option>
+                <option value="B-">B-</option>
+                <option value="B+">B+</option>
+                <option value="AB-">AB-</option>
+                <option value="AB+">AB+</option>
+            </select>   
             <label class="lectura" for="">Alergias:</label>
             <input name="alergias" class="lectura" type="text">
             <label class="lectura" for="">Nombre del tutor:</label>
@@ -57,10 +61,15 @@ $id = $_GET["id"];
             <label class="lectura" for="">No. Teléfono del tutor:</label>
             <input name="notel" class="lectura" type="number">
             <label class="lectura" for="">Fecha de Nacimiento</label>
-            <input name="nacimiento" class="lectura" type="date">
+            <input name="nacimiento" class="lectura" type="date" required>
             <input type="submit" value="Registrar">
         </form>
 	</div>
+    
+    <?php //ESTE HACE EL FOOTER
+        echo $footer;
+    ?>
+    
 </body>
 
 </html>

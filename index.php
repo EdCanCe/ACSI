@@ -1,5 +1,6 @@
 <?php
 include("conexion.php");
+include("variablesglobales.php");
 $alumnos = "SELECT * FROM alumnos";
 ?>
 
@@ -19,20 +20,14 @@ $alumnos = "SELECT * FROM alumnos";
 
 <body>
 
-	<div class="dropdown">
-		<button id="abrir-menu">☰</button>
-		<div class="dropdown-content">
-			<a href="index.php">Inicio</a>
-			<a href="inventario.php">Inventario</a>
-			<a href="consulta-inicio.php">Añadir Consulta</a>
-            <a href="consultas.php">Historial de Consultas</a>
-			<a href="alumnos.php">Historiales de Alumnos</a>
-			<a><input type="text" class="In-control" placeholder="Buscar Alumno por No.Control"></a>
-		</div>
-	</div>
-
+	<?php //ESTE HACE EL MENÚ DESPLEGABLE
+        echo $header;
+    ?>
+    
+        
 	<div class="cuerpo">
-		<h1>ACSI</h1>
+        <center><img src="imgs/icon.png" class="imagen_logo"></center>
+		<h1 class="ACSI_principal">ACSI</h1>
 		<div class="index_direccion">
 			<img src="">
 			<p>Domicilio:<br><br>Av Francisco I. Madero Ote 4923, Cd Industrial, 58200 Morelia, Mich. Junto al salón 11
@@ -58,6 +53,15 @@ $alumnos = "SELECT * FROM alumnos";
 		</div>
 
 	</div>
+        
+    <?php //ESTE HACE EL FOOTER
+        echo $footer;
+    ?>
+    <div class="pie">
+        <h1>ACSI</h1>
+        <img class='imagen_footer' src='imgs/icon.png'>
+    </div>
+    
 </body>
 
 </html>

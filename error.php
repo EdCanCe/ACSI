@@ -1,5 +1,6 @@
 <?php
 include("conexion.php");
+include("variablesglobales.php");
 $alumnos = "SELECT * FROM alumnos";
 ?>
 
@@ -19,22 +20,21 @@ $alumnos = "SELECT * FROM alumnos";
 
 <body>
 
-	<div class="dropdown">
-		<button id="abrir-menu">☰</button>
-		<div class="dropdown-content">
-			<a href="index.php">Inicio</a>
-			<a href="inventario.php">Inventario</a>
-			<a href="consulta-inicio.php">Añadir Consulta</a>
-            <a href="consultas.php">Historial de Consultas</a>
-			<a href="alumnos.php">Historiales de Alumnos</a>
-			<a><input type="text" class="In-control" placeholder="Buscar Alumno por No.Control"></a>
-		</div>
-	</div>
+	<?php //ESTE HACE EL MENÚ DESPLEGABLE
+        echo $header;
+    ?>
 
 	<div class="cuerpo">
 		<h1>ERROR 404</h1>
-        <h2>Página no existente</h2>
+        <center><p>Página no encontrada</p><br></center>
+        <center><a class="boton_a" href="index.php">VOLVER AL INICIO</a></center>
+        <center><img src="imgs/error.png" class="imagen_logo"></center>
 	</div>
+    
+    <?php //ESTE HACE EL FOOTER
+        echo $footer;
+    ?>
+    
 </body>
 
 </html>

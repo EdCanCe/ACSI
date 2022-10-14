@@ -1,8 +1,8 @@
 <?php
 include("conexion.php");
+include("variablesglobales.php");
+$alumnos = "SELECT * FROM alumnos";
 $id = $_GET["id"];
-$alumnos = "SELECT * FROM alumnos WHERE NoControl = '$id'";
-$receta = "SELECT * FROM receta WHERE NoControlFK = '$id'";
 ?>
 
 <!DOCTYPE html>
@@ -21,30 +21,22 @@ $receta = "SELECT * FROM receta WHERE NoControlFK = '$id'";
 
 <body>
 
-	<div class="dropdown">
-		<button id="abrir-menu">☰</button>
-		<div class="dropdown-content">
-			<a href="index.php">Inicio</a>
-			<a href="inventario.php">Inventario</a>
-			<a href="consulta-inicio.php">Añadir Consulta</a>
-            <a href="consultas.php">Historial de Consultas</a>
-			<a href="alumnos.php">Historiales de Alumnos</a>
-			<a><input type="text" class="In-control" placeholder="Buscar Alumno por No.Control"></a>
-		</div>
-	</div>
+	<?php //ESTE HACE EL MENÚ DESPLEGABLE
+        echo $header;
+    ?>
     
 	<div class="cuerpo">
         <h1>Historial Médico</h1>
         <?php
-            $resultado = mysqli_query($conexion, "SELECT * FROM alumnos WHERE NoControl = '$id'");
+            $resultado = mysqli_query($conexion, "SELECT * FROM alumnos WHERE NoControl = $id");
             if (mysqli_num_rows($resultado) == 0) { 
                 { ?>
                 <center><h2>ESTÁ VACÍO</h2></center>
-                <center><p>¿Crear alumno con el mismo No.Control?</p></center>
+                <center><p>¿Registrar alumno con el mismo No.Control?</p></center>
                 <center><a class="boton_a" href="crear_alumno.php?id=<?php echo $id;?>">SI</a></center>
                 <?php }
-            }else{ 
-               $resultado = mysqli_query($conexion, $alumnos);
+            }else{
+                $resultado = mysqli_query($conexion, "SELECT * FROM alumnos WHERE NoControl = $id");
                 while($row=mysqli_fetch_assoc($resultado)) { ?>
                 <tr>
                     <h2>Nombre: <?php echo $row["NombreAl"];?> <?php echo $row["ApPaternoAl"];?> <?php echo $row["ApMaternoAl"];?></h2> 
@@ -52,10 +44,23 @@ $receta = "SELECT * FROM receta WHERE NoControlFK = '$id'";
                     <p>CURP: <?php echo $row["CURPAl"];?></p>
                     <p>Tipo de sangre: <?php echo $row["TipoSangre"];?></p>
                     <p>Alergias: <?php echo $row["Alergias"];?></p>
+                    <?php
+                    $fechaHoy = date("d-m-Y");
+                    $nacimiento = date("d-m-Y", strtotime($row["FechaNacAl"]));
+                    ?>
+                    <p>Fecha de Nacimiento: <?php echo $nacimiento ?></p>
+                    <p>Dia de hoy: <?php echo $fechaHoy ?></p>
+                    <p>Nombre del tutor: <?php echo $row["NombreTut"];?> <?php echo $row["ApPaternoTut"];?> <?php echo $row["ApMaternoTut"];?></p>
+                    <p>Número telefónico del tutor: <?php echo $row["NoTelefonoTut"]?></p>
                 </tr> <?php }
             }  
         ?>
 	</div>
+    
+    <?php //ESTE HACE EL FOOTER
+        echo $footer;
+    ?>
+    
 </body>
 
 </html>

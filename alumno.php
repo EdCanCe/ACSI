@@ -47,9 +47,22 @@ $id = $_GET["id"];
                     <?php
                     $fechaHoy = date("d-m-Y");
                     $nacimiento = date("d-m-Y", strtotime($row["FechaNacAl"]));
+                    $anoActual = date('Y', strtotime($fechaHoy));
+                    $mesActual = date('m', strtotime($fechaHoy))+1;
+                    $diaActual = date('d', strtotime($fechaHoy));
+                    $anoNac = date('Y', strtotime($nacimiento));
+                    $mesNac = date('m', strtotime($nacimiento));
+                    $diaNac = date('d', strtotime($nacimiento));
+                    $edad = $anoActual - $anoNac;
+                    if ($mesActual < $mesNac) {
+                        $edad = $edad - 1;
+                    } else if ($mesActual == $mesNac) {
+                        if ($diaActual < $diaNac) {
+                            $edad = $edad - 1;
+                        }
+                    }
                     ?>
-                    <p>Fecha de Nacimiento: <?php echo $nacimiento ?></p>
-                    <p>Dia de hoy: <?php echo $fechaHoy ?></p>
+                    <p>Edad: <?php echo $edad ?></p>
                     <p>Nombre del tutor: <?php echo $row["NombreTut"];?> <?php echo $row["ApPaternoTut"];?> <?php echo $row["ApMaternoTut"];?></p>
                     <p>Número telefónico del tutor: <?php echo $row["NoTelefonoTut"]?></p>
                 </tr> <?php }
@@ -62,5 +75,5 @@ $id = $_GET["id"];
     ?>
     
 </body>
-
+    
 </html>

@@ -57,10 +57,6 @@ $alumnos = "SELECT * FROM alumnos";
     <?php //ESTE HACE EL FOOTER
         echo $footer;
     ?>
-    <div class="pie">
-        <h1>ACSI</h1>
-        <img class='imagen_footer' src='imgs/icon.png'>
-    </div>
     
 </body>
 

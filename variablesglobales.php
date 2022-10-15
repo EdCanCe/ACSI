@@ -25,6 +25,20 @@ $header = "
 $footer = "
 </div>
     <div class='pie'>
-        <h1>ACSI</h1>
+        <div>
+            <center><h1>ACSI</h1></center>
+            <div class='div_final'>
+                <img class='imagen_footer' src='imgs/icon_circulo.png'> 
+                <div>
+                    <h2>ACSI: ADMINISTRADOR DE CENTROS DE SALUD INSTITUCIONALES</h2>
+                    <p>Elaborado por los alumnos del CETIS 120 <q>Josefa Ortíz de Dominguez</q></p>
+                    <ul>
+                        <li>José Roberto García Correa</li>
+                        <li>Jorge Arturo Salgado Ceja</li>
+                        <li>Edmundo Canedo Cervantes</li>
+                    </ul>
+                </div>
+            </div>
+        <div>
     </div>
 ";

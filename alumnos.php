@@ -17,6 +17,7 @@ $id = '';
 	<link rel="stylesheet" href="style.css?v=<?php echo time(); ?>">
 	<link rel="icon" href="imgs/icon.png">
 	<script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
@@ -27,14 +28,9 @@ $id = '';
 
 	<div class="cuerpo">
         <h1>Historiales de Alumnos</h1>
-        <input type="text" class="buscador_principal" id="buscador_alumnos" onkeyup="buscar_alumnos()" placeholder="Número de Control del Alumno">
-        <center><a class="boton_a" href="crear_alumno.php?id=<?php echo $id;?>">REGISTRAR NUEVO ALUMNO</a></center>
-        <table class="tabla_alumnos" id="tabla_alumnado">
-            <tr>
-                <th>No Control</th>
-                <th>Nombre</th>
-                <th></th>
-            </tr>
+        <input type="text" class="buscador_principal" id="buscador_tr" placeholder="Número de Control del Alumno" onkeyup="buscar($('#buscador_tr').val());">
+        <center><a class="boton_a bordes" href="crear_alumno.php?id=<?php echo $id;?>">REGISTRAR NUEVO ALUMNO</a></center>
+        <table  class="tabla_alumnos" id="tabla_tr">
             <?php $resultado = mysqli_query($conexion, $alumnos);
                 while($row=mysqli_fetch_assoc($resultado)) { ?>
                 <tr>
@@ -48,10 +44,17 @@ $id = '';
         echo $footer;
     ?>
 </body>
-<script>
-    function buscar_alumnos(){
-        var control = document.getElementById('buscador_alumnos').value;
-        
+<script type="text/javascript">
+    function buscar(entrada){
+        var datos = {"entrada":entrada};
+        $.ajax({
+            data:datos,
+            type: 'POST',
+            url:'buscador_alumno.php',
+            success: function(data){
+                document.getElementById('tabla_tr').innerHTML = data;
+            }
+        });
     }
 </script>
 </html>

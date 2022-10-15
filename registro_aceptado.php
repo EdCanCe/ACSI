@@ -2,6 +2,7 @@
 include("conexion.php");
 include("variablesglobales.php");
 $alumnos = "SELECT * FROM alumnos";
+$id = $_GET["id"];
 ?>
 
 <!DOCTYPE html>
@@ -25,11 +26,11 @@ $alumnos = "SELECT * FROM alumnos";
     ?>
 
 	<div class="cuerpo">
-		<h1>ERROR 404</h1>
-        <center><p>Página no encontrada</p><br></center>
-        <center><a class="boton_a" href="index.php">VOLVER AL INICIO</a></center>
+		<h1>Registro aceptado</h1>
+        <center><p>Se registró lo pedido</p><br></center>
+        <center><a class="boton_a" href="<?php echo     $id ?>">CONTINUAR</a></center>
         <br>
-        <center><img src="imgs/error.png" class="imagen_logo"></center>
+        <center><img src="imgs/registro_aceptado.png" class="imagen_logo"></center>
 	</div>
     
     <?php //ESTE HACE EL FOOTER

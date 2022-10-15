@@ -26,19 +26,42 @@ $id = $_GET["id"];
     ?>
     
 	<div class="cuerpo">
-        <h1>Creación de Alumno</h1>
+        <h1>Registro de Alumno</h1>
         <form action="insertaralumno.php" method="post" class="registrardatos">
-            <label class="lectura" for="">Nombre:</label>
+            <label class="lectura_label" for="">Nombre:</label>
             <input name="nombre" class="lectura" type="text" required>
-            <label class="lectura" for="">Apellido Paterno:</label>
+            <label class="desaparece"></label>
+            <label class="lectura_label" for="">Apellido Paterno:</label>
             <input name="appaterno" class="lectura" type="text" required>
-            <label class="lectura" for="">Apellido Materno:</label>
+            <label class="desaparece"></label>
+            <label class="lectura_label" for="">Apellido Materno:</label>
             <input name="apmaterno" class="lectura" type="text">
-            <label class="lectura" for="">No. Control:</label>
+            <label class="desaparece"></label>
+            <label class="lectura_label" for="">No. Control:</label>
             <input name="nocontrol" class="lectura" type="number" value="<?php echo $id;?>" required>
-            <label class="lectura" for="">CURP:</label>
+            <label class="desaparece"></label>
+            <label class="lectura_label" for="">CURP:</label>
             <input name="curp" class="lectura" type="text" required >
-            <label class="lectura" for="">Tipo de sangre:</label>
+            <label class="desaparece"></label>
+            <label class="lectura_label" for="">Alergias:</label>
+            <input name="alergias" class="lectura" type="text">
+            <label class="desaparece"></label>
+            <label class="lectura_label" for="">Nombre del tutor:</label>
+            <input name="nombretut" class="lectura" type="text">
+            <label class="desaparece"></label>
+            <label class="lectura_label" for="">Ap. Paterno del tutor:</label>
+            <input name="appaternotut" class="lectura" type="text">
+            <label class="desaparece"></label>
+            <label class="lectura_label" for="">Ap. Materno del tutor:</label>
+            <input name="apmaternotut" class="lectura" type="text">
+            <label class="desaparece"></label>
+            <label class="lectura_label" for="">No. Teléfono del tutor:</label>
+            <input name="notel" class="lectura" type="number">
+            <label class="desaparece"></label>
+            <label class="lectura_label" for="">Fecha de Nacimiento</label>
+            <input name="nacimiento" class="lectura" type="date" required>
+            <label class="desaparece"></label>
+            <label class="lectura_label" for="">Tipo de sangre:</label>
             <select name="sangre" class="lectura">
                 <option value="--">--</option>
                 <option value="0-">0-</option>
@@ -49,20 +72,9 @@ $id = $_GET["id"];
                 <option value="B+">B+</option>
                 <option value="AB-">AB-</option>
                 <option value="AB+">AB+</option>
-            </select>   
-            <label class="lectura" for="">Alergias:</label>
-            <input name="alergias" class="lectura" type="text">
-            <label class="lectura" for="">Nombre del tutor:</label>
-            <input name="nombretut" class="lectura" type="text">
-            <label class="lectura" for="">Ap. Paterno del tutor:</label>
-            <input name="appaternotut" class="lectura" type="text">
-            <label class="lectura" for="">Ap. Materno del tutor:</label>
-            <input name="apmaternotut" class="lectura" type="text">
-            <label class="lectura" for="">No. Teléfono del tutor:</label>
-            <input name="notel" class="lectura" type="number">
-            <label class="lectura" for="">Fecha de Nacimiento</label>
-            <input name="nacimiento" class="lectura" type="date" required>
-            <input type="submit" value="Registrar">
+            </select>
+            <label></label>
+            <center><input type="submit" value="Registrar" class="boton_a"></center>
         </form>
 	</div>
     

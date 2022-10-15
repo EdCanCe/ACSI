@@ -21,7 +21,7 @@ $querynegado = mysqli_query($conexion, $negado);
 if (mysqli_num_rows($querynegado) == 0){
     $resultado = mysqli_query($conexion, $insertar);
     if($resultado) {
-        echo "<script> window. location='/ACSI/registro_aceptado.php?id=" . $nocontrol . "'</script>";
+        echo "<script> window. location='/ACSI/registro_aceptado.php?id=/ACSI/alumno.php?id=" . $nocontrol . "'</script>";
     }else{
        echo "<script>alert('No se pudo registrar el alumno');
     </script>";

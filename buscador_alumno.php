@@ -11,7 +11,7 @@
         $resultado = mysqli_query($conexion, $query);
         
         if(mysqli_num_rows($resultado) > 0 ){
-            echo '</p><table class="tabla_alumnos">
+            echo '<table class="tabla_alumnos">
             <tr>
                 <th>No Control</th>
                 <th>Nombre</th>

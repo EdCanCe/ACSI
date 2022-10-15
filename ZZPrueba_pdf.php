@@ -34,13 +34,13 @@ $pdf = new PDF();
 $pdf->AliasNbPages();
 $pdf->AddPage();
 $pdf->SetFont('Helvetica','',12);
-$pdf->setXY(20,20);
+$pdf->setY(50);
 
 include("conexion.php");
-$alumnos = "SELECT * FROM alumnos";
+$alumnos = "SELECT * FROM alumnos where NoControl = '". $idpag ."'";
 $resultado = mysqli_query($conexion, $alumnos);
 while($row=mysqli_fetch_assoc($resultado)){
-    $pdf->Cell(0,10,$row['NoControl'],0,1);
+    $pdf->Cell(0,10,$row['NoControl']." ".$row['NombreAl']." ".$row['ApPaternoAl']." ".$row['ApMaternoAl'],0,1);
 }
 $pdf->Output();
 ?>

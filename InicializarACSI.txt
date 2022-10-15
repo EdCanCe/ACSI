@@ -19,7 +19,7 @@ create table Medicina(
 MedicinaID int NOT NULL AUTO_INCREMENT PRIMARY KEY,
 NombreMed varchar(20) NOT NULL,
 ComponenteAct varchar(50) NOT NULL,
-GramajeMed float NOT NULL,
+GramajeMed varchar(50) NOT NULL,
 FotoMed longblob);
 
 create table Doctor(

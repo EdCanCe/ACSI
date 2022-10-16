@@ -65,17 +65,18 @@ $id = $_GET["id"];
                         <p>Edad: <?php echo $edad ?></p>
                         <p>Nombre del tutor: <?php echo $row["NombreTut"];?> <?php echo $row["ApPaternoTut"];?> <?php echo $row["ApMaternoTut"];?></p>
                         <p>Número telefónico del tutor: <?php echo $row["NoTelefonoTut"]?></p>
-                    </tr> 
+                    </tr>
+                    <center><a class="boton_a" href="modificar_alumno.php?id=<?php echo $row["NoControl"];?>">Modificar datos</a></center>
+                    <div class="divisor"></div>
                     <center><h2>Consultas Médicas</h2></center><?php }
                 $resultado = mysqli_query($conexion, "SELECT * FROM receta WHERE NoControlFK = $id");
                 if (mysqli_num_rows($resultado) == 0) { 
                     ?>
-                    <br>
                     <center><p>SIN DATOS REGISTRADOS</p></center>
                     <?php
                 }else{
                     ?>
-                    <table class="tabla_alumnos" id="tabla_tr">
+                    <table>
                         <tr>
                             <th>Fecha</th>
                             <th></th>
@@ -84,7 +85,7 @@ $id = $_GET["id"];
                     <?php
                     while($row=mysqli_fetch_assoc($resultado)) {
                         $meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
-                        $fechaConsulta = $row["Fecha"]->format("j");
+                        $fechaConsulta = date('j', strtotime($row['Fecha']))." de ".$meses[date('n', strtotime($row['Fecha']))]." de ".date('Y', strtotime($row['Fecha']));
                         ?>
                             <tr>
                                 <td><center><?php echo $fechaConsulta ?></center></td>

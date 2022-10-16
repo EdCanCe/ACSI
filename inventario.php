@@ -1,14 +1,13 @@
 <?php
-include("conexion.php");
 include("variablesglobales.php");
-$alumnos = "SELECT * FROM alumnos";
+include("conexion.php");
 ?>
 
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
-	<title>INICIO</title>
+	<title>INVENTARIO</title>
 	<meta charset="utf-8">
 	<meta name="author" content="Jorge Arturo Salgado Ceja, José Roberto García Correa, Edmundo Canedo Cervantes">
 	<meta name="description" content="Sistema para la gestión de enfermería, teniendo elaboración de recetas, vista de historial médico e inventario de medicinas">
@@ -23,19 +22,18 @@ $alumnos = "SELECT * FROM alumnos";
 	<?php //ESTE HACE EL MENÚ DESPLEGABLE
         echo $header;
     ?>
-
+    
 	<div class="cuerpo">
-		<h1>Registro fallido</h1>
-        <center><p>Hubo un error en el procedimiento, checa que no haya más datos con ese valor</p><br></center>
-        <center><a class="boton_a" onclick="regresar()">VOLVER</a></center>
-        <br>
-        <center><img src="imgs/registro_fallido.png" class="imagen_logo"></center>
+        <h1>Inventario</h1>
+        <?php
+        $inv = "SELECT * from medicina;";
+        $resultado = mysqli_query($conexion, $inv);
+            while($row=mysqli_fetch_assoc($resultado)) { ?>
+            <p>Noa: <?php echo $row['MedicinaID'] ?></p>
+            <?php echo '<img src="data:image/jpeg;base64,'.base64_encode($row["FotoMed"]).'"/>'?>
+        <?php } ?>
 	</div>
-    <script>
-        function regresar(){
-            history.back();
-        }
-    </script>
+    
     <?php //ESTE HACE EL FOOTER
         echo $footer;
     ?>

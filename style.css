@@ -53,6 +53,16 @@ html{
     background-position: center;
 }
 
+.divisor{
+    font-size: 0;
+    background: var(--color_obscuro);
+    width: 100%;
+    height: 2px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .cuerpo{
     display: block;
     background: var(--color_fondos);
@@ -218,7 +228,7 @@ tr a{
     text-align: center;
 }
 
-tr a:hover, a:hover, .boton_a:hover{
+tr a:hover, a:hover, .boton_a:hover, input::file-selector-button:hover{
     cursor: pointer;
     background: var(--color_fondos);   
     color: var(--color_principal);
@@ -226,11 +236,11 @@ tr a:hover, a:hover, .boton_a:hover{
     transform: scale() 0.2s;
 }
 
-tr a:active, a:active, .boton_a:active{
+tr a:active, a:active, .boton_a:active, input::file-selector-button:active{
     scale: 0.9;
 }
 
-.boton_a{
+.boton_a, input::file-selector-button{
     display: block; 
     background: var(--color_principal);
     color: var(--color_fondos);
@@ -279,7 +289,7 @@ form label{
 form input{
     border: none;
     border-bottom: 1px solid var(--color_obscuro);
-    display: block
+    display: block;
     width: 10px;
 }
 
@@ -289,6 +299,28 @@ select{
 
 form input, form select{
     margin-bottom: 1cm
+}
+
+.linea_4{
+    line-height: calc(1em + 0.55cm);
+}
+
+input::file-selector-button{
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    padding: 0.1cm 0.5cm;
+    margin: 0.1cm 0.2cm 0.1cm 0.1cm;
+    border: none;
+    display: inline-block;
+    border-bottom: 1px solid var(--color_obscuro);
+}
+
+input::file-selector-button:hover{
+    box-shadow: 0 0 0.1cm var(--color_principal);
+}
+
+.lectura_archivo{
+    border: none;
 }
 
 .imagen_logo{

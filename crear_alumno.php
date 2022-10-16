@@ -64,8 +64,8 @@ $id = $_GET["id"];
             <label class="lectura_label" for="">Tipo de sangre:</label>
             <select name="sangre" class="lectura">
                 <option value="--">--</option>
-                <option value="0-">0-</option>
-                <option value="0+">0+</option>
+                <option value="O-">O-</option>
+                <option value="O+">O+</option>
                 <option value="A-">A-</option>
                 <option value="A+">A+</option>
                 <option value="B-">B-</option>

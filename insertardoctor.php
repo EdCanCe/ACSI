@@ -17,7 +17,7 @@ $querynegado = mysqli_query($conexion, $negado);
 if (mysqli_num_rows($querynegado) == 0){
     $resultado = mysqli_query($conexion, $insertar);
     if($resultado) {
-        echo "<script>window.location='/ACSI'</script>";
+        echo "<script> window. location='/ACSI/registro_aceptado.php?id=/ACSI/doctor.php?id=" . $CedulaProfesional . "'</script>";
     }else{
        echo "<script>window.location='/ACSI/registro_denegado.php?id=Hubo un error no identificado en el registro</script>';
     </script>";

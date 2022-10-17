@@ -38,7 +38,7 @@ $id = $_GET["id"];
             <input name="apmaterno" class="lectura" type="text">
             <label class="desaparece"></label>
             <label class="lectura_label" for="">No. Control:</label>
-            <input name="nocontrol" class="lectura" type="number" value="<?php echo $id;?>" required>
+            <input name="nocontrol" class="lectura" type="number" max="99999999999999" min="0" value="<?php echo $id;?>" required>
             <label class="desaparece"></label>
             <label class="lectura_label" for="">CURP:</label>
             <input name="curp" class="lectura" type="text" required >

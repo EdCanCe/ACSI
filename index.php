@@ -34,23 +34,42 @@ $alumnos = "SELECT * FROM alumnos";
 				en el edificio E
 			</p>
 		</div>
-		<div class="index_doctor">
-			<p id="Doc">Leticia Cisneros Lemus</p>
-			<p>7 AM - 2 PM</p>
-		</div>
-
-		<div class="index_doctor">
-			<p id="Doc2">Fabiola Saavedra Talavera</p>
-			<p>1 PM - 8 PM</p>
-		</div>
-
-		<div class="index_descripcion">
+        
+        <div class="index_descripcion">
 			<p>Administracion de Centros de Salud Institucionales "ACSI", fue creado con la intencion de mejorar
 				el manejo de informacion de una enfermeria escolar, con el uso y manjo de diversas herramientas web
-				y el manejo de bases de datos. Mejorando asi aspectos como: el uso de inverntarios, implementando
-				historiales
-				personales a los alumnos.</p>
+				y el manejo de bases de datos. Mejorando asi aspectos como: el uso de inventarios, implementación de historiales personales a los , etc.</p>
 		</div>
+        
+        <div class="divisor"></div>
+        <center><h2>Doctores disponibles actualmente</h2></center>
+            <?php	
+                date_default_timezone_set('America/Mexico_City');
+                $horaActual = date('G:i:s');
+                $resultado = mysqli_query($conexion, "SELECT * from doctor where (HoraSalida > '$horaActual' and horaEntrada < '$horaActual')");
+            
+                if (mysqli_num_rows($resultado) == 0){
+                    ?>
+                    <center><p>No hay doctores disponibles/trabajando actualmente</p></center>
+                    <?php
+                } else{
+                    ?> <table id="tabla_tr">
+                            <tr>
+                                <th>Horario</th>
+                                <th>Cedula Prof.</th>
+                                <th>Nombre</th>
+                                <th></th>
+                            </tr> <?php
+                            while($row=mysqli_fetch_assoc($resultado)) {
+                                $entrada = date('h:i a', strtotime($row["HoraEntrada"]));
+                                $salida = date('h:i a', strtotime($row["HoraSalida"]));
+                            ?>
+                            <tr>
+                                <td><center><?php echo $entrada ;?> - <?php echo $salida;?></center></td>
+                                <td><center><?php echo $row["CedulaProf"];?></center></td>
+                                <td><center><?php echo $row["NombreDoc"];?> <?php echo $row["ApPaternoDoc"];?> <?php echo $row["ApMaternoDoc"];?> </center></td>
+                                <td><center><a href="doctor.php?id=<?php echo $row["CedulaProf"];?>">Mostrar datos</a></center></td>
+                        </tr> </table><?php } }?>
 
 	</div>
         

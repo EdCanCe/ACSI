@@ -149,6 +149,7 @@ h1{
 	border: none;
     background: var(--color_obscuro);
     background-image: url(imgs/oscurizador.png);
+    z-index: 2;
 }
 
 nav{
@@ -479,10 +480,11 @@ input::file-selector-button:hover{
     width: auto;
     height: 100%;
     margin-left: auto;
+    z-index: 1;
 }
 
 .medicina_botones{
-    //display: flex;
+    display: flex;
     margin-top: 40px;
     width: fit-content;
     margin-left: auto;
@@ -562,6 +564,9 @@ input::file-selector-button:hover{
 }
 
 @media only screen and (max-width: 1050px){
+    .medicina_botones{
+        display: block;
+    }
     .medicina_botones a{
         display: block;
     }

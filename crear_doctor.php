@@ -1,6 +1,7 @@
 <?php
 include("conexion.php");
 include("variablesglobales.php");
+$id = $_GET["id"];
 ?>
 
 <!DOCTYPE html>
@@ -27,7 +28,7 @@ include("variablesglobales.php");
         <h1>Registro de Doctor</h1>
         <form action="insertardoctor.php" method="post" class="registrardatos">
             <label class="lectura_label" for="">Cedula Profesional:</label>
-            <input name="CedulaProfesional" class="lectura" type="text" required>
+            <input name="CedulaProfesional" class="lectura" type="text" value="<?php echo $id ?>"required>
             <label class="desaparece"></label>
 
             <label class="lectura_label" for="">Hora de Entrada:</label>
@@ -57,8 +58,7 @@ include("variablesglobales.php");
             <label class="lectura_label" for="">Apellido Materno:</label>
             <input name="ApMaDoc" class="lectura" type="text">
             <label class="desaparece"></label>
-
-            <label></label>
+            
             <center><input type="submit" value="Registrar" class="boton_a"></center>
         </form>
 	</div>

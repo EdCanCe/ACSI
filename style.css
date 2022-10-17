@@ -339,11 +339,23 @@ input::file-selector-button:hover{
 	margin-top: 10px;
 }
 
+.botones_inventario{
+    margin-top: auto;
+    height: fit-content;
+}
+
+.datos_objeto .boton_a{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    padding: 10px 0;
+}
+
 .objeto_inventario{
 	flex: 290px;
 	margin: 0;
 	padding: 0;
-	height: fit-content;
+	height: 400px;
 	margin-top: 10px;
 }
 
@@ -351,7 +363,9 @@ input::file-selector-button:hover{
 	padding: 20px;
 	width: 240px;
 	background: var(--color_obscuro);
-	height: fit-content;
+    background-image: url(imgs/blanqueador.png);
+    background-blend-mode:overlay;
+	height: 354px;
 	margin-left: auto;
 	margin-right: auto;
 	overflow: hidden;
@@ -359,30 +373,58 @@ input::file-selector-button:hover{
 	border: 3px double var(--color_principal);
 }
 
-.datos_objeto img{
-	/*display: none;*/
-	z-index: 2;
-	/*position: relative;
-	left: 0px;
-	top: 0px;*/
-	float: right;
+.datos_objeto *{
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
-.datos_objeto:hover img{
-	display: block;
+.datos_objeto div{
+    height: 255px;
+    margin-bottom: 20px;
+}
+
+.datos_objeto h2{
+    text-align: left;
+    margin: 0;
+    width: 240px;
 }
 
 #Tem{
 	width:20%;
 }
 
+.imagen_inventario{
+    display: block;
+    float: right;
+    width: calc(40% / 5 * 2);
+    min-width: 200px;
+    aspect-ratio: 1 / 1;
+    position: relative;
+    top: -10px;
+    margin-right: 30px;
+}
 
+.imagen_inventario img{
+    display: block;
+    width: auto;
+    height: 100%;
+    margin-left: auto;
+}
 
+.medicina_botones{
+    //display: flex;
+    margin-top: 40px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
 
-
-
-
-
+.medicina_botones a{
+    display: inline-block;
+    min-width: 175px;
+    padding: 0.2cm 2cm;
+}
 
 #container {
 	/*width: auto;
@@ -450,6 +492,15 @@ input::file-selector-button:hover{
 }
 
 @media only screen and (max-width: 1050px){
+    .medicina_botones a{
+        display: block;
+    }
+    .imagen_inventario{
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
     .cuerpo{
         margin-top: 0cm;
         min-height: calc(100vh - 3cm);

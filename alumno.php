@@ -1,7 +1,6 @@
 <?php
 include("conexion.php");
 include("variablesglobales.php");
-$alumnos = "SELECT * FROM alumnos";
 $id = $_GET["id"];
 ?>
 
@@ -85,7 +84,7 @@ $id = $_GET["id"];
                     <?php
                     while($row=mysqli_fetch_assoc($resultado)) {
                         $meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
-                        $fechaConsulta = date('j', strtotime($row['Fecha']))." de ".$meses[date('n', strtotime($row['Fecha']))]." de ".date('Y', strtotime($row['Fecha']));
+                        $fechaConsulta = date('j', strtotime($row['Fecha']))." de ".$meses[date('n', strtotime($row['Fecha']))-1]." de ".date('Y', strtotime($row['Fecha']));
                         ?>
                             <tr>
                                 <td><center><?php echo $fechaConsulta ?></center></td>

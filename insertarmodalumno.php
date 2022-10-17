@@ -23,10 +23,10 @@ if (mysqli_num_rows($querynegado) != 0){
     if($resultado) {
         echo "<script> window. location='/ACSI/registro_aceptado.php?id=/ACSI/alumno.php?id=" . $nocontrol . "'</script>";
     }else{
-       echo "<script> window. location='/ACSI/registro_denegado.php</script>";
+       echo "<script> window. location='/ACSI/registro_denegado.php?id=Hubo un error no identificado en el registro</script>";
 }
 }else{
-    echo "<script> window. location='/ACSI/registro_denegado.php?id=" . $nocontrol . "'</script>";
+    echo "<script> window. location='/ACSI/registro_denegado.php?id=No se puede modificar un alumno que no existe'</script>";
 }
 
 #"INSERT INTO alumnos(NoControl, CURPAl, NombreAl, ApPaternoAl, ApMaternoAl, TipoSangre, Alergias, NombreTut, ApPaternoTut, ApMaternoTut, NoTelefonoTut, FechaNacAl) VALUES ('$nocontrol', '$curp', '$nombre', '$appaterno', '$apmaterno', '$sangre', '$alergias', '$nombretut', '$appaternotut', '$apmaternotut', '$notel', '$nacimiento');";

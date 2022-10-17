@@ -23,9 +23,8 @@ if (mysqli_num_rows($querynegado) == 0){
     if($resultado) {
         echo "<script> window. location='/ACSI/registro_aceptado.php?id=/ACSI/alumno.php?id=" . $nocontrol . "'</script>";
     }else{
-       echo "<script>alert('No se pudo registrar el alumno');
-    </script>";
+       echo "<script> window. location='/ACSI/registro_denegado.php?id=Hubo un error no identificado en el registro</script>";
 }
 }else{
-    echo "<script> window. location='/ACSI/registro_denegado.php?id=" . $nocontrol . "'</script>";
+    echo "<script> window. location='/ACSI/registro_denegado.php?id=No se puede registrar nuevamente un alumno que ya existe'</script>";
 }

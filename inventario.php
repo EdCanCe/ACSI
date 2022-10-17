@@ -1,6 +1,7 @@
 <?php
 include("variablesglobales.php");
 include("conexion.php");
+$inventario = "SELECT * FROM Medicina   ;";
 ?>
 
 <!DOCTYPE html>
@@ -15,6 +16,7 @@ include("conexion.php");
 	<link rel="stylesheet" href="style.css?v=<?php echo time(); ?>">
 	<link rel="icon" href="imgs/icon.png">
 	<script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
@@ -25,13 +27,22 @@ include("conexion.php");
     
 	<div class="cuerpo">
         <h1>Inventario</h1>
-        <?php
-        $inv = "SELECT * from medicina;";
-        $resultado = mysqli_query($conexion, $inv);
-            while($row=mysqli_fetch_assoc($resultado)) { ?>
-            <p>Noa: <?php echo $row['MedicinaID'] ?></p>
-            <?php echo '<img src="data:image/jpeg;base64,'.base64_encode($row["FotoMed"]).'"/>'?>
-        <?php } ?>
+        <input type="text" class="buscador_principal" id="buscador_tr" placeholder="Nombre o componentes del medicamento" onkeyup="buscar($('#buscador_tr').val());">
+        <div class="inventario" id="inventariocontainer">
+            <?php $resultado = mysqli_query($conexion, $inventario);
+                while($row=mysqli_fetch_assoc($resultado)) { ?>
+                <div class="objeto_inventario">
+                    <div class="datos_objeto">
+                        <h2><?php echo $row["NombreMed"] ?></h2>
+                        <div>
+                            <p>Cantidad: <?php echo $row["CantidadMedicina"] ?></p>
+                            <p>Medicina activa: <?php echo $row["ComponenteAct"] ?>
+                            <p>Gramajes: <?php echo $row["GramajeMed"] ?></p>
+                        </div>
+                        <a  class="boton_a" href="medicamento.php?id=<?php echo $row["MedicinaID"] ?>">Ver Medicamento</a>
+                    </div>
+                </div> <?php } ?>
+        </div>
 	</div>
     
     <?php //ESTE HACE EL FOOTER
@@ -39,5 +50,17 @@ include("conexion.php");
     ?>
     
 </body>
-
+<script type="text/javascript">
+    function buscar(entrada){
+        var datos = {"entrada":entrada};
+        $.ajax({
+            data:datos,
+            type: 'POST',
+            url:'buscador_medicina.php',
+            success: function(data){
+                document.getElementById('inventariocontainer').innerHTML = data;
+            }
+        });
+    }
+</script>
 </html>

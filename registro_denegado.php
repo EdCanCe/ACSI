@@ -1,7 +1,7 @@
 <?php
 include("conexion.php");
 include("variablesglobales.php");
-$alumnos = "SELECT * FROM alumnos";
+$id = $_GET["id"];
 ?>
 
 <!DOCTYPE html>
@@ -26,7 +26,7 @@ $alumnos = "SELECT * FROM alumnos";
 
 	<div class="cuerpo">
 		<h1>Registro fallido</h1>
-        <center><p>Hubo un error en el procedimiento, checa que no haya más datos con ese valor</p><br></center>
+        <center><p><?php echo $id ?></p><br></center>
         <center><a class="boton_a" onclick="regresar()">VOLVER</a></center>
         <br>
         <center><img src="imgs/registro_fallido.png" class="imagen_logo"></center>

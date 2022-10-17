@@ -18,9 +18,10 @@ FechaNacAl date);
 create table Medicina(
 MedicinaID int NOT NULL AUTO_INCREMENT PRIMARY KEY,
 NombreMed varchar(20) NOT NULL,
-ComponenteAct varchar(50) NOT NULL,
-GramajeMed varchar(50) NOT NULL,
-FotoMed longblob);
+ComponenteAct varchar(70) NOT NULL,
+GramajeMed varchar(40) NOT NULL,
+FotoMed longblob,
+CantidadMedicina int DEFAULT 0);
 
 create table Doctor(
 CedulaProf char(8) NOT NULL PRIMARY KEY,

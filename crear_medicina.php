@@ -1,14 +1,13 @@
 <?php
 include("variablesglobales.php");
 include("conexion.php");
-$id = $_GET["id"];
 ?>
 
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
-	<title>REGISTRAR ALUMNO</title>
+	<title>REGISTRAR MEDICINA</title>
 	<meta charset="utf-8">
 	<meta name="author" content="Jorge Arturo Salgado Ceja, José Roberto García Correa, Edmundo Canedo Cervantes">
 	<meta name="description" content="Sistema para la gestión de enfermería, teniendo elaboración de recetas, vista de historial médico e inventario de medicinas">
@@ -26,7 +25,7 @@ $id = $_GET["id"];
     
 	<div class="cuerpo">
         <h1>Registro de Medicina</h1>
-        <form action="crear_medicina.php?id=" method="POST" class="registrardatos" enctype="multipart/form-data" name="formulario">
+        <form action="crear_medicina.php" method="POST" class="registrardatos" enctype="multipart/form-data" name="formulario">
             <label class="lectura_label" for="">Nombre:</label>
             <input name="nombre" class="lectura" type="text" required>
             <label class="desaparece"></label>
@@ -48,24 +47,42 @@ $id = $_GET["id"];
                 $componente = $_POST['componentes'];
                 $gramaje = $_POST['gramaje'];
                 
-                if ($_FILES["foto"]["name"] == ""){
-                    $insertar = "INSERT INTO medicina(NombreMed, ComponenteAct, GramajeMed) VALUES ('$nombre', '$componente', '$gramaje');";
-                }else{
-                    $nombreImagen = $_FILES["foto"]["name"];
-                    $datosImagen = addslashes(file_get_contents($_FILES["foto"]["tmp_name"]));
-
-                    $tipoImagen = $_FILES["foto"]["type"];
-
-                    if(substr($tipoImagen, 0, 5) == 'image'){
-                        echo "Funciona";
+                $negado = "SELECT NombreMed FROM medicina where NombreMed = '$nombre';";
+                $querynegado = mysqli_query($conexion, $negado);
+                if (mysqli_num_rows($querynegado) == 0){
+                    if ($_FILES["foto"]["name"] == ""){
+                        $insertar = "INSERT INTO medicina(NombreMed, ComponenteAct, GramajeMed) VALUES ('$nombre', '$componente', '$gramaje');";
                     }else{
-                        #PONERLO EN UNA PÁGINA DONDE LE DIGA QUE EL DATO NO FUE VÁLIDO, SI SE PUEDE YA CON LOS DEMÁS DATOS LLENADOS, SI NO CON UN BACK
+                        $nombreImagen = $_FILES["foto"]["name"];
+                        $datosImagen = addslashes(file_get_contents($_FILES["foto"]["tmp_name"]));
+                        $tipoImagen = $_FILES["foto"]["type"];
+                        if(substr($tipoImagen, 0, 5) == 'image'){
+                        }else{
+                            echo "<script> window. location='/ACSI/registro_denegado.php?id=Archivo de imagen inválido'</script>";
+                        }
+                        $insertar = "INSERT INTO medicina(NombreMed, ComponenteAct, GramajeMed, FotoMed) VALUES ('$nombre', '$componente', '$gramaje', '$datosImagen');";
                     }
-
-                    $insertar = "INSERT INTO medicina(NombreMed, ComponenteAct, GramajeMed, FotoMed) VALUES ('$nombre', '$componente', '$gramaje', '$datosImagen');";
+                    mysqli_query($conexion, "SET GLOBAL max_allowed_packet=1073741824");
+                    $resultado = mysqli_query($conexion, $insertar);
+                    
+                    #Conseguir el id de la ultima medicina
+                    $idMedicina = '';
+                    $resultadoaux = mysqli_query($conexion, "SELECT MedicinaID FROM medicina where NombreMed = '$nombre';");
+                    while($row=mysqli_fetch_assoc($resultadoaux)){
+                        $idMedicina = $row["MedicinaID"];
+                    }
+                    #Conseguir el id de la ultima medicina
+                    
+                    if($resultado) {
+                        echo "<script> window. location='/ACSI/registro_aceptado.php?id=/ACSI/medicamento.php?id=" . $idMedicina . "'</script>";
+                    }else{
+                       echo "<script> window. location='/ACSI/registro_denegado.php?id=Hubo un error no identificado en el registro</script>";
                 }
-                mysqli_query($conexion, "SET GLOBAL max_allowed_packet=1073741824");
-                mysqli_query($conexion, $insertar);
+                }else{
+                    echo "<script> window. location='/ACSI/registro_denegado.php?id=No se puede registrar nuevamente una medicina que ya existe'</script>";
+                }
+                
+                
             }
         ?>
 	</div>

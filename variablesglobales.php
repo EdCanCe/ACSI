@@ -1,15 +1,49 @@
 <?php
 $header = "
+<div class='navbar'>
+    <nav>
+        <ul class='menu'>
+            <li class='menuHijo'><a href='index.php'>Inicio</a></li>
+            <li class='menuHijo'><a href='inventario.php'>Inventario</a>
+                <ul class='submenu'>
+                    <li><a href='inventario.php'>Ver todo</a></li>
+                    <li><a href='crear_medicina.php'>Registrar</a></li>
+                </ul>
+            </li>
+            <li class='menuHijo'><a href='#'>Consultas</a>
+                <ul class='submenu'>
+                    <li><a href='#'>Ver todas</a></li>
+                    <li><a href='#'>Nueva Consulta</a></li>
+                </ul>
+            </li>
+            <li class='menuHijo'><a href='alumnos.php'>Alumnos</a>
+                <ul class='submenu'>
+                    <li><a href='alumnos.php'>Ver todos</a></li>
+                    <li><a href='crear_alumno.php?id='>Registrar</a></li>
+                </ul>
+            </li>
+            <li class='menuHijo'><a href='#'>Doctores</a>
+                <ul class='submenu'>
+                    <li><a href='#'>Ver todos</a></li>
+                    <li><a href='#'>Registrar</a></li>
+                </ul>
+            </li>
+        </ul>
+    <nav>
+</div>
+<div class='auxCuerpo'>
+";
+
+/*$header = "
 <div class='dropdown'>
     <button id='abrir-menu'>☰</button>
     <div class='dropdown-content'>
-        <a href='index.php'>Inicio</a>
-        <a href='inventario.php'>Inventario</a>
-        <a href='consulta-inicio.php'>Añadir Consulta</a>
-        <a href='consultas.php'>Historial de Consultas</a>
-        <a href='alumnos.php'>Historiales de Alumnos</a>
-        <a href='registrar.php'>Registros</a>
-        <a><input type='text' class='In-control' placeholder='Buscar Alumno por No.Control' id='buscador_inicio'></a>
+        <a class='primer_drop' href='index.php'>Inicio</a>
+        <a class='primer_drop' href='inventario.php'>Inventario</a>
+        <a class='primer_drop' href='consulta-inicio.php'>Añadir Consulta</a>
+        <a class='primer_drop' href='consultas.php'>Historial de Consultas</a>
+        <a class='primer_drop' class='primer_drop'a href='alumnos.php'>Historiales de Alumnos</a>
+        <a class='primer_drop' href='registrar.php'>Registros</a>
     </div>
 </div>
 <script>
@@ -20,7 +54,7 @@ $header = "
     });
 </script>
 <div class='auxCuerpo'>
-";
+";*/
 
 $footer = "
 </div>

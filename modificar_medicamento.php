@@ -82,7 +82,7 @@ $id = $_GET["id"];
                        echo "<script> window. location='/ACSI/registro_denegado.php?id=Hubo un error no identificado en el registro</script>";
                 }
                 }else{
-                    echo "<script> window. location='/ACSI/registro_denegado.php?id=No se puede modificar un medicamento que no existe ".$id."'</script>";
+                    echo "<script> window. location='/ACSI/registro_denegado.php?id=No se puede modificar un medicamento que no existe'</script>";
                 }
                 
                 

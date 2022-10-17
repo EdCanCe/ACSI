@@ -30,7 +30,7 @@ $id = '';
         <h1>Historiales de Alumnos</h1>
         <input type="text" class="buscador_principal" id="buscador_tr" placeholder="Número de Control del Alumno" onkeyup="buscar($('#buscador_tr').val());">
         <center><a class="boton_a bordes" href="crear_alumno.php?id=<?php echo $id;?>">REGISTRAR NUEVO ALUMNO</a></center>
-        <table>
+        <table id="tabla_tr">
             <tr>
                 <th>No Control</th>
                 <th>Nombre</th>

@@ -16,6 +16,7 @@ $id = $_GET["id"];
 	<link rel="stylesheet" href="style.css?v=<?php echo time(); ?>">
 	<link rel="icon" href="imgs/icon.png">
 	<script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>

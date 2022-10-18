@@ -46,7 +46,7 @@ $alumnos = "SELECT * FROM alumnos";
             <?php	
                 date_default_timezone_set('America/Mexico_City');
                 $horaActual = date('G:i:s');
-                $resultado = mysqli_query($conexion, "SELECT * from doctor where (HoraSalida > '$horaActual' and horaEntrada < '$horaActual')");
+                $resultado = mysqli_query($conexion, "SELECT * from doctor where (horaSalida > '$horaActual' and horaEntrada < '$horaActual' and horaEntrada < HoraSalida) or (horaSalida < horaEntrada and ('$horaActual' > horaEntrada or '$horaActual' < horaSalida))");
             
                 if (mysqli_num_rows($resultado) == 0){
                     ?>
@@ -69,7 +69,7 @@ $alumnos = "SELECT * FROM alumnos";
                                 <td><center><?php echo $row["CedulaProf"];?></center></td>
                                 <td><center><?php echo $row["NombreDoc"];?> <?php echo $row["ApPaternoDoc"];?> <?php echo $row["ApMaternoDoc"];?> </center></td>
                                 <td><center><a href="doctor.php?id=<?php echo $row["CedulaProf"];?>">Mostrar datos</a></center></td>
-                        </tr> </table><?php } }?>
+                        </tr> <?php } ?> </table> <?php }?>
 
 	</div>
         
@@ -84,4 +84,6 @@ $alumnos = "SELECT * FROM alumnos";
 <!--
  id="container"
 box-text 
+
+
 -->

@@ -570,6 +570,17 @@ input::file-selector-button:hover{
 }
 
 @media only screen and (max-width: 1050px){
+    nav * {
+        text-align: center;
+    }
+    nav{
+        background: red;
+    }
+    .menuHijo{
+        background: blue;
+        width: 100%;
+        opacity: 30%;
+    }
     .medicina_botones{
         display: block;
     }

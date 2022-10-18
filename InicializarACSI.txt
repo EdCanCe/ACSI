@@ -32,15 +32,12 @@ Especialidad varchar(20) default 'Medico Cirujano',
 NombreDoc varchar(30) NOT NULL,
 ApPaternoDoc varchar(20) NOT NULL,
 ApMaternoDoc varchar(20),
-Contrasenia varchar(15) NOT NULL);
+ContraseniaDoc varchar(15) NOT NULL);
 
 create table Receta(
 NoConsulta bigint NOT NULL AUTO_INCREMENT PRIMARY KEY,
 NoControlFK bigint,
 CedulaProfFK char(8),
-MedicinaIDFK int,
-CONSTRAINT MedicinaIDFK FOREIGN KEY (MedicinaIDFK)
-REFERENCES Medicina(MedicinaID),
 CONSTRAINT NoControlFK FOREIGN KEY (NoControlFK)
 REFERENCES Alumnos(NoControl),
 CONSTRAINT CedulaProfFK FOREIGN KEY (CedulaProfFK)
@@ -50,3 +47,39 @@ TempPaciente float,
 Dosis text,
 Fecha TimeStamp NOT NULL,
 PesoPaciente float);
+
+create table CantidadesMed(
+CantidadesID bigint NOT NULL PRIMARY KEY,
+Cantidad int NOT NULL,
+MedicinaIDFK int,
+CONSTRAINT MedicinaIDFK FOREIGN KEY (MedicinaIDFK)
+REFERENCES Medicina(MedicinaID),
+NoConsultaFK bigint,
+CONSTRAINT NoConsultaFK FOREIGN KEY (NoConsultaFK)
+REFERENCES Receta(NoConsulta));
+
+create table CuentaAnonima(
+CuentaID bigint NOT NULL PRIMARY KEY,
+CuentaContrasenia varchar(15) NOT NULL);
+
+create table Pregunta(
+PreguntaID bigint NOT NULL PRIMARY KEY,
+ContenidoPreg varchar(150) NOT NULL,
+AutorPregFK bigint,
+CONSTRAINT AutorPregFK FOREIGN KEY (AutorPregFK)
+REFERENCES CuentaAnonima(CuentaID));
+
+create table Respuesta(
+RespuestaID bigint NOT NULL PRIMARY KEY,
+ContenidoResp varchar(150) NOT NULL,
+PreguntaFK bigint,
+Votos bigint,
+CONSTRAINT PreguntaFK FOREIGN KEY (PreguntaFK)
+REFERENCES Pregunta(PreguntaID),
+AutorLike bool default 0);
+
+create table Votos(
+VotoID bigint NOT NULL PRIMARY KEY,
+RespuestaFK bigint,
+CONSTRAINT RespuestaFK FOREIGN KEY (RespuestaFK)
+REFERENCES Respuesta(RespuestaID));

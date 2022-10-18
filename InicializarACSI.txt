@@ -31,7 +31,8 @@ InstitutoEgreso varchar(40) NOT NULL,
 Especialidad varchar(20) default 'Medico Cirujano',
 NombreDoc varchar(30) NOT NULL,
 ApPaternoDoc varchar(20) NOT NULL,
-ApMaternoDoc varchar(20));
+ApMaternoDoc varchar(20),
+Contrasenia varchar(15) NOT NULL);
 
 create table Receta(
 NoConsulta bigint NOT NULL AUTO_INCREMENT PRIMARY KEY,

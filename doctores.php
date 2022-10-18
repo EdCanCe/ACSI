@@ -39,9 +39,9 @@ $id = '';
             <?php $resultado = mysqli_query($conexion, $doctores);
                 while($row=mysqli_fetch_assoc($resultado)) { ?>
                 <tr>
-                    <td><?php echo $row["CedulaProf"];?></td>
-                    <td> <?php echo $row["NombreDoc"];?> <?php echo $row["ApPaternoDoc"];?> <?php echo $row["ApMaternoDoc"];?> </td>
-                    <td><a href="doctor.php?id=<?php echo $row["CedulaProf"];?>">Mostrar datos</a></td>
+                    <td><center><?php echo $row["CedulaProf"];?></center></td>
+                    <td><center><?php echo $row["NombreDoc"];?> <?php echo $row["ApPaternoDoc"];?> <?php echo $row["ApMaternoDoc"];?></center></td>
+                    <td><center><a href="doctor.php?id=<?php echo $row["CedulaProf"];?>">Mostrar datos</a></center></td>
                 </tr> <?php } ?>
         </table>
 	</div>

@@ -13,7 +13,7 @@ $header = "
             <li class='menuHijo'><a href='#'>Consultas</a>
                 <ul class='submenu'>
                     <li><a href='#'>Ver todas</a></li>
-                    <li><a href='#'>Nueva Consulta</a></li>
+                    <li><a href='crear_consulta.php'>Nueva Consulta</a></li>
                 </ul>
             </li>
             <li class='menuHijo'><a href='alumnos.php'>Alumnos</a>
@@ -22,10 +22,22 @@ $header = "
                     <li><a href='crear_alumno.php?id='>Registrar</a></li>
                 </ul>
             </li>
-            <li class='menuHijo'><a href='#'>Doctores</a>
+            <li class='menuHijo'><a href='doctores.php'>Doctores</a>
                 <ul class='submenu'>
-                    <li><a href='#'>Ver todos</a></li>
-                    <li><a href='#'>Registrar</a></li>
+                    <li><a href='doctores.php'>Ver todos</a></li>
+                    <li><a href='crear_doctor.php?id='>Registrar</a></li>
+                </ul>
+            </li>
+            <li class='menuHijo'><a href='#'>Preguntas</a>
+                <ul class='submenu'>
+                    <li><a href='#'>Ver todas</a></li>
+                    <li><a href='#'>Faltan responder</a></li>
+                </ul>
+            </li>
+            <li class='menuHijo'><a href='#'>Blog</a>
+                <ul class='submenu'>
+                    <li><a href='#'>Ver blog</a></li>
+                    <li><a href='#'>Crear entrada</a></li>
                 </ul>
             </li>
         </ul>

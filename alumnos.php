@@ -29,7 +29,7 @@ $id = '';
 	<div class="cuerpo">
         <h1>Historiales de Alumnos</h1>
         <input type="text" class="buscador_principal" id="buscador_tr" placeholder="Número de Control del Alumno" onkeyup="buscar($('#buscador_tr').val());">
-        <center><a class="boton_a bordes" href="crear_alumno.php?id=<?php echo $id;?>">REGISTRAR NUEVO ALUMNO</a></center>
+        <center><a class="boton_a bordes" href="crear_alumno.php?id=">REGISTRAR NUEVO ALUMNO</a></center>
         <table id="tabla_tr">
             <tr>
                 <th>No Control</th>
@@ -39,9 +39,9 @@ $id = '';
             <?php $resultado = mysqli_query($conexion, $alumnos);
                 while($row=mysqli_fetch_assoc($resultado)) { ?>
                 <tr>
-                    <td><?php echo $row["NoControl"];?></td>
-                    <td> <?php echo $row["NombreAl"];?> <?php echo $row["ApPaternoAl"];?> <?php echo $row["ApMaternoAl"];?> </td>
-                    <td><a href="alumno.php?id=<?php echo $row["NoControl"];?>">Mostrar Historial</a></td>
+                    <td><center><?php echo $row["NoControl"];?></center></td>
+                    <td><center><?php echo $row["NombreAl"];?> <?php echo $row["ApPaternoAl"];?> <?php echo $row["ApMaternoAl"];?></center></td>
+                    <td><center><a href="alumno.php?id=<?php echo $row["NoControl"];?>">Mostrar Historial</a></center></td>
                 </tr> <?php } ?>
         </table>
 	</div>

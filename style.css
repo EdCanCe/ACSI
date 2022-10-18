@@ -333,7 +333,13 @@ td{
     display: block;
     flex: 1;
     padding: 2px;
-    text-align: left;
+}
+
+td center{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100%;
+    height: 1.5em;
 }
 
 form{

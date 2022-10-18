@@ -20,9 +20,9 @@
             
             while($row = $resultado->fetch_assoc()){
                 echo"<tr>
-                <td>".$row["CedulaProf"]."</td>
-                <td>".$row["NombreDoc"]." ".$row["ApPaternoDoc"]." ".$row["ApMaternoDoc"]."</td>
-                <td><a href='doctor.php?id=".$row["CedulaProf"]."'>Mostrar datos</a></td>
+                <td><center>".$row["CedulaProf"]."</center></td>
+                <td><center>".$row["NombreDoc"]." ".$row["ApPaternoDoc"]." ".$row["ApMaternoDoc"]."</center></td>
+                <td><center><a href='doctor.php?id=".$row["CedulaProf"]."'>Mostrar datos</a></center></td>
                 </tr>";
             }
             

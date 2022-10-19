@@ -28,7 +28,7 @@ $id = $_GET["id"];
         <h1>Registro de Doctor</h1>
         <form action="insertardoctor.php" method="post" class="registrardatos">
             <label class="lectura_label" for="">Cedula Profesional:</label>
-            <input name="CedulaProfesional" class="lectura" type="text" value="<?php echo $id ?>"required>
+            <input name="CedulaProfesional" class="lectura" type="text" maxlength="8" value="<?php echo $id ?>"required>
             <label class="desaparece"></label>
 
             <label class="lectura_label" for="">Hora de Entrada:</label>

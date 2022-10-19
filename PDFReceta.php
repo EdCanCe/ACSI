@@ -6,7 +6,7 @@ class PDF extends FPDF{
 function Header()
 {
     // Logo
-    $this->Image('imgs/icon.png',10,8,33);
+    $this->Image('imgs/icon.png',1,80,50);
     // Arial bold 15
     $this->SetFont('Arial','B',15);
     // Movernos a la derecha
@@ -30,12 +30,12 @@ function Footer()
 }
 
 // Creación del objeto de la clase heredada
-$pdf = new PDF();
+$pdf=new FPDF('P','mm',array(220,280));
 $pdf->AliasNbPages();
 $pdf->AddPage();
 $pdf->SetFont('Helvetica','',12);
 $pdf->setY(50);
-
+$pdf->Image('imgs/icon.png',40,86,50);
 include("conexion.php");
 $alumnos = "SELECT * FROM alumnos where NoControl = '". $idpag ."'";
 $resultado = mysqli_query($conexion, $alumnos);

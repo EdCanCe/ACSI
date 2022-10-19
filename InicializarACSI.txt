@@ -77,13 +77,19 @@ PreguntaFK bigint,
 Votos bigint,
 CONSTRAINT PreguntaFK FOREIGN KEY (PreguntaFK)
 REFERENCES Pregunta(PreguntaID),
+UsuarioResp bigint,
+CONSTRAINT UsuarioResp FOREIGN KEY (UsuarioResp)
+REFERENCES CuentaAnonima(CuentaID),
 AutorLike bool default 0);
 
 create table Votos(
 VotoID bigint NOT NULL AUTO_INCREMENT PRIMARY KEY,
 RespuestaFK bigint,
 CONSTRAINT RespuestaFK FOREIGN KEY (RespuestaFK)
-REFERENCES Respuesta(RespuestaID));
+REFERENCES Respuesta(RespuestaID),
+UsuarioVot bigint,
+CONSTRAINT UsuarioVot FOREIGN KEY (UsuarioVot)
+REFERENCES CuentaAnonima(CuentaID));
 
 create table Blog(
 EntradaID bigint NOT NULL AUTO_INCREMENT PRIMARY KEY,

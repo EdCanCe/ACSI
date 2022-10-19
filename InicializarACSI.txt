@@ -49,7 +49,7 @@ Fecha TimeStamp NOT NULL,
 PesoPaciente float);
 
 create table CantidadesMed(
-CantidadesID bigint NOT NULL PRIMARY KEY,
+CantidadesID bigint NOT NULL AUTO_INCREMENT PRIMARY KEY,
 Cantidad int NOT NULL,
 MedicinaIDFK int,
 CONSTRAINT MedicinaIDFK FOREIGN KEY (MedicinaIDFK)
@@ -59,18 +59,19 @@ CONSTRAINT NoConsultaFK FOREIGN KEY (NoConsultaFK)
 REFERENCES Receta(NoConsulta));
 
 create table CuentaAnonima(
-CuentaID bigint NOT NULL PRIMARY KEY,
+CuentaID bigint NOT NULL AUTO_INCREMENT PRIMARY KEY,
+CuentaNombre VarChar(10),
 CuentaContrasenia varchar(15) NOT NULL);
 
 create table Pregunta(
-PreguntaID bigint NOT NULL PRIMARY KEY,
+PreguntaID bigint NOT NULL AUTO_INCREMENT PRIMARY KEY,
 ContenidoPreg varchar(150) NOT NULL,
 AutorPregFK bigint,
 CONSTRAINT AutorPregFK FOREIGN KEY (AutorPregFK)
 REFERENCES CuentaAnonima(CuentaID));
 
 create table Respuesta(
-RespuestaID bigint NOT NULL PRIMARY KEY,
+RespuestaID bigint NOT NULL AUTO_INCREMENT PRIMARY KEY,
 ContenidoResp varchar(150) NOT NULL,
 PreguntaFK bigint,
 Votos bigint,
@@ -79,7 +80,12 @@ REFERENCES Pregunta(PreguntaID),
 AutorLike bool default 0);
 
 create table Votos(
-VotoID bigint NOT NULL PRIMARY KEY,
+VotoID bigint NOT NULL AUTO_INCREMENT PRIMARY KEY,
 RespuestaFK bigint,
 CONSTRAINT RespuestaFK FOREIGN KEY (RespuestaFK)
 REFERENCES Respuesta(RespuestaID));
+
+create table Blog(
+EntradaID bigint NOT NULL AUTO_INCREMENT PRIMARY KEY,
+ContenidoEnt varchar(150) NOT NULL,
+FotoEnt longblob);

@@ -1,5 +1,6 @@
 <?php
 include("variablesglobales.php");
+session_start();
 include("conexion.php");
 $id = $_GET["id"];
 ?>

@@ -1,5 +1,6 @@
 <?php
 $idpag = $_GET["id"];
+session_start();
 require('fpdf/fpdf.php');
 class PDF extends FPDF{
     // Cabecera de página

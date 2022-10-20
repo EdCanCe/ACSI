@@ -1,5 +1,6 @@
 <?php
 include("conexion.php");
+session_start();
 include("variablesglobales.php");
 $id = $_GET["id"];
 $alumnos = "SELECT * FROM alumnos where NoControl = $id";

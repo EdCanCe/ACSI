@@ -1,5 +1,5 @@
 <?php
-$header = "
+$headerdoc = "
 <div class='navbar'>
     <nav>
         <ul class='menu'>
@@ -22,6 +22,58 @@ $header = "
                     <li><a href='crear_alumno.php?id='>Registrar</a></li>
                 </ul>
             </li>
+            <li class='menuHijo'><a href='doctores.php'>Doctores</a>
+                <ul class='submenu'>
+                    <li><a href='doctores.php'>Ver todos</a></li>
+                    <li><a href='crear_doctor.php?id='>Registrar</a></li>
+                </ul>
+            </li>
+            <li class='menuHijo'><a href='#'>Preguntas</a>
+                <ul class='submenu'>
+                    <li><a href='#'>Ver todas</a></li>
+                    <li><a href='#'>Faltan responder</a></li>
+                </ul>
+            </li>
+            <li class='menuHijo'><a href='#'>Blog</a>
+                <ul class='submenu'>
+                    <li><a href='#'>Ver blog</a></li>
+                    <li><a href='#'>Crear entrada</a></li>
+                </ul>
+            </li>
+        </ul>
+    <nav>
+</div>
+<div class='auxCuerpo'>
+";
+
+$headersin = "
+<div class='navbar'>
+    <nav>
+        <ul class='menu'>
+            <li class='menuHijo'><a href='index.php'>Inicio</a></li>
+            <li class='menuHijo'><a href='doctores.php'>Doctores</a>
+                <ul class='submenu'>
+                    <li><a href='doctores.php'>Ver todos</a></li>
+                    <li><a href='crear_doctor.php?id='>Registrar</a></li>
+                </ul>
+            </li>
+            <li class='menuHijo'><a href='#'>Blog</a>
+                <ul class='submenu'>
+                    <li><a href='#'>Ver blog</a></li>
+                    <li><a href='#'>Crear entrada</a></li>
+                </ul>
+            </li>
+        </ul>
+    <nav>
+</div>
+<div class='auxCuerpo'>
+";
+
+$headeralm = "
+<div class='navbar'>
+    <nav>
+        <ul class='menu'>
+            <li class='menuHijo'><a href='index.php'>Inicio</a></li>
             <li class='menuHijo'><a href='doctores.php'>Doctores</a>
                 <ul class='submenu'>
                     <li><a href='doctores.php'>Ver todos</a></li>

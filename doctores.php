@@ -24,7 +24,22 @@ $id = '';
 <body>
 
 	<?php //ESTE HACE EL MENÚ DESPLEGABLE
-        echo $header;
+        $mostrar = '0';
+        if(isset($_SESSION["UsuarioSes"])){ //checa si ya inició sesión
+            $usuariochecar = $_SESSION["UsuarioSes"];
+            $passochecar = $_SESSION["PassSes"];
+            $tipochecar = $_SESSION["TipoSes"];
+            $mostrar = '1';
+            if($tipochecar == '1') $mostrar = '2';
+        }
+        if($mostrar == 0){
+            echo $headersin;
+        }
+        else if($mostrar == 1){
+            echo $headeralm;
+        }else if($mostrar == 2){
+            echo $headerdoc;
+        }
     ?>
 
 	<div class="cuerpo">

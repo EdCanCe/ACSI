@@ -22,56 +22,30 @@ $alumnos = "SELECT * FROM alumnos";
 <body>
 
 	<?php //ESTE HACE EL MENÚ DESPLEGABLE
-        echo $header;
+        $mostrar = '0';
+        if(isset($_SESSION["UsuarioSes"])){ //checa si ya inició sesión
+            $usuariochecar = $_SESSION["UsuarioSes"];
+            $passochecar = $_SESSION["PassSes"];
+            $tipochecar = $_SESSION["TipoSes"];
+            $mostrar = '1';
+            if($tipochecar == '1') $mostrar = '2';
+        }
+        if($mostrar == 0){
+            echo $headersin;
+        }
+        else if($mostrar == 1){
+            echo $headeralm;
+        }else if($mostrar == 2){
+            echo $headerdoc;
+        }
     ?>
     
         
 	<div class="cuerpo">
-        <center><img src="imgs/icon.png" class="imagen_logo"></center>
-		<h1 class="ACSI_principal">ACSI</h1>
-		<div class="index_direccion">
-			<img src="">
-			<p>Domicilio:<br><br>Av Francisco I. Madero Ote 4923, Cd Industrial, 58200 Morelia, Mich. Junto al salón 11
-				en el edificio E
-			</p>
-		</div>
-        
-        <div class="index_descripcion">
-			<p>Administracion de Centros de Salud Institucionales "ACSI", fue creado con la intencion de mejorar
-				el manejo de informacion de una enfermeria escolar, con el uso y manjo de diversas herramientas web
-				y el manejo de bases de datos. Mejorando asi aspectos como: el uso de inventarios, implementación de historiales personales a los , etc.</p>
-		</div>
-        
-        <div class="divisor"></div>
-        <center><h2>Doctores disponibles actualmente</h2></center>
-            <?php	
-                date_default_timezone_set('America/Mexico_City');
-                $horaActual = date('G:i:s');
-                $resultado = mysqli_query($conexion, "SELECT * from doctor where (horaSalida > '$horaActual' and horaEntrada < '$horaActual' and horaEntrada < HoraSalida) or (horaSalida < horaEntrada and ('$horaActual' > horaEntrada or '$horaActual' < horaSalida))");
-            
-                if (mysqli_num_rows($resultado) == 0){
-                    ?>
-                    <center><p>No hay doctores disponibles/trabajando actualmente</p></center>
-                    <?php
-                } else{
-                    ?> <table id="tabla_tr">
-                            <tr>
-                                <th>Horario</th>
-                                <th>Cedula Prof.</th>
-                                <th>Nombre</th>
-                                <th></th>
-                            </tr> <?php
-                            while($row=mysqli_fetch_assoc($resultado)) {
-                                $entrada = date('h:i a', strtotime($row["HoraEntrada"]));
-                                $salida = date('h:i a', strtotime($row["HoraSalida"]));
-                            ?>
-                            <tr>
-                                <td><center><?php echo $entrada ;?> - <?php echo $salida;?></center></td>
-                                <td><center><?php echo $row["CedulaProf"];?></center></td>
-                                <td><center><?php echo $row["NombreDoc"];?> <?php echo $row["ApPaternoDoc"];?> <?php echo $row["ApMaternoDoc"];?> </center></td>
-                                <td><center><a href="doctor.php?id=<?php echo $row["CedulaProf"];?>">Mostrar datos</a></center></td>
-                        </tr> <?php } ?> </table> <?php }?>
-
+        <div class="auxliarindex">
+            <a href="login.php" class="boton_a">Iniciar sesión</a>
+            <a href="crear_cuenta.php" class="boton_a">Crear Cuenta</a>
+        </div>
 	</div>
         
     <?php //ESTE HACE EL FOOTER

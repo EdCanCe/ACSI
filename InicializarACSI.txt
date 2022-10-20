@@ -58,17 +58,23 @@ NoConsultaFK bigint,
 CONSTRAINT NoConsultaFK FOREIGN KEY (NoConsultaFK)
 REFERENCES Receta(NoConsulta));
 
-create table CuentaAnonima(
+create table Cuenta(
 CuentaID bigint NOT NULL AUTO_INCREMENT PRIMARY KEY,
-CuentaNombre VarChar(10),
-CuentaContrasenia varchar(15) NOT NULL);
+Usuario varchar(15) NOT NULL,
+Pass varchar(15) NOT NULL,
+TipoCuenta bool default 0,
+CedulaDocFK char(8),
+CONSTRAINT CedulaDocFK FOREIGN KEY (CedulaDocFK)
+REFERENCES Doctor(CedulaProf));
+
+ALTER TABLE Cuenta AUTO_INCREMENT=100000000;
 
 create table Pregunta(
 PreguntaID bigint NOT NULL AUTO_INCREMENT PRIMARY KEY,
 ContenidoPreg varchar(150) NOT NULL,
 AutorPregFK bigint,
 CONSTRAINT AutorPregFK FOREIGN KEY (AutorPregFK)
-REFERENCES CuentaAnonima(CuentaID));
+REFERENCES Cuenta(CuentaID));
 
 create table Respuesta(
 RespuestaID bigint NOT NULL AUTO_INCREMENT PRIMARY KEY,
@@ -79,7 +85,7 @@ CONSTRAINT PreguntaFK FOREIGN KEY (PreguntaFK)
 REFERENCES Pregunta(PreguntaID),
 UsuarioResp bigint,
 CONSTRAINT UsuarioResp FOREIGN KEY (UsuarioResp)
-REFERENCES CuentaAnonima(CuentaID),
+REFERENCES Cuenta(CuentaID),
 AutorLike bool default 0);
 
 create table Votos(
@@ -89,7 +95,7 @@ CONSTRAINT RespuestaFK FOREIGN KEY (RespuestaFK)
 REFERENCES Respuesta(RespuestaID),
 UsuarioVot bigint,
 CONSTRAINT UsuarioVot FOREIGN KEY (UsuarioVot)
-REFERENCES CuentaAnonima(CuentaID));
+REFERENCES Cuenta(CuentaID));
 
 create table Blog(
 EntradaID bigint NOT NULL AUTO_INCREMENT PRIMARY KEY,

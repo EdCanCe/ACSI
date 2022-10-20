@@ -8,7 +8,7 @@ include("variablesglobales.php");
 <html lang="es">
 
 <head>
-	<title>REGISTRARSE</title>
+	<title>CREAR CUENTA</title>
 	<meta charset="utf-8">
 	<meta name="author" content="Jorge Arturo Salgado Ceja, José Roberto García Correa, Edmundo Canedo Cervantes">
 	<meta name="description" content="Sistema para la gestión de enfermería, teniendo elaboración de recetas, vista de historial médico e inventario de medicinas">
@@ -20,20 +20,35 @@ include("variablesglobales.php");
 
 <body>
 
+	<?php //ESTE HACE EL MENÚ DESPLEGABLE
+        $mostrar = '0';
+        if(isset($_SESSION["UsuarioSes"])){ //checa si ya inició sesión
+            $usuariochecar = $_SESSION["UsuarioSes"];
+            $passochecar = $_SESSION["PassSes"];
+            $tipochecar = $_SESSION["TipoSes"];
+            $mostrar = '1';
+            if($tipochecar == '1') $mostrar = '2';
+        }
+        if($mostrar == 0){
+            echo $headersin;
+        }
+        else if($mostrar == 1){
+            echo $headeralm;
+        }else if($mostrar == 2){
+            echo $headerdoc;
+        }
+    ?>
+    
 	<div class="cuerpo">
-        <h1>Registro</h1>
+        <h1>Crear Cuenta</h1>
         <form action="registro.php" method="post" class="registrardatos">
-
-            <label class="lectura_label" for="">Correo:</label>
-            <input name="email" class="lectura" type="email" required>
-            <label class="desaparece"></label>
-
-            <label class="lectura_label" for="">Usuario:</label>
-            <input name="username" class="lectura" type="text" required>
+            
+            <label class="lectura_label" for="">Nombre usuario:</label>
+            <input name="usuario" class="lectura" type="text" maxlength="15" minlength="6" pattern="[a-zA-Z0-9]+" placeholder="Con este inicias sesión" required>
             <label class="desaparece"></label>
 
             <label class="lectura_label" for="">Contraseña:</label>
-            <input name="password" class="lectura" type="password" required>
+            <input name="pass" class="lectura" type="password" maxlength="15" minlength="6" pattern="[a-zA-Z0-9]+" placeholder="Solo letras y números" required>
             <label class="desaparece"></label>
             
             <center><input type="submit" value="Registrar" class="boton_a"></center>

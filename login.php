@@ -20,12 +20,27 @@ include("variablesglobales.php");
 
 <body>
 
-    <?php //ESTE HACE EL FOOTER
-        echo $header;
+    <?php //ESTE HACE EL MENÚ DESPLEGABLE
+        $mostrar = '0';
+        if(isset($_SESSION["UsuarioSes"])){ //checa si ya inició sesión
+            $usuariochecar = $_SESSION["UsuarioSes"];
+            $passochecar = $_SESSION["PassSes"];
+            $tipochecar = $_SESSION["TipoSes"];
+            $mostrar = '1';
+            if($tipochecar == '1') $mostrar = '2';
+        }
+        if($mostrar == 0){
+            echo $headersin;
+        }
+        else if($mostrar == 1){
+            echo $headeralm;
+        }else if($mostrar == 2){
+            echo $headerdoc;
+        }
     ?>
 
 	<div class="cuerpo">
-    <h1>Sistema de Login</h1>
+    <h1>Iniciar Sesión</h1>
     <form action="validar.php" method="post" class="registrardatos">
     <label class="lectura_label" for="">Usuario:</label>
     <input type="text" placeholder="Ingrese su usuario" name="usuario" class="lectura" required>

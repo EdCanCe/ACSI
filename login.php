@@ -48,7 +48,7 @@ include("variablesglobales.php");
     <label class="lectura_label" for="">Contraseña:</label>
     <input type="password" placeholder="Ingrese su contraseña" name="pass" class="lectura" required>
     <label class="desaparece"></label>
-    <center><input type="submit" value="ingresar" class="boton_a"></center>
+    <center><input type="submit" value="Ingresar" class="boton_a"></center>
 
     </form>
 	</div>

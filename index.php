@@ -42,10 +42,9 @@ $alumnos = "SELECT * FROM alumnos";
     
         
 	<div class="cuerpo">
-        <div class="auxliarindex">
-            <a href="login.php" class="boton_a">Iniciar sesión</a>
-            <a href="crear_cuenta.php" class="boton_a">Crear Cuenta</a>
-        </div>
+        <h1>¿Qué quieres hacer?</h1>
+            <center><a href="login.php" class="boton_a">Iniciar sesión</a></center>
+            <center><a href="crear_cuenta.php" class="boton_a">Crear Cuenta</a></center>
 	</div>
         
     <?php //ESTE HACE EL FOOTER

@@ -1,8 +1,7 @@
 <?php
 include ("conexion.php");
-
-$doctor = $_SESSION["doc"];
-  
+    
+}
 #----------ANTES DE HACER LA RECETA TENEMOS QUE INICIAR SESION, PARA QUE NO TE TENGA QUE PEDIR EL DOCTOR Y LO TOME DE LA CUENTA ACTUAL
 
 $insertar = "INSERT INTO alumnos(NoControl, CURPAl, NombreAl, ApPaternoAl, ApMaternoAl, TipoSangre, Alergias, NombreTut, ApPaternoTut, ApMaternoTut, NoTelefonoTut, FechaNacAl) VALUES ('$nocontrol', '$curp', '$nombre', '$appaterno', '$apmaterno', '$sangre', '$alergias', '$nombretut', '$appaternotut', '$apmaternotut', '$notel', '$nacimiento');";

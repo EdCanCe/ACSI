@@ -31,8 +31,7 @@ InstitutoEgreso varchar(40) NOT NULL,
 Especialidad varchar(20) default 'Medico Cirujano',
 NombreDoc varchar(30) NOT NULL,
 ApPaternoDoc varchar(20) NOT NULL,
-ApMaternoDoc varchar(20),
-ContraseniaDoc varchar(15) NOT NULL);
+ApMaternoDoc varchar(20));
 
 create table Receta(
 NoConsulta bigint NOT NULL AUTO_INCREMENT PRIMARY KEY,
@@ -45,8 +44,10 @@ REFERENCES Doctor(CedulaProf),
 Padecimientos text NOT NULL,
 TempPaciente float,
 Dosis text,
+Diagnostico text,
 Fecha TimeStamp NOT NULL,
-PesoPaciente float);
+PesoPaciente float,
+Altura float);
 
 create table CantidadesMed(
 CantidadesID bigint NOT NULL AUTO_INCREMENT PRIMARY KEY,

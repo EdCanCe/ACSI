@@ -12,7 +12,7 @@ if(mysqli_num_rows($resultado) == 0){
     echo "<script> window. location='/ACSI/registro_denegado.php?id=Cuenta o contraseña incorrectos'</script>";
 }else{
     while($row=mysqli_fetch_assoc($resultado)) {
-        $_SESSION["TipoSes"] = '$row["TipoCuenta"]';
+        $_SESSION["TipoSes"] = $row["TipoCuenta"];
     }
     $_SESSION["UsuarioSes"] = $username;
     $_SESSION["PassSes"] = $password;

@@ -75,6 +75,14 @@ $id = $_GET["id"];
             <input name="ApMaDoc" class="lectura" type="text">
             <label class="desaparece"></label>
             
+            <label class="lectura_label" for="">Nombre de usuario:</label>
+            <input name="Usuario" class="lectura" type="text">
+            <label class="desaparece"></label>
+            
+            <label class="lectura_label" for="">Contraseña:</label>
+            <input name="Pass" class="lectura" type="text">
+            <label class="desaparece"></label>
+            
             <center><input type="submit" value="Registrar" class="boton_a"></center>
         </form>
 	</div>

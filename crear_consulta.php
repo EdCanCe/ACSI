@@ -60,10 +60,16 @@ include("variablesglobales.php");
             <label class="lectura_label" for="">Peso Actual</label>
             <input name="Peso" class="lectura" type="number" min="25" placeholder="En kilogramos" required>
             <label class="desaparece"></label>
+            <label class="lectura_label" for="">Altura Actual</label>
+            <input name="Altura" class="lectura" type="number" placeholder="En metros" required>
+            <label class="desaparece"></label>
             <label class="lectura_label" for="">Padecimientos</label>
             <input name="Padecimientos" class="lectura" type="text" required>
             <label class="desaparece"></label>
-            <label class="lectura_label" for="">Medicamento administrado</label>
+            <label class="lectura_label" for="">Diagnóstico</label>
+            <input name="Diagnostico" class="lectura" type="text" required>
+            <label class="desaparece"></label>
+            <label class="lectura_label" for="">Medicamento administrado DE ESTO FALTA VINCULARLO A CANTIDADES CON JS</label>
             <select name="MedicinaFK" class="lectura">
                 <option value="" selected disabled>--</option>
                 <?php 

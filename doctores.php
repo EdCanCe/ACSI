@@ -1,5 +1,6 @@
 <?php
 include("conexion.php");
+session_start();
 include("variablesglobales.php");
 $doctores = "SELECT * FROM doctor where CedulaProf like '%%'";
 $id = '';

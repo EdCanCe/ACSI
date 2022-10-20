@@ -1,5 +1,6 @@
 <?php
 include("conexion.php");
+session_start();
 include("variablesglobales.php");
 $alumnos = "SELECT * FROM alumnos";
 $id = $_GET["id"];

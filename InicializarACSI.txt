@@ -42,6 +42,7 @@ REFERENCES Alumnos(NoControl),
 CONSTRAINT CedulaProfFK FOREIGN KEY (CedulaProfFK)
 REFERENCES Doctor(CedulaProf),
 Padecimientos text NOT NULL,
+Diagnostico text NOT NULL,
 TempPaciente float,
 Dosis text,
 Diagnostico text,

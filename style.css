@@ -350,13 +350,13 @@ form{
 
 form * {
     flex: 50%;
-    margin-left: 0.5cm;
 }
 
 form label{
-    flex-basis: 23% !important;
+    flex-basis: 20% !important;
     text-align: end;
     margin:0;
+    margin-right: 0.5cm;
 }
 
 form input{

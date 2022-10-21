@@ -92,7 +92,7 @@ $id = $_GET["id"];
                                     <tr>
                                         <td><center><?php echo $fechaConsulta ?></center></td>
                                         <td><center><?php echo $row["NoControlFK"];?></center></td>
-                                        <td><a href="consulta_medica.php?id=<?php echo $row["NoConsulta"];?>">Mostrar Consulta Médica</a></td>
+                                        <td><a href="consulta.php?id=<?php echo $row["NoConsulta"];?>">Mostrar Consulta Médica</a></td>
                                     </tr>
                                 <?php
                             }

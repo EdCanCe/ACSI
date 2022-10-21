@@ -62,7 +62,7 @@ $alumnos = "SELECT * FROM alumnos";
             <?php	
                 date_default_timezone_set('America/Mexico_City');
                 $horaActual = date('G:i:s');
-                $resultado = mysqli_query($conexion, "SELECT * from doctor where (HoraSalida > '$horaActual' and horaEntrada < '$horaActual')");
+                $resultado = mysqli_query($conexion, "SELECT * from doctor where (HoraEntrada < HoraSalida and HoraSalida > '$horaActual' and horaEntrada < '$horaActual') or (HoraEntrada > HoraSalida and (HoraSalida > '$horaActual' or horaEntrada < '$horaActual'))");
             
                 if (mysqli_num_rows($resultado) == 0){
                     ?>

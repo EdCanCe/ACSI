@@ -38,12 +38,20 @@ while($row=mysqli_fetch_assoc($resultado)){
     }
     $pdf->Cell(0,10,utf8_decode("Temperatura del paciente: ".$row['TempPaciente']." °C"),0,1,'L');
     $pdf->Cell(0,10,utf8_decode("Peso del paciente: ".$row['PesoPaciente']." kg"),0,1,'L');
+    $pdf->Cell(0,10,utf8_decode("Altura del paciente: ".$row['Altura']." mts"),0,1,'L');
     $pdf->Ln(10);
     $pdf->SetX(15);
-    $pdf->Cell(0,10,utf8_decode("Padecimientos y diagnóstico:"),0,1,'L');
+    $pdf->Cell(0,10,utf8_decode("Padecimientos:"),0,1,'L');
     $pdf->SetFont('Helvetica','B',10);
     $pdf->SetX(20);
     $pdf->Multicell(180,6,utf8_decode($row['Padecimientos']),0,1);
+    $pdf->Ln(7);
+    $pdf->SetX(15);
+    $pdf->SetFont('Helvetica','B',15);
+    $pdf->Cell(0,10,utf8_decode("Diagnóstico:"),0,1,'L');
+    $pdf->SetFont('Helvetica','B',10);
+    $pdf->SetX(20);
+    $pdf->Multicell(180,6,utf8_decode($row['Diagnostico']),0,1);
     $pdf->Ln(7);
     $pdf->SetX(15);
     $pdf->SetFont('Helvetica','B',15);

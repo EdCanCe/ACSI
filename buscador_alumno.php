@@ -5,7 +5,7 @@
         
         $aKeyword = explode(" ", $_POST['entrada']);
         
-        $query = "SELECT * FROM alumnos where NoControl LIKE '%".$_POST['entrada']."%'";
+        $query = "SELECT * FROM Alumnos where NoControl LIKE '%".$_POST['entrada']."%'";
         #https://youtu.be/yB95t3GsDxw?t=578 para cuando haga el buscador de medicinas por los espacios
         
         $resultado = mysqli_query($conexion, $query);

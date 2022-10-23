@@ -2,7 +2,7 @@
 include("variablesglobales.php");
 session_start();
 include("conexion.php");
-$inventario = "SELECT * FROM Medicina   ;";
+$inventario = "SELECT * FROM Medicina;";
 ?>
 
 <!DOCTYPE html>

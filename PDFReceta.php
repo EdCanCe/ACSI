@@ -25,14 +25,14 @@ $pdf->SetFont('Helvetica','B',10);
 $pdf->Ln(10);
 $pdf->SetAutoPageBreak(0);
 include("conexion.php");
-$resultado = mysqli_query($conexion, "SELECT * from receta where NoConsulta = '$idpag'");
+$resultado = mysqli_query($conexion, "SELECT * from Receta where NoConsulta = '$idpag'");
 while($row=mysqli_fetch_assoc($resultado)){
     $meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
     $fechaConsulta = date('j', strtotime($row['Fecha']))." de ".$meses[date('n', strtotime($row['Fecha']))-1]." de ".date('Y', strtotime($row['Fecha']));
     $pdf->Cell(0,6,utf8_decode($fechaConsulta),0,1,'R');
     $pdf->SetFont('Helvetica','B',15);
     $pdf->Ln(6);
-    $resultado2 = mysqli_query($conexion, "SELECT * from alumnos where NoControl = '$row[NoControlFK]'");
+    $resultado2 = mysqli_query($conexion, "SELECT * from Alumnos where NoControl = '$row[NoControlFK]'");
     while($row2=mysqli_fetch_assoc($resultado2)){
         $pdf->Cell(0,10,utf8_decode("Nombre del paciente: ".$row2['NombreAl']." ".$row2['ApPaternoAl']." ".$row2['ApMaternoAl']),0,1,'L');
     }
@@ -59,7 +59,7 @@ while($row=mysqli_fetch_assoc($resultado)){
     $pdf->SetFont('Helvetica','B',10);
     $pdf->SetX(20);
     $pdf->Multicell(180,6,utf8_decode($row['Dosis']),0,1);
-    $resultado2 = mysqli_query($conexion, "SELECT * from doctor where CedulaProf = '$row[CedulaProfFK]'");
+    $resultado2 = mysqli_query($conexion, "SELECT * from Doctor where CedulaProf = '$row[CedulaProfFK]'");
     while($row2=mysqli_fetch_assoc($resultado2)){
         $pdf->SetFont('Helvetica','B',10);
         $pdf->SetY(265);

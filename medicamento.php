@@ -44,7 +44,7 @@ $id = $_GET["id"];
 	<div class="cuerpo">
         <h1>Medicamento</h1>
         <?php
-            $resultado = mysqli_query($conexion, "SELECT * FROM medicina WHERE MedicinaID = $id");
+            $resultado = mysqli_query($conexion, "SELECT * FROM Medicina WHERE MedicinaID = $id");
             if (mysqli_num_rows($resultado) == 0) { 
                 { ?>
                 <center><h2>ESTÁ VACÍO</h2></center>

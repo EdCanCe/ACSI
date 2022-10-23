@@ -5,7 +5,7 @@
         
         $aKeyword = explode(" ", $_POST['entrada']);
         
-        $query = "SELECT * FROM medicina where NombreMed LIKE LOWER('%".$aKeyword[0]."%') OR ComponenteAct LIKE LOWER('%".$aKeyword[0]."%')";
+        $query = "SELECT * FROM Medicina where NombreMed LIKE LOWER('%".$aKeyword[0]."%') OR ComponenteAct LIKE LOWER('%".$aKeyword[0]."%')";
         #https://youtu.be/yB95t3GsDxw?t=578 para cuando haga el buscador de medicinas por los espacios
         
         for($i = 1; $i < count($aKeyword); $i++){

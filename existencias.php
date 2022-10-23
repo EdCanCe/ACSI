@@ -42,7 +42,7 @@ $id = $_GET["id"];
     
 	<div class="cuerpo">
         <h1>Modificación de existencias</h1>
-        <?php $resultado = mysqli_query($conexion, "SELECT * FROM medicina WHERE MedicinaID = $id");
+        <?php $resultado = mysqli_query($conexion, "SELECT * FROM Medicina WHERE MedicinaID = $id");
             if (mysqli_num_rows($resultado) == 0) { 
                 { ?>
                 <center><h2>ESTÁ VACÍO</h2></center>
@@ -50,7 +50,7 @@ $id = $_GET["id"];
                 <center><a class="boton_a" href="crear_medicina.php">SI</a></center>
                 <?php }
             }else{ ?>
-            <?php $resultado = mysqli_query($conexion, "SELECT * FROM medicina where MedicinaID = '$id'");
+            <?php $resultado = mysqli_query($conexion, "SELECT * FROM Medicina where MedicinaID = '$id'");
                     while($row=mysqli_fetch_assoc($resultado)) { ?>
                     <form action="existencias.php?id=<?php echo $id ?>" method="POST" class="registrardatos" enctype="multipart/form-data" name="formulario">
                         <label class="desaparece"></label>
@@ -73,7 +73,7 @@ $id = $_GET["id"];
                 
                 $anterior = '';
                 
-                $resultado = mysqli_query($conexion, "SELECT * FROM medicina WHERE MedicinaID = $id");
+                $resultado = mysqli_query($conexion, "SELECT * FROM Medicina WHERE MedicinaID = $id");
                 while($row=mysqli_fetch_assoc($resultado)){
                     $anterior = $row["CantidadMedicina"];
                 }
@@ -94,7 +94,7 @@ $id = $_GET["id"];
                 
                 $anterior = '';
                 
-                $resultado = mysqli_query($conexion, "SELECT * FROM medicina WHERE MedicinaID = $id");
+                $resultado = mysqli_query($conexion, "SELECT * FROM Medicina WHERE MedicinaID = $id");
                 while($row=mysqli_fetch_assoc($resultado)){
                     $anterior = $row["CantidadMedicina"];
                 }

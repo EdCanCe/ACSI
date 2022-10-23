@@ -16,7 +16,7 @@ $nacimiento = $_POST["nacimiento"];
 
 $insertar = "UPDATE alumnos SET CURPAl = '$curp', NombreAl = '$nombre', ApPaternoAl = '$appaterno', ApMaternoAl = '$apmaterno', Alergias = '$alergias', NombreTut = '$nombretut', ApPaternoTut = '$appaternotut', ApMaternoTut = '$apmaternotut', NoTelefonoTut = '$notel', FechaNacAl = '$nacimiento' where NoControl = $nocontrol;";
 
-$negado = "SELECT * FROM alumnos where NoControl = $nocontrol";
+$negado = "SELECT * FROM Alumnos where NoControl = $nocontrol";
 $querynegado = mysqli_query($conexion, $negado);
 if (mysqli_num_rows($querynegado) != 0){
     $resultado = mysqli_query($conexion, $insertar);

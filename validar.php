@@ -5,7 +5,7 @@ session_start();
 
 include('conexion.php');
 
-$consulta="SELECT * FROM cuenta where usuario='$username' and pass='$password'";
+$consulta="SELECT * FROM Cuenta where usuario='$username' and pass='$password'";
 $resultado=mysqli_query($conexion, $consulta);
 
 if(mysqli_num_rows($resultado) == 0){

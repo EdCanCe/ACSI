@@ -2,7 +2,6 @@
 include("conexion.php");
 session_start();
 include("variablesglobales.php");
-$alumnos = "SELECT * FROM alumnos";
 ?>
 
 <!DOCTYPE html>

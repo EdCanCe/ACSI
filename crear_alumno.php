@@ -2,7 +2,7 @@
 include("conexion.php");
 session_start();
 include("variablesglobales.php");
-$alumnos = "SELECT * FROM alumnos";
+$alumnos = "SELECT * FROM Alumnos";
 $id = $_GET["id"];
 ?>
 

@@ -2,7 +2,7 @@
 include("conexion.php");
 session_start();
 include("variablesglobales.php");
-$doctores = "SELECT * FROM doctor where CedulaProf like '%%'";
+$doctores = "SELECT * FROM Doctor where CedulaProf like '%%'";
 $id = '';
 ?>
 

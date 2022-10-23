@@ -44,7 +44,7 @@ $alumnos = "SELECT * FROM alumnos where NoControl = $id";
 	<div class="cuerpo">
         <h1>Modificación de Alumno</h1>
         <?php
-            $resultado = mysqli_query($conexion, "SELECT * FROM alumnos WHERE NoControl = $id");
+            $resultado = mysqli_query($conexion, "SELECT * FROM Alumnos WHERE NoControl = $id");
             if (mysqli_num_rows($resultado) == 0) { 
                 { ?>
                 <center><h2>ESTÁ VACÍO</h2></center>

@@ -4,9 +4,9 @@ include ("conexion.php");
 $pass = $_POST["pass"];
 $cuenta = $_POST["usuario"];
 
-$insertar = "INSERT INTO cuenta(usuario, pass) VALUES ('$cuenta', '$pass');";
+$insertar = "INSERT INTO Cuenta(usuario, pass) VALUES ('$cuenta', '$pass');";
 
-$negado = "SELECT * FROM cuenta where usuario = '$cuenta'";
+$negado = "SELECT * FROM Cuenta where usuario = '$cuenta'";
 $querynegado = mysqli_query($conexion, $negado);
 if (mysqli_num_rows($querynegado) == 0){
     $resultado = mysqli_query($conexion, $insertar);

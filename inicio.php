@@ -2,7 +2,6 @@
 include("conexion.php");
 session_start();
 include("variablesglobales.php");
-$alumnos = "SELECT * FROM alumnos";
 ?>
 
 <!DOCTYPE html>
@@ -62,7 +61,7 @@ $alumnos = "SELECT * FROM alumnos";
             <?php	
                 date_default_timezone_set('America/Mexico_City');
                 $horaActual = date('G:i:s');
-                $resultado = mysqli_query($conexion, "SELECT * from doctor where (HoraEntrada < HoraSalida and HoraSalida > '$horaActual' and horaEntrada < '$horaActual') or (HoraEntrada > HoraSalida and (HoraSalida > '$horaActual' or horaEntrada < '$horaActual'))");
+                $resultado = mysqli_query($conexion, "SELECT * from Doctor where (HoraEntrada < HoraSalida and HoraSalida > '$horaActual' and horaEntrada < '$horaActual') or (HoraEntrada > HoraSalida and (HoraSalida > '$horaActual' or horaEntrada < '$horaActual'))");
             
                 if (mysqli_num_rows($resultado) == 0){
                     ?>

@@ -12,14 +12,14 @@ $ApMaDoc = $_POST["ApMaDoc"];
 $pass = $_POST["Pass"];
 $usuario = $_POST["Usuario"];
 
-$insertar = "INSERT INTO doctor(CedulaProf, HoraEntrada, HoraSalida, InstitutoEgreso, Especialidad, NombreDoc, ApPaternoDoc, ApMaternoDoc) VALUES ('$CedulaProfesional', '$HoraEntrada', '$HoraSalida', '$Egreso', '$Especialidad', '$NombreDoc', '$ApPaDoc', '$ApMaDoc');";
+$insertar = "INSERT INTO Doctor(CedulaProf, HoraEntrada, HoraSalida, InstitutoEgreso, Especialidad, NombreDoc, ApPaternoDoc, ApMaternoDoc) VALUES ('$CedulaProfesional', '$HoraEntrada', '$HoraSalida', '$Egreso', '$Especialidad', '$NombreDoc', '$ApPaDoc', '$ApMaDoc');";
 
-$negado = "SELECT * FROM doctor where CedulaProf = '$CedulaProfesional'";
+$negado = "SELECT * FROM Doctor where CedulaProf = '$CedulaProfesional'";
 $querynegado = mysqli_query($conexion, $negado);
 if (mysqli_num_rows($querynegado) == 0){
     $resultado = mysqli_query($conexion, $insertar);
     if($resultado) {
-        mysqli_query($conexion, "INSERT INTO cuenta(Usuario, Pass, TipoCuenta, CedulaDocFK) VALUES ('$usuario', '$pass', 1, '$CedulaProfesional')");
+        mysqli_query($conexion, "INSERT INTO Cuenta(Usuario, Pass, TipoCuenta, CedulaDocFK) VALUES ('$usuario', '$pass', 1, '$CedulaProfesional')");
         echo "<script> window. location='/ACSI/registro_aceptado.php?id=/ACSI/doctor.php?id=" . $CedulaProfesional . "'</script>";
     }else{
        echo "<script>window.location='/ACSI/registro_denegado.php?id=Hubo un error no identificado en el registro</script>';

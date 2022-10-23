@@ -63,11 +63,11 @@ include("conexion.php");
                 $componente = $_POST['componentes'];
                 $gramaje = $_POST['gramaje'];
                 
-                $negado = "SELECT NombreMed FROM medicina where NombreMed = '$nombre';";
+                $negado = "SELECT NombreMed FROM Medicina where NombreMed = '$nombre';";
                 $querynegado = mysqli_query($conexion, $negado);
                 if (mysqli_num_rows($querynegado) == 0){
                     if ($_FILES["foto"]["name"] == ""){
-                        $insertar = "INSERT INTO medicina(NombreMed, ComponenteAct, GramajeMed) VALUES ('$nombre', '$componente', '$gramaje');";
+                        $insertar = "INSERT INTO Medicina(NombreMed, ComponenteAct, GramajeMed) VALUES ('$nombre', '$componente', '$gramaje');";
                     }else{
                         $nombreImagen = $_FILES["foto"]["name"];
                         $datosImagen = addslashes(file_get_contents($_FILES["foto"]["tmp_name"]));
@@ -76,14 +76,14 @@ include("conexion.php");
                         }else{
                             echo "<script> window. location='/ACSI/registro_denegado.php?id=Archivo de imagen inválido'</script>";
                         }
-                        $insertar = "INSERT INTO medicina(NombreMed, ComponenteAct, GramajeMed, FotoMed) VALUES ('$nombre', '$componente', '$gramaje', '$datosImagen');";
+                        $insertar = "INSERT INTO Medicina(NombreMed, ComponenteAct, GramajeMed, FotoMed) VALUES ('$nombre', '$componente', '$gramaje', '$datosImagen');";
                     }
                     mysqli_query($conexion, "SET GLOBAL max_allowed_packet=1073741824");
                     $resultado = mysqli_query($conexion, $insertar);
                     
                     #Conseguir el id de la ultima medicina
                     $idMedicina = '';
-                    $resultadoaux = mysqli_query($conexion, "SELECT MedicinaID FROM medicina where NombreMed = '$nombre';");
+                    $resultadoaux = mysqli_query($conexion, "SELECT MedicinaID FROM Medicina where NombreMed = '$nombre';");
                     while($row=mysqli_fetch_assoc($resultadoaux)){
                         $idMedicina = $row["MedicinaID"];
                     }

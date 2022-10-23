@@ -42,7 +42,7 @@ $id = $_GET["id"];
     
 	<div class="cuerpo">
         <h1>Registro de Medicina</h1>
-        <?php $resultado = mysqli_query($conexion, "SELECT * FROM medicina WHERE MedicinaID = $id");
+        <?php $resultado = mysqli_query($conexion, "SELECT * FROM Medicina WHERE MedicinaID = $id");
             if (mysqli_num_rows($resultado) == 0) { 
                 { ?>
                 <center><h2>ESTÁ VACÍO</h2></center>
@@ -51,7 +51,7 @@ $id = $_GET["id"];
                 <?php }
             }else{ ?>
         <form action="modificar_medicamento.php?id=<?php echo $id ?>" method="POST" class="registrardatos" enctype="multipart/form-data" name="formulario">
-            <?php $resultado = mysqli_query($conexion, "SELECT * FROM medicina where MedicinaID = '$id'");
+            <?php $resultado = mysqli_query($conexion, "SELECT * FROM Medicina where MedicinaID = '$id'");
                     while($row=mysqli_fetch_assoc($resultado)) { ?>
                     <label class="lectura_label" for="">Nombre:</label>
                     <input name="nombre" class="lectura" type="text" value="<?php echo $row["NombreMed"] ?>" required>

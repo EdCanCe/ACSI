@@ -2,7 +2,7 @@
 include("conexion.php");
 session_start();
 include("variablesglobales.php");
-$alumnos = "SELECT * FROM alumnos where NoControl like '%%'";
+$alumnos = "SELECT * FROM Alumnos where NoControl like '%%'";
 $id = '';
 ?>
 

@@ -7,8 +7,8 @@ $HoraSalida = $_POST["HoraSalida"];
 $Egreso = $_POST["Egreso"];
 $Especialidad = $_POST["Especialidad"];
 $NombreDoc = $_POST["NombreDoc"];
-$ApPaDoc = $_POST["ApPaDoc"];
-$ApMaDoc = $_POST["ApMaDoc"];
+$ApPaDoc = $_POST["ApPaternoDoc"];
+$ApMaDoc = $_POST["ApMaternoDoc"];
 $pass = $_POST["Pass"];
 $usuario = $_POST["Usuario"];
 

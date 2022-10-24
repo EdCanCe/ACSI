@@ -12,7 +12,7 @@ $headerdoc = "
             </li>
             <li class='menuHijo'><a href='#'>Consultas</a>
                 <ul class='submenu'>
-                    <li><a href='#'>Ver todas</a></li>
+                    <li><a href='consultas.php'>Ver todas</a></li>
                     <li><a href='crear_consulta.php'>Nueva Consulta</a></li>
                 </ul>
             </li>

@@ -2,7 +2,6 @@
 include("conexion.php");
 session_start();
 include("variablesglobales.php");
-$doctores = "SELECT * FROM Doctor where CedulaProf like '%%'";
 $id = '';
 ?>
 
@@ -43,25 +42,21 @@ $id = '';
     ?>
 
 	<div class="cuerpo">
-        <h1>Doctores</h1>
-        <input type="text" class="buscador_principal" id="buscador_tr" placeholder="Cédula profesional del doctor" onkeyup="buscar($('#buscador_tr').val());">
-
-<?php if($mostrar == 2) {?>
-        <center><a class="boton_a bordes" href="crear_doctor.php?id=<?php echo $id;?>">REGISTRAR NUEVO DOCTOR</a></center>
-
-<?php } ?>
+        <h1>Últimas consultas</h1>
+        <center><a class="boton_a bordes" href="crear_consulta.php">NUEVA CONSULTA</a></center>
         <table id="tabla_tr">
             <tr>
-                <th>Cedula Prof.</th>
-                <th>Nombre</th>
+                <th>Fecha</th>
                 <th></th>
             </tr>
-            <?php $resultado = mysqli_query($conexion, $doctores);
-                while($row=mysqli_fetch_assoc($resultado)) { ?>
+            <?php $resultado = mysqli_query($conexion, "SELECT * FROM Receta");
+                while($row=mysqli_fetch_assoc($resultado)) { 
+                    $meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+                    $fechaConsulta = date('j', strtotime($row['Fecha']))." de ".$meses[date('n', strtotime($row['Fecha']))-1]." de ".date('Y', strtotime($row['Fecha']));
+                ?>
                 <tr>
-                    <td><center><?php echo $row["CedulaProf"];?></center></td>
-                    <td><center><?php echo $row["NombreDoc"];?> <?php echo $row["ApPaternoDoc"];?> <?php echo $row["ApMaternoDoc"];?></center></td>
-                    <td><center><a href="doctor.php?id=<?php echo $row["CedulaProf"];?>">Mostrar datos</a></center></td>
+                    <td><center><?php echo $fechaConsulta;?></center></td>
+                    <td><center><a href="consulta.php?id=<?php echo $row["NoConsulta"];?>">Mostrar Consulta</a></center></td>
                 </tr> <?php } ?>
         </table>
 	</div>
@@ -69,17 +64,4 @@ $id = '';
         echo $footer;
     ?>
 </body>
-<script type="text/javascript">
-    function buscar(entrada){
-        var datos = {"entrada":entrada};
-        $.ajax({
-            data:datos,
-            type: 'POST',
-            url:'buscador_doctor.php',
-            success: function(data){
-                document.getElementById('tabla_tr').innerHTML = data;
-            }
-        });
-    }
-</script>
 </html>

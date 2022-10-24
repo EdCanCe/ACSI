@@ -117,7 +117,6 @@ $id = $_GET["id"];
                     while($row=mysqli_fetch_assoc($resultado)) {
                         ?>
                             <tr>
-                                <td><center><?php echo $row["Cantidad"] ?></center></td>
                                 <td><center><?php 
                                 
                                 $aux = $row['NoConsultaFK'];
@@ -131,6 +130,9 @@ $id = $_GET["id"];
                                 echo $salida;   
                                     
                                 ?></center></td>
+
+                                <td><center><?php echo $row["Cantidad"] ?></center></td>
+
                             </tr>
                         <?php
                     }

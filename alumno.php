@@ -43,7 +43,7 @@ $id = $_GET["id"];
 	<div class="cuerpo">
         <h1>Historial Médico</h1>
         <?php
-            $resultado = mysqli_query($conexion, "SELECT * FROM alumnos WHERE NoControl = $id");
+            $resultado = mysqli_query($conexion, "SELECT * FROM Alumnos WHERE NoControl = $id");
             if (mysqli_num_rows($resultado) == 0) { 
                 { ?>
                 <center><h2>ESTÁ VACÍO</h2></center>
@@ -51,7 +51,7 @@ $id = $_GET["id"];
                 <center><a class="boton_a" href="crear_alumno.php?id=<?php echo $id;?>">SI</a></center>
                 <?php }
             }else{
-                $resultado = mysqli_query($conexion, "SELECT * FROM alumnos WHERE NoControl = $id");
+                $resultado = mysqli_query($conexion, "SELECT * FROM Alumnos WHERE NoControl = $id");
                 while($row=mysqli_fetch_assoc($resultado)) { ?>
                     <tr>
                         <h2>Nombre: <?php echo $row["NombreAl"];?> <?php echo $row["ApPaternoAl"];?> <?php echo $row["ApMaternoAl"];?></h2> 
@@ -84,7 +84,7 @@ $id = $_GET["id"];
                     <center><a class="boton_a" href="modificar_alumno.php?id=<?php echo $row["NoControl"];?>">Modificar datos</a></center>
                     <div class="divisor"></div>
                     <center><h2>Consultas Médicas</h2></center><?php }
-                $resultado = mysqli_query($conexion, "SELECT * FROM receta WHERE NoControlFK = $id");
+                $resultado = mysqli_query($conexion, "SELECT * FROM Receta WHERE NoControlFK = $id");
                 if (mysqli_num_rows($resultado) == 0) { 
                     ?>
                     <center><p>SIN DATOS REGISTRADOS</p></center>

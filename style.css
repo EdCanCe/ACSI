@@ -321,6 +321,12 @@ tr a:active, a:active, .boton_a:active, input::file-selector-button:active, p bu
     border-bottom: 2px solid var(--color_obscuro);
 }
 
+h2 .boton_a{
+    font-size: 0.6em;
+    display: inline-block;
+    padding: 3px 15px;
+}
+
 th{
     display: block;
     flex: 1;

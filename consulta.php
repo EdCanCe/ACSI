@@ -97,8 +97,7 @@ $id = $_GET["id"];
                     <center><a class="boton_a" href="PDFReceta.php?id=<?php echo $row["NoConsulta"] ?>">Ver Receta</a></center>
         
                     <div class="divisor"></div>
-                    <br>
-                    <h1>Medicamentos Administrados</h1>
+                    <h2><center>Medicamentos Administrados</center></h2>
         
                 <?php }
                 $resultado = mysqli_query($conexion, "SELECT * FROM CantidadesMed WHERE NoConsultaFK = '$id'");

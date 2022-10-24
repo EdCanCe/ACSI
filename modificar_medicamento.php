@@ -75,11 +75,11 @@ $id = $_GET["id"];
                 $componente = $_POST['componentes'];
                 $gramaje = $_POST['gramaje'];
                 
-                $negado = "SELECT * FROM medicina where MedicinaID = '$id'";
+                $negado = "SELECT * FROM Medicina where MedicinaID = '$id'";
                 $querynegado = mysqli_query($conexion, $negado);
                 if (mysqli_num_rows($querynegado) != 0){
                     if ($_FILES["foto"]["name"] == ""){
-                        $insertar = "UPDATE medicina SET NombreMed = '$nombre', ComponenteAct = '$componente', GramajeMed = '$gramaje' where MedicinaID = '$id'";
+                        $insertar = "UPDATE Medicina SET NombreMed = '$nombre', ComponenteAct = '$componente', GramajeMed = '$gramaje' where MedicinaID = '$id'";
                     }else{
                         $nombreImagen = $_FILES["foto"]["name"];
                         $datosImagen = addslashes(file_get_contents($_FILES["foto"]["tmp_name"]));

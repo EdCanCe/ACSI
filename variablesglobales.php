@@ -40,6 +40,7 @@ $headerdoc = "
                     <li><a href='#'>Crear entrada</a></li>
                 </ul>
             </li>
+            <li class='menuHijo'><a href='cierra.php'>Cerrar Sesión</a></li>
         </ul>
     <nav>
 </div>
@@ -92,6 +93,7 @@ $headeralm = "
                     <li><a href='#'>Crear entrada</a></li>
                 </ul>
             </li>
+            <li class='menuHijo'><a href='cierra.php'>Cerrar Sesión</a></li>
         </ul>
     <nav>
 </div>

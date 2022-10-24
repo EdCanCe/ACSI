@@ -73,14 +73,14 @@ $id = $_GET["id"];
                 
                 $anterior = '';
                 
-                $resultado = mysqli_query($conexion, "SELECT * FROM Medicina WHERE MedicinaID = $id");
+                $resultado = mysqli_query($conexion, "SELECT * FROM Medicina WHERE MedicinaID = '$id'");
                 while($row=mysqli_fetch_assoc($resultado)){
                     $anterior = $row["CantidadMedicina"];
                 }
                 
                 $final = $_POST['Cantidad'] + $anterior;
                 
-                $insertar = "UPDATE medicina SET CantidadMedicina = '$final';";
+                $insertar = "UPDATE Medicina SET CantidadMedicina = '$final';";
                 
                 $resultado = mysqli_query($conexion, $insertar);
                 if($resultado) {
@@ -101,7 +101,7 @@ $id = $_GET["id"];
                 
                 $final = $anterior - $_POST['Cantidad'];
                 
-                $insertar = "UPDATE medicina SET CantidadMedicina = '$final';";
+                $insertar = "UPDATE Medicina SET CantidadMedicina = '$final';";
                 
                 $resultado = mysqli_query($conexion, $insertar);
                 if($resultado) {

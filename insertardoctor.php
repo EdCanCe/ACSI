@@ -6,6 +6,7 @@ $HoraEntrada = $_POST["HoraEntrada"];
 $HoraSalida = $_POST["HoraSalida"];
 $Egreso = $_POST["Egreso"];
 $Especialidad = $_POST["Especialidad"];
+if($Especialidad == "") $Especialidad = "Médico Cirujano";
 $NombreDoc = $_POST["NombreDoc"];
 $ApPaDoc = $_POST["ApPaternoDoc"];
 $ApMaDoc = $_POST["ApMaternoDoc"];

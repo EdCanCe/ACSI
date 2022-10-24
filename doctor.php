@@ -9,7 +9,7 @@ $id = $_GET["id"];
 <html lang="es">
 
 <head>
-	<title>HISTORIAL MÉDICO</title>
+	<title>DOCTOR</title>
 	<meta charset="utf-8">
 	<meta name="author" content="Jorge Arturo Salgado Ceja, José Roberto García Correa, Edmundo Canedo Cervantes">
 	<meta name="description" content="Sistema para la gestión de enfermería, teniendo elaboración de recetas, vista de historial médico e inventario de medicinas">
@@ -41,9 +41,9 @@ $id = $_GET["id"];
     ?>
     
 	<div class="cuerpo">
-        <h1>Historial Médico</h1>
+        <h1>Doctor</h1>
         <?php
-            $resultado = mysqli_query($conexion, "SELECT * FROM doctor WHERE CedulaProf = '$id'");
+            $resultado = mysqli_query($conexion, "SELECT * FROM Doctor WHERE CedulaProf = '$id'");
             if (mysqli_num_rows($resultado) == 0) { 
                 { ?>
                 <center><h2>ESTÁ VACÍO</h2></center>
@@ -51,14 +51,54 @@ $id = $_GET["id"];
                 <center><a class="boton_a" href="crear_doctor.php?id=<?php echo $id;?>">SI</a></center>
                 <?php }
             }else{
-                $resultado = mysqli_query($conexion, "SELECT * FROM doctor WHERE CedulaProf = '$id'");
+                $resultado = mysqli_query($conexion, "SELECT * FROM Doctor WHERE CedulaProf = '$id'");
                 while($row=mysqli_fetch_assoc($resultado)) { ?>
                         <h2>Nombre: <?php echo $row["NombreDoc"];?> <?php echo $row["ApPaternoDoc"];?> <?php echo $row["ApMaternoDoc"];?></h2> 
                         <p>Horario: <?php echo $row["HoraEntrada"];?>-<?php echo $row["HoraSalida"];?></p>
                         <p>Cedula Profesional: <?php echo $row["CedulaProf"];?></p>
                         <p>Instituto de Egreso: <?php echo $row["InstitutoEgreso"];?></p>
                         <p>Especialidad: <?php echo $row["Especialidad"];?></p>
+                        <?php 
+                            if($mostrar == 2){
+                                ?> 
+                                    <div class="divisor"></div>
+                                    <h2><center>ÚLTIMAS CONSULTAS</center></h2>
+                                <?php
+
+                                    $resultado = mysqli_query($conexion, "SELECT * FROM Receta WHERE CedulaProfFK = '$id'");
+                                    if (mysqli_num_rows($resultado) == 0) { 
+                                        ?>
+                                        <center><p>NO HA TENIDO CITAS</p></center>
+                                        <?php
+                                    }else{
+                                        ?>
+                                        <table>
+                                            <tr>
+                                                <th>Fecha</th>
+                                                <th></th>
+                                            </tr>
+                                            
+                                        <?php
+                                        while($row=mysqli_fetch_assoc($resultado)) {
+                                            $meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+                                            $fechaConsulta = date('j', strtotime($row['Fecha']))." de ".$meses[date('n', strtotime($row['Fecha']))-1]." de ".date('Y', strtotime($row['Fecha']));
+                                            ?>
+                                                <tr>
+                                                    <td><center><?php echo $fechaConsulta ?></center></td>
+                                                    <td><a href="consulta.php?id=<?php echo $row["NoConsulta"];?>">Mostrar Consulta Médica</a></td>
+                                                </tr>
+                                            <?php
+                                        }
+                                        ?>
+                                            </table>
+                                        <?php
+                                    } 
+
+                            }
+                        ?>
                 <?php }
+ 
+
             } ?>
 	</div>
 

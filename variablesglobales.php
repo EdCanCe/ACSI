@@ -3,14 +3,14 @@ $headerdoc = "
 <div class='navbar'>
     <nav>
         <ul class='menu'>
-            <li class='menuHijo'><a href='index.php'>Inicio</a></li>
+            <li class='menuHijo'><a href='inicio.php'>Inicio</a></li>
             <li class='menuHijo'><a href='inventario.php'>Inventario</a>
                 <ul class='submenu'>
                     <li><a href='inventario.php'>Ver todo</a></li>
                     <li><a href='crear_medicina.php'>Registrar</a></li>
                 </ul>
             </li>
-            <li class='menuHijo'><a href='#'>Consultas</a>
+            <li class='menuHijo'><a href='consultas.php'>Consultas</a>
                 <ul class='submenu'>
                     <li><a href='consultas.php'>Ver todas</a></li>
                     <li><a href='crear_consulta.php'>Nueva Consulta</a></li>
@@ -28,42 +28,25 @@ $headerdoc = "
                     <li><a href='crear_doctor.php?id='>Registrar</a></li>
                 </ul>
             </li>
-            <li class='menuHijo'><a href='#'>Preguntas</a>
-                <ul class='submenu'>
-                    <li><a href='#'>Ver todas</a></li>
-                    <li><a href='#'>Faltan responder</a></li>
-                </ul>
-            </li>
-            <li class='menuHijo'><a href='#'>Blog</a>
-                <ul class='submenu'>
-                    <li><a href='#'>Ver blog</a></li>
-                    <li><a href='#'>Crear entrada</a></li>
-                </ul>
-            </li>
             <li class='menuHijo'><a href='cierra.php'>Cerrar Sesión</a></li>
         </ul>
     <nav>
 </div>
-<div class='auxCuerpo'>
+<div class='auxCuerpo'>            <li class='menuHijo'><a href='index.php'>Inicio</a></li>
+
 ";
 
 $headersin = "
 <div class='navbar'>
     <nav>
         <ul class='menu'>
-            <li class='menuHijo'><a href='index.php'>Inicio</a></li>
+            <li class='menuHijo'><a href='inicio.php'>Inicio</a></li>
+            <li class='menuHijo'><a href='index.php'>Iniciar Sesión</a></li>
             <li class='menuHijo'><a href='doctores.php'>Doctores</a>
                 <ul class='submenu'>
                     <li><a href='doctores.php'>Ver todos</a></li>
                     <li><a href='crear_doctor.php?id='>Registrar</a></li>
                 </ul>
-            </li>
-            <li class='menuHijo'><a href='#'>Blog</a>
-                <ul class='submenu'>
-                    <li><a href='#'>Ver blog</a></li>
-                    <li><a href='#'>Crear entrada</a></li>
-                </ul>
-            </li>
         </ul>
     <nav>
 </div>
@@ -74,23 +57,11 @@ $headeralm = "
 <div class='navbar'>
     <nav>
         <ul class='menu'>
-            <li class='menuHijo'><a href='index.php'>Inicio</a></li>
+            <li class='menuHijo'><a href='inicio.php'>Inicio</a></li>
             <li class='menuHijo'><a href='doctores.php'>Doctores</a>
                 <ul class='submenu'>
                     <li><a href='doctores.php'>Ver todos</a></li>
                     <li><a href='crear_doctor.php?id='>Registrar</a></li>
-                </ul>
-            </li>
-            <li class='menuHijo'><a href='#'>Preguntas</a>
-                <ul class='submenu'>
-                    <li><a href='#'>Ver todas</a></li>
-                    <li><a href='#'>Faltan responder</a></li>
-                </ul>
-            </li>
-            <li class='menuHijo'><a href='#'>Blog</a>
-                <ul class='submenu'>
-                    <li><a href='#'>Ver blog</a></li>
-                    <li><a href='#'>Crear entrada</a></li>
                 </ul>
             </li>
             <li class='menuHijo'><a href='cierra.php'>Cerrar Sesión</a></li>
@@ -142,3 +113,116 @@ $footer = "
         <div>
     </div>
 ";
+
+$permisoDoctor = "
+<h1>Necesitas ser doctor para ver esto</h1>
+<center><a class='boton_a' onclick='regresar()'>VOLVER</a></center>
+<center><img src='imgs/registro_fallido.png' class='imagen_logo'></center>
+<script>
+    function regresar(){
+        history.back();
+    }
+</script>
+";
+
+/*
+$headerdoc = "
+<div class='navbar'>
+    <nav>
+        <ul class='menu'>
+            <li class='menuHijo'><a href='index.php'>Inicio</a></li>
+            <li class='menuHijo'><a href='inventario.php'>Inventario</a>
+                <ul class='submenu'>
+                    <li><a href='inventario.php'>Ver todo</a></li>
+                    <li><a href='crear_medicina.php'>Registrar</a></li>
+                </ul>
+            </li>
+            <li class='menuHijo'><a href='#'>Consultas</a>
+                <ul class='submenu'>
+                    <li><a href='consultas.php'>Ver todas</a></li>
+                    <li><a href='crear_consulta.php'>Nueva Consulta</a></li>
+                </ul>
+            </li>
+            <li class='menuHijo'><a href='alumnos.php'>Alumnos</a>
+                <ul class='submenu'>
+                    <li><a href='alumnos.php'>Ver todos</a></li>
+                    <li><a href='crear_alumno.php?id='>Registrar</a></li>
+                </ul>
+            </li>
+            <li class='menuHijo'><a href='doctores.php'>Doctores</a>
+                <ul class='submenu'>
+                    <li><a href='doctores.php'>Ver todos</a></li>
+                    <li><a href='crear_doctor.php?id='>Registrar</a></li>
+                </ul>
+            </li>
+            <li class='menuHijo'><a href='#'>Preguntas</a>
+                <ul class='submenu'>
+                    <li><a href='#'>Ver todas</a></li>
+                    <li><a href='#'>Faltan responder</a></li>
+                </ul>
+            </li>
+            <li class='menuHijo'><a href='#'>Blog</a>
+                <ul class='submenu'>
+                    <li><a href='#'>Ver blog</a></li>
+                    <li><a href='#'>Crear entrada</a></li>
+                </ul>
+            </li>
+            <li class='menuHijo'><a href='cierra.php'>Cerrar Sesión</a></li>
+        </ul>
+    <nav>
+</div>
+<div class='auxCuerpo'>
+";*/
+
+/*$headersin = "
+<div class='navbar'>
+    <nav>
+        <ul class='menu'>
+            <li class='menuHijo'><a href='index.php'>Inicio</a></li>
+            <li class='menuHijo'><a href='doctores.php'>Doctores</a>
+                <ul class='submenu'>
+                    <li><a href='doctores.php'>Ver todos</a></li>
+                    <li><a href='crear_doctor.php?id='>Registrar</a></li>
+                </ul>
+            </li>
+            <li class='menuHijo'><a href='#'>Blog</a>
+                <ul class='submenu'>
+                    <li><a href='#'>Ver blog</a></li>
+                    <li><a href='#'>Crear entrada</a></li>
+                </ul>
+            </li>
+        </ul>
+    <nav>
+</div>
+<div class='auxCuerpo'>
+";*/
+
+/* $headeralm = " <div class='navbar'>
+    <nav>
+        <ul class='menu'>
+            <li class='menuHijo'><a href='index.php'>Inicio</a></li>
+            <li class='menuHijo'><a href='doctores.php'>Doctores</a>
+                <ul class='submenu'>
+                    <li><a href='doctores.php'>Ver todos</a></li>
+                    <li><a href='crear_doctor.php?id='>Registrar</a></li>
+                </ul>
+            </li>
+            <li class='menuHijo'><a href='#'>Preguntas</a>
+                <ul class='submenu'>
+                    <li><a href='#'>Ver todas</a></li>
+                    <li><a href='#'>Faltan responder</a></li>
+                </ul>
+            </li>
+            <li class='menuHijo'><a href='#'>Blog</a>
+                <ul class='submenu'>
+                    <li><a href='#'>Ver blog</a></li>
+                    <li><a href='#'>Crear entrada</a></li>
+                </ul>
+            </li>
+            <li class='menuHijo'><a href='cierra.php'>Cerrar Sesión</a></li>
+        </ul>
+    <nav>
+</div>
+<div class='auxCuerpo'>
+";
+*/

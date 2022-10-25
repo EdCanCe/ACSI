@@ -43,6 +43,18 @@ $id = '';
     ?>
 
 	<div class="cuerpo">
+
+        <?php 
+
+            if($mostrar != 2){
+                
+                echo $permisoDoctor;
+
+            }else {
+
+        ?>
+
+    
         <h1>Historiales de Alumnos</h1>
         <input type="text" class="buscador_principal" id="buscador_tr" placeholder="Número de Control del Alumno" onkeyup="buscar($('#buscador_tr').val());">
         <center><a class="boton_a bordes" href="crear_alumno.php?id=">REGISTRAR NUEVO ALUMNO</a></center>
@@ -60,6 +72,7 @@ $id = '';
                     <td><center><a href="alumno.php?id=<?php echo $row["NoControl"];?>">Mostrar Historial</a></center></td>
                 </tr> <?php } ?>
         </table>
+        <?php } ?>
 	</div>
     <?php //ESTE HACE EL FOOTER
         echo $footer;

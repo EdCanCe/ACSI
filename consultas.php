@@ -42,6 +42,19 @@ $id = '';
     ?>
 
 	<div class="cuerpo">
+
+
+        <?php 
+
+            if($mostrar != 2){
+                
+                echo $permisoDoctor;
+
+            }else {
+
+        ?>
+
+
         <h1>Últimas consultas</h1>
         <center><a class="boton_a bordes" href="crear_consulta.php">NUEVA CONSULTA</a></center>
         <table id="tabla_tr">
@@ -59,6 +72,7 @@ $id = '';
                     <td><center><a href="consulta.php?id=<?php echo $row["NoConsulta"];?>">Mostrar Consulta</a></center></td>
                 </tr> <?php } ?>
         </table>
+        <?php } ?>
 	</div>
     <?php //ESTE HACE EL FOOTER
         echo $footer;

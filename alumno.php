@@ -98,12 +98,65 @@ $id = $_GET["id"];
                         <center><a class="boton_a" href="modificar_alumno.php?id=<?php echo $row["NoControl"];?>">Modificar datos</a></center>
                         <div class="divisor"></div>
                         <center><h2>Consultas Médicas</h2></center><?php }
+                    $fechaAntigua = date('y-m-d', strtotime('-32 days'));
                     $resultado = mysqli_query($conexion, "SELECT * FROM Receta WHERE NoControlFK = $id");
+                    $resultado2 = mysqli_query($conexion, "select count(*) as Cantidad, DATE_FORMAT(Fecha,'%y-%m-%d') as FechaS FROM Receta where Fecha >= '$fechaAntigua' GROUP BY Fecha");
                     if (mysqli_num_rows($resultado) == 0) { 
                         ?>
                         <center><p>SIN DATOS REGISTRADOS</p></center>
                         <?php
                     }else{
+                        
+                        $meterJS = "['Fecha', 'Idas']";
+                        $ultima = $fechaAntigua;
+                        $linea =  "";
+                        while($row=mysqli_fetch_assoc($resultado2)) {
+                            while($ultima < $row["FechaS"]){
+                                $meterJS.= $linea;
+                                $ultima = date('y-m-d', strtotime($ultima.'+1 days'));
+                                $linea = ", \n['".$ultima."',  0]";
+                                
+                            }
+                            
+                            $fechaMeter = $row["FechaS"];
+                            $cantidadMeter = $row["Cantidad"];
+                            $linea = ", \n['".$fechaMeter."',  ".$cantidadMeter."]";
+                            $meterJS.= $linea;
+                        }
+                        
+                        
+                        
+                        ?>
+        
+
+                        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                        
+                        <script type="text/javascript">
+                            google.charts.load('current', {'packages':['corechart']});
+                            google.charts.setOnLoadCallback(drawChart);
+
+                            function drawChart() {
+                                var data = google.visualization.arrayToDataTable([
+                                <?php echo $meterJS ?>
+                                ]);
+
+                            var options = {
+                                title: 'Visitas últimos 30 días',
+                                curveType: 'function',
+                                legend: { position: 'bottom' }
+                                };
+
+                            var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+                            chart.draw(data, options);
+                          }
+                        </script>
+                        <div id="curve_chart" style="width: 900px; height: 500px"></div>
+        
+                        <?php
+                        
+                        
+                        
                         ?>
                         <table>
                             <tr>
@@ -112,6 +165,7 @@ $id = $_GET["id"];
                             </tr>
                             
                         <?php
+                        $resultado = mysqli_query($conexion, "SELECT * FROM Receta WHERE NoControlFK = $id");
                         while($row=mysqli_fetch_assoc($resultado)) {
                             $meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
                             $fechaConsulta = date('j', strtotime($row['Fecha']))." de ".$meses[date('n', strtotime($row['Fecha']))-1]." de ".date('Y', strtotime($row['Fecha']));

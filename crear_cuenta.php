@@ -40,6 +40,19 @@ include("variablesglobales.php");
     ?>
     
 	<div class="cuerpo">
+
+
+        <?php 
+
+            if($mostrar != 2){
+                
+                echo $permisoDoctor;
+
+            }else {
+
+        ?>
+
+
         <h1>Crear Cuenta</h1>
         <form action="registro.php" method="post" class="registrardatos">
             
@@ -53,6 +66,7 @@ include("variablesglobales.php");
             
             <center><input type="submit" value="Registrar" class="boton_a"></center>
         </form>
+        <?php } ?>
 	</div>
     
     <?php //ESTE HACE EL FOOTER

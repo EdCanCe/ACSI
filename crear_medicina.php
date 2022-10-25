@@ -40,6 +40,19 @@ include("conexion.php");
     ?>
     
 	<div class="cuerpo">
+
+
+        <?php 
+
+            if($mostrar != 2){
+                
+                echo $permisoDoctor;
+
+            }else {
+
+        ?>
+
+
         <h1>Registro de Medicina</h1>
         <form action="crear_medicina.php" method="POST" class="registrardatos" enctype="multipart/form-data" name="formulario">
             <label class="lectura_label" for="">Nombre:</label>
@@ -101,6 +114,7 @@ include("conexion.php");
                 
             }
         ?>
+        <?php } ?>
 	</div>
     
     <?php //ESTE HACE EL FOOTER

@@ -42,6 +42,19 @@ $inventario = "SELECT * FROM Medicina;";
     ?>
     
 	<div class="cuerpo">
+
+
+        <?php 
+
+            if($mostrar != 2){
+                
+                echo $permisoDoctor;
+
+            }else {
+
+        ?>
+
+
         <h1>Inventario</h1>
         <input type="text" class="buscador_principal" id="buscador_tr" placeholder="Nombre o componentes del medicamento" onkeyup="buscar($('#buscador_tr').val());">
         <div class="inventario" id="inventariocontainer">
@@ -59,6 +72,7 @@ $inventario = "SELECT * FROM Medicina;";
                     </div>
                 </div> <?php } ?>
         </div>
+        <?php } ?>
 	</div>
     
     <?php //ESTE HACE EL FOOTER

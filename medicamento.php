@@ -42,6 +42,19 @@ $id = $_GET["id"];
     ?>
     
 	<div class="cuerpo">
+
+
+        <?php 
+
+            if($mostrar != 2){
+                
+                echo $permisoDoctor;
+
+            }else {
+
+        ?>
+
+
         <h1>Medicamento</h1>
         <?php
             $resultado = mysqli_query($conexion, "SELECT * FROM Medicina WHERE MedicinaID = $id");
@@ -102,6 +115,7 @@ $id = $_GET["id"];
                 }
             }  
         ?>
+        <?php } ?>
 	</div>
     
     <?php //ESTE HACE EL FOOTER

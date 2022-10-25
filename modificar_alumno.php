@@ -42,6 +42,19 @@ $alumnos = "SELECT * FROM Alumnos where NoControl = $id";
     ?>
     
 	<div class="cuerpo">
+
+
+        <?php 
+
+            if($mostrar != 2){
+                
+                echo $permisoDoctor;
+
+            }else {
+
+        ?>
+
+
         <h1>Modificación de Alumno</h1>
         <?php
             $resultado = mysqli_query($conexion, "SELECT * FROM Alumnos WHERE NoControl = '$id'");
@@ -116,6 +129,7 @@ $alumnos = "SELECT * FROM Alumnos where NoControl = $id";
                 <?php } ?>
 
             </form>
+    <?php } ?>
     <?php } ?>
 	</div>
     

@@ -41,6 +41,19 @@ $id = $_GET["id"];
     ?>
     
 	<div class="cuerpo">
+
+
+        <?php 
+
+            if($mostrar != 2){
+                
+                echo $permisoDoctor;
+
+            }else {
+
+        ?>
+
+
         <h1>Registro de Doctor</h1>
         <form action="insertardoctor.php" method="post" class="registrardatos">
             <label class="lectura_label" for="">Cedula Profesional:</label>
@@ -85,6 +98,7 @@ $id = $_GET["id"];
             
             <center><input type="submit" value="Registrar" class="boton_a"></center>
         </form>
+        <?php } ?>
 	</div>
     
     <?php //ESTE HACE EL FOOTER

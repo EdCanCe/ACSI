@@ -9,7 +9,7 @@ $id = $_GET["id"];
 <html lang="es">
 
 <head>
-	<title>INICIO</title>
+	<title>REGISTRO ACEPTADO</title>
 	<meta charset="utf-8">
 	<meta name="author" content="Jorge Arturo Salgado Ceja, José Roberto García Correa, Edmundo Canedo Cervantes">
 	<meta name="description" content="Sistema para la gestión de enfermería, teniendo elaboración de recetas, vista de historial médico e inventario de medicinas">

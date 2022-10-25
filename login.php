@@ -8,7 +8,7 @@ include("variablesglobales.php");
 <html lang="es">
 
 <head>
-	<title>REGISTRARSE</title>
+	<title>INICIAR SESIÓN</title>
 	<meta charset="utf-8">
 	<meta name="author" content="Jorge Arturo Salgado Ceja, José Roberto García Correa, Edmundo Canedo Cervantes">
 	<meta name="description" content="Sistema para la gestión de enfermería, teniendo elaboración de recetas, vista de historial médico e inventario de medicinas">

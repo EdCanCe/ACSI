@@ -111,26 +111,20 @@ $id = $_GET["id"];
                         $ultima = $fechaAntigua;
                         $linea =  "";
                         while($row=mysqli_fetch_assoc($resultado2)) {
-                            while($ultima < $row["FechaS"]){
+                            while($ultima < date('y-m-d', strtotime($row["FechaS"].'+0 days'))){
+                                $linea = ", \n['".$ultima."',  0]";
                                 $meterJS.= $linea;
                                 $ultima = date('y-m-d', strtotime($ultima.'+1 days'));
-                                $linea = ", \n['".$ultima."',  0]";
-                                
                             }
                             
                             $fechaMeter = $row["FechaS"];
                             $cantidadMeter = $row["Cantidad"];
                             $linea = ", \n['".$fechaMeter."',  ".$cantidadMeter."]";
                             $meterJS.= $linea;
+                            $ultima = date('y-m-d', strtotime($ultima.'+1 days'));
                         }
-                        
-                        
-                        
                         ?>
-        
-
                         <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-                        
                         <script type="text/javascript">
                             google.charts.load('current', {'packages':['corechart']});
                             google.charts.setOnLoadCallback(drawChart);
@@ -142,22 +136,23 @@ $id = $_GET["id"];
 
                             var options = {
                                 title: 'Visitas últimos 30 días',
-                                curveType: 'function',
-                                legend: { position: 'bottom' }
+                                curveType: 'linear',
+                                legend: { position: 'bottom' },
+                                lineWidth: 5,
+                                lineDashStyle: [5, 5],
+                                colors: ['#004d06'],
                                 };
 
                             var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
 
                             chart.draw(data, options);
+                            $(window).resize(function(){
+                                drawChart();
+                            });
                           }
                         </script>
-                        <div id="curve_chart" style="width: 900px; height: 500px"></div>
-        
-                        <?php
-                        
-                        
-                        
-                        ?>
+                        <div id="curve_chart" style="width: 100%x; height: 500px"></div>
+                        <br>
                         <table>
                             <tr>
                                 <th>Fecha</th>

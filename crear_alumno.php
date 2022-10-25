@@ -70,7 +70,7 @@ $id = $_GET["id"];
             <input name="nocontrol" class="lectura" type="number" max="99999999999999" min="0" value="<?php echo $id;?>" required>
             <label class="desaparece"></label>
             <label class="lectura_label" for="">CURP:</label>
-            <input name="curp" class="lectura" type="text" required >
+            <input name="curp" class="lectura" type="text" required maxlength="18">
             <label class="desaparece"></label>
             <label class="lectura_label" for="">Alergias:</label>
             <input name="alergias" class="lectura" type="text">

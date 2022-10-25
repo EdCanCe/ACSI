@@ -89,11 +89,11 @@ $id = $_GET["id"];
             <label class="desaparece"></label>
             
             <label class="lectura_label" for="">Nombre de usuario:</label>
-            <input name="Usuario" class="lectura" type="text">
+            <input name="Usuario" class="lectura" type="text" required>
             <label class="desaparece"></label>
             
             <label class="lectura_label" for="">Contraseña:</label>
-            <input name="Pass" class="lectura" type="text">
+            <input name="Pass" class="lectura" type="text" required>
             <label class="desaparece"></label>
             
             <center><input type="submit" value="Registrar" class="boton_a"></center>

@@ -257,6 +257,10 @@ ul{
   font-size:2vh;
 }
 
+button{
+    border: none;
+}
+
 .tp{
   margin-bottom: 2.5vh;
 }
@@ -568,7 +572,6 @@ input::file-selector-button:hover{
 	margin-right: auto;
 	border: none;
     border-bottom: 1px solid var(--color_obscuro);
-	//box-shadow: 0 2px 7px var(--color_principal);
 }
 
 .bordes{

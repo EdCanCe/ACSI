@@ -32,7 +32,7 @@ $headerdoc = "
         </ul>
     <nav>
 </div>
-<div class='auxCuerpo'>            <li class='menuHijo'><a href='index.php'>Inicio</a></li>
+<div class='auxCuerpo'>            
 
 ";
 

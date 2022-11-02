@@ -40,15 +40,24 @@ if($resultado) {
                 $bKeyword = explode("-", $aKeyword[$i]);
                 
                 $medId = "";
-                $resultado2 = mysqli_query($conexion, "SELECT MedicinaID from Medicina where NombreMed = '$bKeyword[0]'");
+                $cant = "";
+                $resultado2 = mysqli_query($conexion, "SELECT * from Medicina where NombreMed = '$bKeyword[0]'");
                 if(mysqli_num_rows($resultado2) > 0 ){
                     while($row=mysqli_fetch_assoc($resultado2)) {
                         $medId = $row["MedicinaID"];
+                        $cant = $row["CantidadMedicina"];
                     }
                 }else{
                     echo "<script> window. location='/ACSI/registro_denegado.php?id=No existe esa medicina en la lista</script>";
                 }
                 $resultado2 = mysqli_query($conexion, "INSERT INTO CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) VALUES ('$bKeyword[1]', '$medId', '$idreceta')");
+                $cant = $cant - $bKeyword[1];
+                $resultado2 = mysqli_query($conexion, "UPDATE Medicina SET CantidadMedicina = '$cant' where MedicinaID = '$medId'");
+
+                
+
+
+
                 
             }
         }

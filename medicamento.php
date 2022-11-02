@@ -83,7 +83,7 @@ $id = $_GET["id"];
                     ?>
                     <div class="divisor"></div>
                         <center><h2>Últimas dosis administradas</h2></center><?php
-                        $resultado = mysqli_query($conexion, "SELECT * FROM CantidadesMed INNER JOIN Receta ON CantidadesMed.NoConsultaFK = Receta.NoConsulta where CantidadesMed.MedicinaIDFK = 1");
+                        $resultado = mysqli_query($conexion, "SELECT * FROM CantidadesMed INNER JOIN Receta ON CantidadesMed.NoConsultaFK = Receta.NoConsulta where CantidadesMed.MedicinaIDFK = $id");
                         if (mysqli_num_rows($resultado) == 0) { 
                         ?>
                             <center><p>SIN DATOS REGISTRADOS</p></center>

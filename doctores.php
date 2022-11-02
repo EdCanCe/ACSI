@@ -44,18 +44,6 @@ $id = '';
 
 	<div class="cuerpo">
 
-
-        <?php 
-
-            if($mostrar != 2){
-                
-                echo $permisoDoctor;
-
-            }else {
-
-        ?>
-
-
         <h1>Doctores</h1>
         <input type="text" class="buscador_principal" id="buscador_tr" placeholder="Cédula profesional del doctor" onkeyup="buscar($('#buscador_tr').val());">
 
@@ -77,7 +65,6 @@ $id = '';
                     <td><center><a href="doctor.php?id=<?php echo $row["CedulaProf"];?>">Mostrar datos</a></center></td>
                 </tr> <?php } ?>
         </table>
-        <?php } ?>
 	</div>
     <?php //ESTE HACE EL FOOTER
         echo $footer;

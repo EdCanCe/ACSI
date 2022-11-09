@@ -8,8 +8,8 @@ $Egreso = $_POST["Egreso"];
 $Especialidad = $_POST["Especialidad"];
 if($Especialidad == "") $Especialidad = "Médico Cirujano";
 $NombreDoc = $_POST["NombreDoc"];
-$ApPaDoc = $_POST["ApPaternoDoc"];
-$ApMaDoc = $_POST["ApMaternoDoc"];
+$ApPaDoc = $_POST["ApPaDoc"];
+$ApMaDoc = $_POST["ApMaDoc"];
 $pass = $_POST["Pass"];
 $usuario = $_POST["Usuario"];
 

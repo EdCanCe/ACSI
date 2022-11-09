@@ -1,0 +1,1366 @@
+insert into Alumnos(NombreAl, ApPaternoAl, ApMaternoAl, FechaNacAl, CURPAl, NombreTut, ApPaternoTut, ApMaternoTut, NoTelefonoTut, Alergias, TipoSangre, NoControl) values("Astrolopiteco", "Díaz", "Peña", "2002-04-19", "D�PA020419HMNNRDA6", "Pedro", "Fernández", "Chávez", "4438311843", "frambuesas", "O-", 41823491851678);
+
+insert into Doctor(CedulaProf, HoraEntrada, HoraSalida, InstitutoEgreso, Especialidad, NombreDoc, ApPaternoDoc, ApMaternoDoc) values("87998352", "15:10:00", "18:20:00", "UVAQ", "Traumatólogo", "Mateo", "Peña", "Díaz");
+
+insert into Cuenta(Usuario, Pass, TipoCuenta, CedulaDocFK) values("Mat87998352", "hola123", 1, "87998352");
+
+insert into Medicina(NombreMed, ComponenteAct, GramajeMed) values("estrexidina", "Calcio", "14");
+
+insert into Alumnos(NombreAl, ApPaternoAl, ApMaternoAl, FechaNacAl, CURPAl, NombreTut, ApPaternoTut, ApMaternoTut, NoTelefonoTut, Alergias, TipoSangre, NoControl) values("Astrolopiteco", "Guadarrama", "Fonseca", "2001-06-09", "GUFA010609HMNNRDA5", "Oliver", "Fonseca", "López", "4434498234", "maní", "A-", 17284421756098);
+
+insert into Doctor(CedulaProf, HoraEntrada, HoraSalida, InstitutoEgreso, Especialidad, NombreDoc, ApPaternoDoc, ApMaternoDoc) values("83524840", "15:10:00", "13:50:00", "Tecnológico de Monterrey campus GDL", "Nefrólogo", "Alexa", "Guadarrama", "Molina");
+
+insert into Cuenta(Usuario, Pass, TipoCuenta, CedulaDocFK) values("Ale83524840", "hola123", 1, "83524840");
+
+insert into Medicina(NombreMed, ComponenteAct, GramajeMed) values("cefoxideo", "Hierro", "81");
+
+insert into Alumnos(NombreAl, ApPaternoAl, ApMaternoAl, FechaNacAl, CURPAl, NombreTut, ApPaternoTut, ApMaternoTut, NoTelefonoTut, Alergias, TipoSangre, NoControl) values("Erick", "Mandela", "Martínez", "2003-02-17", "MAME030217HMNNRDA9", "Alexa", "Molina", "García", "4435342370", "tierra", "AB-", 48562460738716);
+
+insert into Doctor(CedulaProf, HoraEntrada, HoraSalida, InstitutoEgreso, Especialidad, NombreDoc, ApPaternoDoc, ApMaternoDoc) values("66520796", "05:50:00", "17:00:00", "Tecnológico de Monterrey campus CDMX", "Oftalmólogo", "Mariana", "Guzmán", "Chávez");
+
+insert into Cuenta(Usuario, Pass, TipoCuenta, CedulaDocFK) values("Mar66520796", "hola123", 1, "66520796");
+
+insert into Medicina(NombreMed, ComponenteAct, GramajeMed) values("prostoxorex", "Loratadina", "14");
+
+insert into Alumnos(NombreAl, ApPaternoAl, ApMaternoAl, FechaNacAl, CURPAl, NombreTut, ApPaternoTut, ApMaternoTut, NoTelefonoTut, Alergias, TipoSangre, NoControl) values("Alexis", "Ramírez", "González", "2004-12-05", "RAGA041205HMNNRDA4", "Oliver", "Carrillo", "Martínez", "4432584088", "gatos", "A-", 75458704112608);
+
+insert into Doctor(CedulaProf, HoraEntrada, HoraSalida, InstitutoEgreso, Especialidad, NombreDoc, ApPaternoDoc, ApMaternoDoc) values("30739327", "00:20:00", "16:10:00", "Tecnológico de Monterrey campus GDL", "Pediátra", "Leonardo", "Revilla", "López");
+
+insert into Cuenta(Usuario, Pass, TipoCuenta, CedulaDocFK) values("Leo30739327", "hola123", 1, "30739327");
+
+insert into Medicina(NombreMed, ComponenteAct, GramajeMed) values("prostaxantel", "Omeprazol", "49");
+
+insert into Alumnos(NombreAl, ApPaternoAl, ApMaternoAl, FechaNacAl, CURPAl, NombreTut, ApPaternoTut, ApMaternoTut, NoTelefonoTut, Alergias, TipoSangre, NoControl) values("Alexander", "Ramírez", "Nieto", "2001-03-14", "RANA010314HMNNRDA8", "Alejandra", "García", "López", "4432291425", "mariscos", "O+", 60166304896023);
+
+insert into Doctor(CedulaProf, HoraEntrada, HoraSalida, InstitutoEgreso, Especialidad, NombreDoc, ApPaternoDoc, ApMaternoDoc) values("16069975", "06:50:00", "10:40:00", "UMSNH", "Neurólogo", "Ania", "Martínez", "Fonseca");
+
+insert into Cuenta(Usuario, Pass, TipoCuenta, CedulaDocFK) values("Ani16069975", "hola123", 1, "16069975");
+
+insert into Medicina(NombreMed, ComponenteAct, GramajeMed) values("salurfoxacina", "VitaminaD", "48");
+
+insert into Alumnos(NombreAl, ApPaternoAl, ApMaternoAl, FechaNacAl, CURPAl, NombreTut, ApPaternoTut, ApMaternoTut, NoTelefonoTut, Alergias, TipoSangre, NoControl) values("Diego", "Murillo", "Nieto", "2003-02-20", "MUND030220HMNNRDA3", "Alexa", "González", "Mandela", "4432398295", "fresas", "A-", 32497772357639);
+
+insert into Doctor(CedulaProf, HoraEntrada, HoraSalida, InstitutoEgreso, Especialidad, NombreDoc, ApPaternoDoc, ApMaternoDoc) values("29679571", "06:00:00", "05:20:00", "Tecnológico de Monterrey campus GDL", "Nefrólogo", "Leticia", "Díaz", "Molina");
+
+insert into Cuenta(Usuario, Pass, TipoCuenta, CedulaDocFK) values("Let29679571", "hola123", 1, "29679571");
+
+insert into Medicina(NombreMed, ComponenteAct, GramajeMed) values("barbabamol", "Paracetamol", "7");
+
+insert into Alumnos(NombreAl, ApPaternoAl, ApMaternoAl, FechaNacAl, CURPAl, NombreTut, ApPaternoTut, ApMaternoTut, NoTelefonoTut, Alergias, TipoSangre, NoControl) values("Estefania", "Fernández", "López", "2003-11-18", "FELE031118HMNNRDA1", "Liliana", "Ordaz", "Aguilar", "4435305331", "maní", "B-", 32194971714853);
+
+insert into Doctor(CedulaProf, HoraEntrada, HoraSalida, InstitutoEgreso, Especialidad, NombreDoc, ApPaternoDoc, ApMaternoDoc) values("21239836", "19:30:00", "01:50:00", "UMSNH", "Gastroenterólogo", "Astrolopiteco", "Nieto", "Mendoza");
+
+insert into Cuenta(Usuario, Pass, TipoCuenta, CedulaDocFK) values("Ast21239836", "hola123", 1, "21239836");
+
+insert into Medicina(NombreMed, ComponenteAct, GramajeMed) values("prilasoxacina", "Paracetamol", "24");
+
+insert into Alumnos(NombreAl, ApPaternoAl, ApMaternoAl, FechaNacAl, CURPAl, NombreTut, ApPaternoTut, ApMaternoTut, NoTelefonoTut, Alergias, TipoSangre, NoControl) values("José", "Carrillo", "Ordaz", "2002-11-25", "CAOJ021125HMNNRDA7", "Oliver", "González", "Ordaz", "4438459033", "fresas", "B+", 77222166996107);
+
+insert into Doctor(CedulaProf, HoraEntrada, HoraSalida, InstitutoEgreso, Especialidad, NombreDoc, ApPaternoDoc, ApMaternoDoc) values("34005130", "09:40:00", "09:50:00", "Tecnológico de Monterrey campus MTY", "Neurólogo", "Sofía", "González", "Murillo");
+
+insert into Cuenta(Usuario, Pass, TipoCuenta, CedulaDocFK) values("Sof34005130", "hola123", 1, "34005130");
+
+insert into Medicina(NombreMed, ComponenteAct, GramajeMed) values("estroldidina", "Ibuprofeno", "62");
+
+insert into Alumnos(NombreAl, ApPaternoAl, ApMaternoAl, FechaNacAl, CURPAl, NombreTut, ApPaternoTut, ApMaternoTut, NoTelefonoTut, Alergias, TipoSangre, NoControl) values("Ariana", "García", "Guarnizo", "2001-10-21", "GAGA011021HMNNRDA0", "Diego", "Mendoza", "López", "4436099177", "polen", "A-", 00248755630394);
+
+insert into Doctor(CedulaProf, HoraEntrada, HoraSalida, InstitutoEgreso, Especialidad, NombreDoc, ApPaternoDoc, ApMaternoDoc) values("13840897", "19:10:00", "13:40:00", "Tecnológico de Monterrey campus MTY", "Traumatólogo", "Victoria", "Ramírez", "Molina");
+
+insert into Cuenta(Usuario, Pass, TipoCuenta, CedulaDocFK) values("Vic13840897", "hola123", 1, "13840897");
+
+insert into Medicina(NombreMed, ComponenteAct, GramajeMed) values("viroxubutazona", "Clonazepam", "19");
+
+insert into Alumnos(NombreAl, ApPaternoAl, ApMaternoAl, FechaNacAl, CURPAl, NombreTut, ApPaternoTut, ApMaternoTut, NoTelefonoTut, Alergias, TipoSangre, NoControl) values("Liliana", "Fernández", "Guarnizo", "2003-01-21", "FEGL030121HMNNRDA1", "Oliver", "Ordaz", "Murillo", "4439523511", "fresas", "AB+", 64432968030374);
+
+insert into Doctor(CedulaProf, HoraEntrada, HoraSalida, InstitutoEgreso, Especialidad, NombreDoc, ApPaternoDoc, ApMaternoDoc) values("93484972", "19:10:00", "11:50:00", "Tecnológico de Monterrey campus MTY", "Neurólogo", "Armando", "Carrillo", "García");
+
+insert into Cuenta(Usuario, Pass, TipoCuenta, CedulaDocFK) values("Arm93484972", "hola123", 1, "93484972");
+
+insert into Medicina(NombreMed, ComponenteAct, GramajeMed) values("prilueramol", "Amoxicilina", "38");
+
+insert into Alumnos(NombreAl, ApPaternoAl, ApMaternoAl, FechaNacAl, CURPAl, NombreTut, ApPaternoTut, ApMaternoTut, NoTelefonoTut, Alergias, TipoSangre, NoControl) values("Liliana", "Guzmán", "González", "2001-03-17", "GUGL010317HMNNRDA7", "Alexa", "García", "Peña", "4432838430", "fresas", "O-", 28544765696552);
+
+insert into Doctor(CedulaProf, HoraEntrada, HoraSalida, InstitutoEgreso, Especialidad, NombreDoc, ApPaternoDoc, ApMaternoDoc) values("13032828", "18:10:00", "17:20:00", "UNIMO", "Psicólogo", "Ania", "Murillo", "Chávez");
+
+insert into Cuenta(Usuario, Pass, TipoCuenta, CedulaDocFK) values("Ani13032828", "hola123", 1, "13032828");
+
+insert into Medicina(NombreMed, ComponenteAct, GramajeMed) values("prilemibamato", "Clonazepam", "85");
+
+insert into Alumnos(NombreAl, ApPaternoAl, ApMaternoAl, FechaNacAl, CURPAl, NombreTut, ApPaternoTut, ApMaternoTut, NoTelefonoTut, Alergias, TipoSangre, NoControl) values("Ariana", "Valles", "Carrillo", "2004-05-23", "VACA040523HMNNRDA2", "José", "Valles", "Guzmán", "4438317365", "perros", "B-", 72905318918163);
+
+insert into Doctor(CedulaProf, HoraEntrada, HoraSalida, InstitutoEgreso, Especialidad, NombreDoc, ApPaternoDoc, ApMaternoDoc) values("97982868", "18:40:00", "14:00:00", "UVAQ", "Traumatólogo", "Alexis", "García", "Sánchez");
+
+insert into Cuenta(Usuario, Pass, TipoCuenta, CedulaDocFK) values("Ale97982868", "hola123", 1, "97982868");
+
+insert into Medicina(NombreMed, ComponenteAct, GramajeMed) values("salasubutazona", "Azitromicina", "22");
+
+insert into Alumnos(NombreAl, ApPaternoAl, ApMaternoAl, FechaNacAl, CURPAl, NombreTut, ApPaternoTut, ApMaternoTut, NoTelefonoTut, Alergias, TipoSangre, NoControl) values("Leonardo", "Fonseca", "González", "2002-04-27", "FOGL020427HMNNRDA0", "Estefania", "Sánchez", "González", "4430539898", "gatos", "A-", 39762277610711);
+
+insert into Doctor(CedulaProf, HoraEntrada, HoraSalida, InstitutoEgreso, Especialidad, NombreDoc, ApPaternoDoc, ApMaternoDoc) values("61760131", "13:50:00", "04:00:00", "Tecnológico de Monterrey campus CDMX", "Pediátra", "María", "Molina", "López");
+
+insert into Cuenta(Usuario, Pass, TipoCuenta, CedulaDocFK) values("Mar61760131", "hola123", 1, "61760131");
+
+insert into Medicina(NombreMed, ComponenteAct, GramajeMed) values("priluerantel", "VitaminaA", "38");
+
+insert into Alumnos(NombreAl, ApPaternoAl, ApMaternoAl, FechaNacAl, CURPAl, NombreTut, ApPaternoTut, ApMaternoTut, NoTelefonoTut, Alergias, TipoSangre, NoControl) values("Liliana", "Mendoza", "Peña", "2001-08-04", "MEPL010804HMNNRDA1", "Ania", "Murillo", "Mendoza", "4435428582", "sulfas", "AB-", 39113212334147);
+
+insert into Doctor(CedulaProf, HoraEntrada, HoraSalida, InstitutoEgreso, Especialidad, NombreDoc, ApPaternoDoc, ApMaternoDoc) values("35880485", "05:40:00", "07:50:00", "Tecnológico de Monterrey campus CDMX", "Oftalmólogo", "Juan", "Pino", "Carrillo");
+
+insert into Cuenta(Usuario, Pass, TipoCuenta, CedulaDocFK) values("Jua35880485", "hola123", 1, "35880485");
+
+insert into Medicina(NombreMed, ComponenteAct, GramajeMed) values("mitalpilina", "Paracetamol", "94");
+
+insert into Alumnos(NombreAl, ApPaternoAl, ApMaternoAl, FechaNacAl, CURPAl, NombreTut, ApPaternoTut, ApMaternoTut, NoTelefonoTut, Alergias, TipoSangre, NoControl) values("Mateo", "García", "Chávez", "2002-07-02", "GACM020702HMNNRDA6", "Armando", "Chávez", "Pino", "4433207292", "maní", "B-", 99563596303041);
+
+insert into Doctor(CedulaProf, HoraEntrada, HoraSalida, InstitutoEgreso, Especialidad, NombreDoc, ApPaternoDoc, ApMaternoDoc) values("21222101", "16:00:00", "10:50:00", "Tecnológico de Monterrey campus CDMX", "Oftalmólogo", "Guadalupe", "Aguilar", "Chávez");
+
+insert into Cuenta(Usuario, Pass, TipoCuenta, CedulaDocFK) values("Gua21222101", "hola123", 1, "21222101");
+
+insert into Medicina(NombreMed, ComponenteAct, GramajeMed) values("virikorex", "VitaminaC", "73");
+
+insert into Alumnos(NombreAl, ApPaternoAl, ApMaternoAl, FechaNacAl, CURPAl, NombreTut, ApPaternoTut, ApMaternoTut, NoTelefonoTut, Alergias, TipoSangre, NoControl) values("David", "Chávez", "Fonseca", "2004-10-19", "CHFD041019HMNNRDA6", "Diego", "Aguilar", "Molina", "4438347940", "sulfas", "A-", 69103302605978);
+
+insert into Doctor(CedulaProf, HoraEntrada, HoraSalida, InstitutoEgreso, Especialidad, NombreDoc, ApPaternoDoc, ApMaternoDoc) values("60063285", "13:00:00", "09:40:00", "Tecnológico de Monterrey campus CDMX", "Psicólogo", "Leonardo", "García", "Fernández");
+
+insert into Cuenta(Usuario, Pass, TipoCuenta, CedulaDocFK) values("Leo60063285", "hola123", 1, "60063285");
+
+insert into Medicina(NombreMed, ComponenteAct, GramajeMed) values("sulfaaxidina", "VitaminaD", "95");
+
+insert into Alumnos(NombreAl, ApPaternoAl, ApMaternoAl, FechaNacAl, CURPAl, NombreTut, ApPaternoTut, ApMaternoTut, NoTelefonoTut, Alergias, TipoSangre, NoControl) values("Consuelo", "Aguilar", "Márquez", "2001-10-26", "AGMC011026HMNNRDA4", "Liliana", "Peña", "Martínez", "4435235595", "perros", "B-", 71415945941710);
+
+insert into Doctor(CedulaProf, HoraEntrada, HoraSalida, InstitutoEgreso, Especialidad, NombreDoc, ApPaternoDoc, ApMaternoDoc) values("56256359", "11:10:00", "05:10:00", "UNIMO", "Nefrólogo", "Alexander", "Guarnizo", "Valles");
+
+insert into Cuenta(Usuario, Pass, TipoCuenta, CedulaDocFK) values("Ale56256359", "hola123", 1, "56256359");
+
+insert into Medicina(NombreMed, ComponenteAct, GramajeMed) values("mituxolol", "Paracetamol", "48");
+
+insert into Alumnos(NombreAl, ApPaternoAl, ApMaternoAl, FechaNacAl, CURPAl, NombreTut, ApPaternoTut, ApMaternoTut, NoTelefonoTut, Alergias, TipoSangre, NoControl) values("Pedro", "López", "Murillo", "2000-08-11", "L�MP000811HMNNRDA5", "Guadalupe", "García", "Guarnizo", "4436753852", "fresas", "B+", 53204970272725);
+
+insert into Doctor(CedulaProf, HoraEntrada, HoraSalida, InstitutoEgreso, Especialidad, NombreDoc, ApPaternoDoc, ApMaternoDoc) values("03621963", "10:40:00", "16:20:00", "UNIMO", "Gastroenterólogo", "Armando", "Valles", "Martínez");
+
+insert into Cuenta(Usuario, Pass, TipoCuenta, CedulaDocFK) values("Arm03621963", "hola123", 1, "03621963");
+
+insert into Medicina(NombreMed, ComponenteAct, GramajeMed) values("saluxidina", "Salbutamol", "29");
+
+insert into Alumnos(NombreAl, ApPaternoAl, ApMaternoAl, FechaNacAl, CURPAl, NombreTut, ApPaternoTut, ApMaternoTut, NoTelefonoTut, Alergias, TipoSangre, NoControl) values("Consuelo", "Díaz", "López", "2004-07-20", "D�LC040720HMNNRDA0", "Pablo", "Valles", "Pino", "4435778792", "frambuesas", "A-", 79820674447460);
+
+insert into Doctor(CedulaProf, HoraEntrada, HoraSalida, InstitutoEgreso, Especialidad, NombreDoc, ApPaternoDoc, ApMaternoDoc) values("52200092", "08:50:00", "07:50:00", "UNIMO", "Nefrólogo", "Leticia", "Ordaz", "Nieto");
+
+insert into Cuenta(Usuario, Pass, TipoCuenta, CedulaDocFK) values("Let52200092", "hola123", 1, "52200092");
+
+insert into Medicina(NombreMed, ComponenteAct, GramajeMed) values("barbaxacepam", "Hierro", "75");
+
+insert into Alumnos(NombreAl, ApPaternoAl, ApMaternoAl, FechaNacAl, CURPAl, NombreTut, ApPaternoTut, ApMaternoTut, NoTelefonoTut, Alergias, TipoSangre, NoControl) values("Liliana", "Aguilar", "Ramírez", "2000-04-11", "AGRL000411HMNNRDA6", "Pedro", "Sánchez", "Peña", "4434130482", "frambuesas", "AB+", 28353777079151);
+
+insert into Doctor(CedulaProf, HoraEntrada, HoraSalida, InstitutoEgreso, Especialidad, NombreDoc, ApPaternoDoc, ApMaternoDoc) values("34427129", "05:30:00", "01:40:00", "UMSNH", "Psicólogo", "Victoria", "Márquez", "Mendoza");
+
+insert into Cuenta(Usuario, Pass, TipoCuenta, CedulaDocFK) values("Vic34427129", "hola123", 1, "34427129");
+
+insert into Medicina(NombreMed, ComponenteAct, GramajeMed) values("salikamol", "Azitromicina", "6");
+
+insert into Alumnos(NombreAl, ApPaternoAl, ApMaternoAl, FechaNacAl, CURPAl, NombreTut, ApPaternoTut, ApMaternoTut, NoTelefonoTut, Alergias, TipoSangre, NoControl) values("María", "Sánchez", "Chávez", "2005-01-27", "S�CM050127HMNNRDA3", "Cuauhtemoc", "García", "Murillo", "4432663424", "camarón", "B+", 11242419235680);
+
+insert into Doctor(CedulaProf, HoraEntrada, HoraSalida, InstitutoEgreso, Especialidad, NombreDoc, ApPaternoDoc, ApMaternoDoc) values("03049801", "00:30:00", "05:50:00", "Tecnológico de Monterrey campus GDL", "Pediátra", "Ariana", "Pino", "Sánchez");
+
+insert into Cuenta(Usuario, Pass, TipoCuenta, CedulaDocFK) values("Ari03049801", "hola123", 1, "03049801");
+
+insert into Medicina(NombreMed, ComponenteAct, GramajeMed) values("prilikideo", "Calcio", "84");
+
+insert into Alumnos(NombreAl, ApPaternoAl, ApMaternoAl, FechaNacAl, CURPAl, NombreTut, ApPaternoTut, ApMaternoTut, NoTelefonoTut, Alergias, TipoSangre, NoControl) values("María", "Meza", "Chávez", "2004-06-02", "MECM040602HMNNRDA6", "Gonzalo", "Valles", "Murillo", "4431061578", "tierra", "B-", 72251955790405);
+
+insert into Doctor(CedulaProf, HoraEntrada, HoraSalida, InstitutoEgreso, Especialidad, NombreDoc, ApPaternoDoc, ApMaternoDoc) values("63862969", "19:50:00", "04:50:00", "UMSNH", "Neurólogo", "Alejandra", "García", "Murillo");
+
+insert into Cuenta(Usuario, Pass, TipoCuenta, CedulaDocFK) values("Ale63862969", "hola123", 1, "63862969");
+
+insert into Medicina(NombreMed, ComponenteAct, GramajeMed) values("sulfaasacepam", "VitaminaD", "71");
+
+insert into Alumnos(NombreAl, ApPaternoAl, ApMaternoAl, FechaNacAl, CURPAl, NombreTut, ApPaternoTut, ApMaternoTut, NoTelefonoTut, Alergias, TipoSangre, NoControl) values("David", "Fernández", "Martínez", "2005-11-21", "FEMD051121HMNNRDA4", "Cuauhtemoc", "Díaz", "Fonseca", "4435418399", "tierra", "O-", 69904432649003);
+
+insert into Doctor(CedulaProf, HoraEntrada, HoraSalida, InstitutoEgreso, Especialidad, NombreDoc, ApPaternoDoc, ApMaternoDoc) values("38206418", "03:10:00", "17:10:00", "UNIMO", "Neurocirujano", "Estefania", "Molina", "Guzmán");
+
+insert into Cuenta(Usuario, Pass, TipoCuenta, CedulaDocFK) values("Est38206418", "hola123", 1, "38206418");
+
+insert into Medicina(NombreMed, ComponenteAct, GramajeMed) values("cefalpicina", "Aripiprazol", "10");
+
+insert into Alumnos(NombreAl, ApPaternoAl, ApMaternoAl, FechaNacAl, CURPAl, NombreTut, ApPaternoTut, ApMaternoTut, NoTelefonoTut, Alergias, TipoSangre, NoControl) values("Diego", "Peña", "González", "2005-05-12", "PEGD050512HMNNRDA9", "Diego", "López", "Aguilar", "4432138882", "polen", "AB-", 96555332236000);
+
+insert into Doctor(CedulaProf, HoraEntrada, HoraSalida, InstitutoEgreso, Especialidad, NombreDoc, ApPaternoDoc, ApMaternoDoc) values("54222363", "06:00:00", "13:20:00", "UMSNH", "Psiquiatra", "David", "Chávez", "Chávez");
+
+insert into Cuenta(Usuario, Pass, TipoCuenta, CedulaDocFK) values("Dav54222363", "hola123", 1, "54222363");
+
+insert into Medicina(NombreMed, ComponenteAct, GramajeMed) values("sulfaikaquina", "Azitromicina", "2");
+
+insert into Alumnos(NombreAl, ApPaternoAl, ApMaternoAl, FechaNacAl, CURPAl, NombreTut, ApPaternoTut, ApMaternoTut, NoTelefonoTut, Alergias, TipoSangre, NoControl) values("Erick", "Martínez", "Guzmán", "2003-07-03", "MAGE030703HMNNRDA9", "José", "Chávez", "Martínez", "4436884261", "camarón", "AB-", 11422271881903);
+
+insert into Doctor(CedulaProf, HoraEntrada, HoraSalida, InstitutoEgreso, Especialidad, NombreDoc, ApPaternoDoc, ApMaternoDoc) values("03969782", "14:10:00", "11:40:00", "Tecnológico de Monterrey campus GDL", "Psiquiatra", "Guadalupe", "Molina", "Carrillo");
+
+insert into Cuenta(Usuario, Pass, TipoCuenta, CedulaDocFK) values("Gua03969782", "hola123", 1, "03969782");
+
+insert into Medicina(NombreMed, ComponenteAct, GramajeMed) values("andronmideo", "Aripiprazol", "17");
+
+insert into Alumnos(NombreAl, ApPaternoAl, ApMaternoAl, FechaNacAl, CURPAl, NombreTut, ApPaternoTut, ApMaternoTut, NoTelefonoTut, Alergias, TipoSangre, NoControl) values("Ania", "Ordaz", "Pino", "2001-07-03", "ORPA010703HMNNRDA7", "Alexa", "Murillo", "Carrillo", "4435337992", "polen", "AB+", 23355155634796);
+
+insert into Doctor(CedulaProf, HoraEntrada, HoraSalida, InstitutoEgreso, Especialidad, NombreDoc, ApPaternoDoc, ApMaternoDoc) values("51440822", "08:50:00", "05:50:00", "UVAQ", "Traumatólogo", "Oliver", "Fonseca", "Fonseca");
+
+insert into Cuenta(Usuario, Pass, TipoCuenta, CedulaDocFK) values("Oli51440822", "hola123", 1, "51440822");
+
+insert into Medicina(NombreMed, ComponenteAct, GramajeMed) values("barboldideo", "Loratadina", "0");
+
+insert into Alumnos(NombreAl, ApPaternoAl, ApMaternoAl, FechaNacAl, CURPAl, NombreTut, ApPaternoTut, ApMaternoTut, NoTelefonoTut, Alergias, TipoSangre, NoControl) values("Estefania", "Pino", "Nieto", "2001-09-23", "PINE010923HMNNRDA4", "Ariana", "Ordaz", "Revilla", "4433465863", "plástico", "AB+", 55131807505122);
+
+insert into Doctor(CedulaProf, HoraEntrada, HoraSalida, InstitutoEgreso, Especialidad, NombreDoc, ApPaternoDoc, ApMaternoDoc) values("77840481", "10:20:00", "03:20:00", "Tecnológico de Monterrey campus GDL", "Neurocirujano", "José", "Fernández", "Carrillo");
+
+insert into Cuenta(Usuario, Pass, TipoCuenta, CedulaDocFK) values("Jos77840481", "hola123", 1, "77840481");
+
+insert into Medicina(NombreMed, ComponenteAct, GramajeMed) values("cefemidina", "Loratadina", "28");
+
+insert into Alumnos(NombreAl, ApPaternoAl, ApMaternoAl, FechaNacAl, CURPAl, NombreTut, ApPaternoTut, ApMaternoTut, NoTelefonoTut, Alergias, TipoSangre, NoControl) values("Erick", "Peña", "López", "2002-10-17", "PELE021017HMNNRDA3", "Eduardo", "Valles", "López", "4438203334", "camarón", "A-", 89207347226530);
+
+insert into Doctor(CedulaProf, HoraEntrada, HoraSalida, InstitutoEgreso, Especialidad, NombreDoc, ApPaternoDoc, ApMaternoDoc) values("58445444", "07:50:00", "03:00:00", "UNIMO", "Psiquiatra", "Mateo", "Pino", "Martínez");
+
+insert into Cuenta(Usuario, Pass, TipoCuenta, CedulaDocFK) values("Mat58445444", "hola123", 1, "58445444");
+
+insert into Medicina(NombreMed, ComponenteAct, GramajeMed) values("virasilina", "Salbutamol", "86");
+
+insert into Alumnos(NombreAl, ApPaternoAl, ApMaternoAl, FechaNacAl, CURPAl, NombreTut, ApPaternoTut, ApMaternoTut, NoTelefonoTut, Alergias, TipoSangre, NoControl) values("Alexander", "Fonseca", "Molina", "2001-11-20", "FOMA011120HMNNRDA1", "Pedro", "Mendoza", "Guzmán", "4432537511", "mariscos", "A+", 58716043491712);
+
+insert into Doctor(CedulaProf, HoraEntrada, HoraSalida, InstitutoEgreso, Especialidad, NombreDoc, ApPaternoDoc, ApMaternoDoc) values("42138197", "13:40:00", "02:30:00", "UVAQ", "Neurocirujano", "Estefania", "García", "Mandela");
+
+insert into Cuenta(Usuario, Pass, TipoCuenta, CedulaDocFK) values("Est42138197", "hola123", 1, "42138197");
+
+insert into Medicina(NombreMed, ComponenteAct, GramajeMed) values("acixideo", "VitaminaD", "30");
+
+insert into Alumnos(NombreAl, ApPaternoAl, ApMaternoAl, FechaNacAl, CURPAl, NombreTut, ApPaternoTut, ApMaternoTut, NoTelefonoTut, Alergias, TipoSangre, NoControl) values("Diego", "Ramírez", "Fonseca", "2003-12-24", "RAFD031224HMNNRDA6", "Ariana", "Guadarrama", "Guzmán", "4437378491", "fresas", "A-", 29117301115309);
+
+insert into Doctor(CedulaProf, HoraEntrada, HoraSalida, InstitutoEgreso, Especialidad, NombreDoc, ApPaternoDoc, ApMaternoDoc) values("42512454", "13:50:00", "08:10:00", "Tecnológico de Monterrey campus GDL", "Traumatólogo", "Liliana", "Meza", "Aguilar");
+
+insert into Cuenta(Usuario, Pass, TipoCuenta, CedulaDocFK) values("Lil42512454", "hola123", 1, "42512454");
+
+insert into Medicina(NombreMed, ComponenteAct, GramajeMed) values("estrissolol", "Paracetamol", "47");
+
+insert into Alumnos(NombreAl, ApPaternoAl, ApMaternoAl, FechaNacAl, CURPAl, NombreTut, ApPaternoTut, ApMaternoTut, NoTelefonoTut, Alergias, TipoSangre, NoControl) values("Diego", "Pino", "Aguilar", "2004-10-07", "PIAD041007HMNNRDA4", "Cuauhtemoc", "Carrillo", "Meza", "4437697843", "polen", "O+", 27958450751545);
+
+insert into Doctor(CedulaProf, HoraEntrada, HoraSalida, InstitutoEgreso, Especialidad, NombreDoc, ApPaternoDoc, ApMaternoDoc) values("05524582", "11:30:00", "01:40:00", "Tecnológico de Monterrey campus GDL", "Gastroenterólogo", "Liliana", "Carrillo", "Mandela");
+
+insert into Cuenta(Usuario, Pass, TipoCuenta, CedulaDocFK) values("Lil05524582", "hola123", 1, "05524582");
+
+insert into Medicina(NombreMed, ComponenteAct, GramajeMed) values("estruxidina", "Paracetamol", "99");
+
+insert into Alumnos(NombreAl, ApPaternoAl, ApMaternoAl, FechaNacAl, CURPAl, NombreTut, ApPaternoTut, ApMaternoTut, NoTelefonoTut, Alergias, TipoSangre, NoControl) values("Mateo", "Peña", "Márquez", "2002-08-23", "PEMM020823HMNNRDA3", "Eduardo", "Mendoza", "Guzmán", "4439132382", "fresas", "B+", 29879708926299);
+
+insert into Doctor(CedulaProf, HoraEntrada, HoraSalida, InstitutoEgreso, Especialidad, NombreDoc, ApPaternoDoc, ApMaternoDoc) values("22511406", "01:20:00", "04:30:00", "Tecnológico de Monterrey campus GDL", "Oftalmólogo", "Alexis", "Nieto", "Mandela");
+
+insert into Cuenta(Usuario, Pass, TipoCuenta, CedulaDocFK) values("Ale22511406", "hola123", 1, "22511406");
+
+insert into Medicina(NombreMed, ComponenteAct, GramajeMed) values("mitoxibamato", "Clonazepam", "69");
+
+insert into Alumnos(NombreAl, ApPaternoAl, ApMaternoAl, FechaNacAl, CURPAl, NombreTut, ApPaternoTut, ApMaternoTut, NoTelefonoTut, Alergias, TipoSangre, NoControl) values("Estefania", "Revilla", "Márquez", "2000-10-15", "REME001015HMNNRDA7", "Pedro", "Ramírez", "Valles", "4430156702", "gatos", "B-", 65759335058702);
+
+insert into Doctor(CedulaProf, HoraEntrada, HoraSalida, InstitutoEgreso, Especialidad, NombreDoc, ApPaternoDoc, ApMaternoDoc) values("00308662", "06:50:00", "02:40:00", "Tecnológico de Monterrey campus CDMX", "Psicólogo", "Ariana", "Martínez", "Mendoza");
+
+insert into Cuenta(Usuario, Pass, TipoCuenta, CedulaDocFK) values("Ari00308662", "hola123", 1, "00308662");
+
+insert into Medicina(NombreMed, ComponenteAct, GramajeMed) values("sulfaixubutazona", "Amoxicilina", "68");
+
+insert into Alumnos(NombreAl, ApPaternoAl, ApMaternoAl, FechaNacAl, CURPAl, NombreTut, ApPaternoTut, ApMaternoTut, NoTelefonoTut, Alergias, TipoSangre, NoControl) values("Ariana", "Guarnizo", "Peña", "2005-08-01", "GUPA050801HMNNRDA4", "Ania", "Mendoza", "González", "4431440783", "fresas", "B+", 10504470618603);
+
+insert into Doctor(CedulaProf, HoraEntrada, HoraSalida, InstitutoEgreso, Especialidad, NombreDoc, ApPaternoDoc, ApMaternoDoc) values("68323317", "13:20:00", "07:00:00", "UMSNH", "Cardiólogo", "María", "Pino", "Revilla");
+
+insert into Cuenta(Usuario, Pass, TipoCuenta, CedulaDocFK) values("Mar68323317", "hola123", 1, "68323317");
+
+insert into Medicina(NombreMed, ComponenteAct, GramajeMed) values("gestenteracepam", "Loratadina", "25");
+
+insert into Alumnos(NombreAl, ApPaternoAl, ApMaternoAl, FechaNacAl, CURPAl, NombreTut, ApPaternoTut, ApMaternoTut, NoTelefonoTut, Alergias, TipoSangre, NoControl) values("Oliver", "Guzmán", "Revilla", "2002-02-16", "GURO020216HMNNRDA4", "Erick", "Mandela", "Meza", "4435013750", "perros", "A+", 96342392726735);
+
+insert into Doctor(CedulaProf, HoraEntrada, HoraSalida, InstitutoEgreso, Especialidad, NombreDoc, ApPaternoDoc, ApMaternoDoc) values("46729667", "17:50:00", "02:10:00", "UMSNH", "Psicólogo", "Cuauhtemoc", "Fernández", "Nieto");
+
+insert into Cuenta(Usuario, Pass, TipoCuenta, CedulaDocFK) values("Cua46729667", "hola123", 1, "46729667");
+
+insert into Medicina(NombreMed, ComponenteAct, GramajeMed) values("acalpilina", "Hierro", "44");
+
+insert into Alumnos(NombreAl, ApPaternoAl, ApMaternoAl, FechaNacAl, CURPAl, NombreTut, ApPaternoTut, ApMaternoTut, NoTelefonoTut, Alergias, TipoSangre, NoControl) values("Astrolopiteco", "Peña", "Murillo", "2003-04-17", "PEMA030417HMNNRDA7", "Sofía", "Guadarrama", "Nieto", "4432494462", "fresas", "A-", 51005540719407);
+
+insert into Doctor(CedulaProf, HoraEntrada, HoraSalida, InstitutoEgreso, Especialidad, NombreDoc, ApPaternoDoc, ApMaternoDoc) values("01518663", "04:30:00", "08:30:00", "Tecnológico de Monterrey campus GDL", "Neurocirujano", "Erick", "Mandela", "Fonseca");
+
+insert into Cuenta(Usuario, Pass, TipoCuenta, CedulaDocFK) values("Eri01518663", "hola123", 1, "01518663");
+
+insert into Medicina(NombreMed, ComponenteAct, GramajeMed) values("cefisseprenalina", "Aripiprazol", "57");
+
+insert into Alumnos(NombreAl, ApPaternoAl, ApMaternoAl, FechaNacAl, CURPAl, NombreTut, ApPaternoTut, ApMaternoTut, NoTelefonoTut, Alergias, TipoSangre, NoControl) values("Estefania", "Chávez", "Ordaz", "2003-07-04", "CHOE030704HMNNRDA6", "Alexa", "Revilla", "Aguilar", "4438312328", "mariscos", "A+", 34210310653842);
+
+insert into Doctor(CedulaProf, HoraEntrada, HoraSalida, InstitutoEgreso, Especialidad, NombreDoc, ApPaternoDoc, ApMaternoDoc) values("64264117", "18:30:00", "19:30:00", "Tecnológico de Monterrey campus GDL", "Gastroenterólogo", "Juan", "Guadarrama", "Carrillo");
+
+insert into Cuenta(Usuario, Pass, TipoCuenta, CedulaDocFK) values("Jua64264117", "hola123", 1, "64264117");
+
+insert into Medicina(NombreMed, ComponenteAct, GramajeMed) values("gestedicina", "Azitromicina", "35");
+
+insert into Alumnos(NombreAl, ApPaternoAl, ApMaternoAl, FechaNacAl, CURPAl, NombreTut, ApPaternoTut, ApMaternoTut, NoTelefonoTut, Alergias, TipoSangre, NoControl) values("Victoria", "Revilla", "Peña", "2002-02-10", "REPV020210HMNNRDA8", "Alexander", "Márquez", "López", "4435151818", "perros", "O+", 21136148938055);
+
+insert into Doctor(CedulaProf, HoraEntrada, HoraSalida, InstitutoEgreso, Especialidad, NombreDoc, ApPaternoDoc, ApMaternoDoc) values("33594829", "06:30:00", "16:00:00", "Tecnológico de Monterrey campus CDMX", "Cardiólogo", "Armando", "Márquez", "Pino");
+
+insert into Cuenta(Usuario, Pass, TipoCuenta, CedulaDocFK) values("Arm33594829", "hola123", 1, "33594829");
+
+insert into Medicina(NombreMed, ComponenteAct, GramajeMed) values("acurfideo", "Azitromicina", "88");
+
+insert into Alumnos(NombreAl, ApPaternoAl, ApMaternoAl, FechaNacAl, CURPAl, NombreTut, ApPaternoTut, ApMaternoTut, NoTelefonoTut, Alergias, TipoSangre, NoControl) values("Alexis", "Mandela", "Díaz", "2005-03-19", "MADA050319HMNNRDA9", "Pablo", "Pino", "Nieto", "4439559710", "perros", "O-", 36226466916962);
+
+insert into Doctor(CedulaProf, HoraEntrada, HoraSalida, InstitutoEgreso, Especialidad, NombreDoc, ApPaternoDoc, ApMaternoDoc) values("83660720", "09:10:00", "13:20:00", "Tecnológico de Monterrey campus CDMX", "Neurólogo", "Alexis", "Murillo", "Fonseca");
+
+insert into Cuenta(Usuario, Pass, TipoCuenta, CedulaDocFK) values("Ale83660720", "hola123", 1, "83660720");
+
+insert into Medicina(NombreMed, ComponenteAct, GramajeMed) values("cefemamol", "Aripiprazol", "48");
+
+insert into Alumnos(NombreAl, ApPaternoAl, ApMaternoAl, FechaNacAl, CURPAl, NombreTut, ApPaternoTut, ApMaternoTut, NoTelefonoTut, Alergias, TipoSangre, NoControl) values("Leticia", "Aguilar", "Peña", "2000-05-25", "AGPL000525HMNNRDA5", "Consuelo", "Chávez", "Carrillo", "4435937727", "tierra", "B+", 94542083608280);
+
+insert into Doctor(CedulaProf, HoraEntrada, HoraSalida, InstitutoEgreso, Especialidad, NombreDoc, ApPaternoDoc, ApMaternoDoc) values("65727283", "10:20:00", "16:40:00", "Tecnológico de Monterrey campus GDL", "Traumatólogo", "Mariana", "Díaz", "Fernández");
+
+insert into Cuenta(Usuario, Pass, TipoCuenta, CedulaDocFK) values("Mar65727283", "hola123", 1, "65727283");
+
+insert into Medicina(NombreMed, ComponenteAct, GramajeMed) values("prostixidina", "VitaminaA", "11");
+
+insert into Alumnos(NombreAl, ApPaternoAl, ApMaternoAl, FechaNacAl, CURPAl, NombreTut, ApPaternoTut, ApMaternoTut, NoTelefonoTut, Alergias, TipoSangre, NoControl) values("Guadalupe", "Sánchez", "Pino", "2003-07-14", "S�PG030714HMNNRDA9", "Erick", "Fernández", "Márquez", "4431658145", "tierra", "AB-", 43994257345285);
+
+insert into Doctor(CedulaProf, HoraEntrada, HoraSalida, InstitutoEgreso, Especialidad, NombreDoc, ApPaternoDoc, ApMaternoDoc) values("89131841", "09:00:00", "18:50:00", "Tecnológico de Monterrey campus CDMX", "Traumatólogo", "Alejandra", "Guadarrama", "Chávez");
+
+insert into Cuenta(Usuario, Pass, TipoCuenta, CedulaDocFK) values("Ale89131841", "hola123", 1, "89131841");
+
+insert into Medicina(NombreMed, ComponenteAct, GramajeMed) values("acedacepam", "VitaminaC", "67");
+
+insert into Alumnos(NombreAl, ApPaternoAl, ApMaternoAl, FechaNacAl, CURPAl, NombreTut, ApPaternoTut, ApMaternoTut, NoTelefonoTut, Alergias, TipoSangre, NoControl) values("María", "Revilla", "Guarnizo", "2005-10-01", "REGM051001HMNNRDA8", "Guadalupe", "Murillo", "Fernández", "4439645373", "plástico", "A-", 28760690397708);
+
+insert into Doctor(CedulaProf, HoraEntrada, HoraSalida, InstitutoEgreso, Especialidad, NombreDoc, ApPaternoDoc, ApMaternoDoc) values("78671182", "12:00:00", "12:00:00", "UNIMO", "Pediátra", "María", "Carrillo", "Pino");
+
+insert into Cuenta(Usuario, Pass, TipoCuenta, CedulaDocFK) values("Mar78671182", "hola123", 1, "78671182");
+
+insert into Medicina(NombreMed, ComponenteAct, GramajeMed) values("estrurfideo", "Salbutamol", "76");
+
+insert into Alumnos(NombreAl, ApPaternoAl, ApMaternoAl, FechaNacAl, CURPAl, NombreTut, ApPaternoTut, ApMaternoTut, NoTelefonoTut, Alergias, TipoSangre, NoControl) values("Consuelo", "Meza", "Nieto", "2003-08-24", "MENC030824HMNNRDA4", "Guadalupe", "Guzmán", "Guadarrama", "4435526087", "perros", "AB+", 61083279163747);
+
+insert into Doctor(CedulaProf, HoraEntrada, HoraSalida, InstitutoEgreso, Especialidad, NombreDoc, ApPaternoDoc, ApMaternoDoc) values("38990291", "08:10:00", "01:10:00", "UMSNH", "Neurocirujano", "Alexis", "Fonseca", "García");
+
+insert into Cuenta(Usuario, Pass, TipoCuenta, CedulaDocFK) values("Ale38990291", "hola123", 1, "38990291");
+
+insert into Medicina(NombreMed, ComponenteAct, GramajeMed) values("gestonmideo", "Clonazepam", "21");
+
+insert into Alumnos(NombreAl, ApPaternoAl, ApMaternoAl, FechaNacAl, CURPAl, NombreTut, ApPaternoTut, ApMaternoTut, NoTelefonoTut, Alergias, TipoSangre, NoControl) values("Ania", "Nieto", "Márquez", "2005-01-08", "NIMA050108HMNNRDA6", "José", "Aguilar", "Murillo", "4431418635", "camarón", "O-", 39405941181024);
+
+insert into Doctor(CedulaProf, HoraEntrada, HoraSalida, InstitutoEgreso, Especialidad, NombreDoc, ApPaternoDoc, ApMaternoDoc) values("81001420", "04:20:00", "19:20:00", "Tecnológico de Monterrey campus GDL", "Oftalmólogo", "Liliana", "García", "Carrillo");
+
+insert into Cuenta(Usuario, Pass, TipoCuenta, CedulaDocFK) values("Lil81001420", "hola123", 1, "81001420");
+
+insert into Medicina(NombreMed, ComponenteAct, GramajeMed) values("cefalpibamato", "Clonazepam", "92");
+
+insert into Alumnos(NombreAl, ApPaternoAl, ApMaternoAl, FechaNacAl, CURPAl, NombreTut, ApPaternoTut, ApMaternoTut, NoTelefonoTut, Alergias, TipoSangre, NoControl) values("Oliver", "Guadarrama", "Fernández", "2003-01-06", "GUFO030106HMNNRDA5", "Armando", "Guzmán", "Díaz", "4434245137", "polen", "AB+", 18485742465292);
+
+insert into Doctor(CedulaProf, HoraEntrada, HoraSalida, InstitutoEgreso, Especialidad, NombreDoc, ApPaternoDoc, ApMaternoDoc) values("74905200", "13:30:00", "12:00:00", "Tecnológico de Monterrey campus CDMX", "Neurólogo", "Erick", "Carrillo", "Mendoza");
+
+insert into Cuenta(Usuario, Pass, TipoCuenta, CedulaDocFK) values("Eri74905200", "hola123", 1, "74905200");
+
+insert into Medicina(NombreMed, ComponenteAct, GramajeMed) values("prilurfantel", "Salbutamol", "68");
+
+insert into Alumnos(NombreAl, ApPaternoAl, ApMaternoAl, FechaNacAl, CURPAl, NombreTut, ApPaternoTut, ApMaternoTut, NoTelefonoTut, Alergias, TipoSangre, NoControl) values("Ania", "Guarnizo", "Nieto", "2002-03-27", "GUNA020327HMNNRDA5", "Liliana", "Guarnizo", "Ordaz", "4435762069", "mariscos", "AB-", 84451629886213);
+
+insert into Doctor(CedulaProf, HoraEntrada, HoraSalida, InstitutoEgreso, Especialidad, NombreDoc, ApPaternoDoc, ApMaternoDoc) values("29913728", "19:10:00", "10:00:00", "Tecnológico de Monterrey campus MTY", "Gastroenterólogo", "Eduardo", "Ramírez", "Mendoza");
+
+insert into Cuenta(Usuario, Pass, TipoCuenta, CedulaDocFK) values("Edu29913728", "hola123", 1, "29913728");
+
+insert into Medicina(NombreMed, ComponenteAct, GramajeMed) values("salixidina", "VitaminaK", "93");
+
+insert into Alumnos(NombreAl, ApPaternoAl, ApMaternoAl, FechaNacAl, CURPAl, NombreTut, ApPaternoTut, ApMaternoTut, NoTelefonoTut, Alergias, TipoSangre, NoControl) values("Pablo", "Carrillo", "Chávez", "2000-02-27", "CACP000227HMNNRDA1", "Alejandra", "Márquez", "Fonseca", "4437256139", "plástico", "AB+", 74746775960313);
+
+insert into Doctor(CedulaProf, HoraEntrada, HoraSalida, InstitutoEgreso, Especialidad, NombreDoc, ApPaternoDoc, ApMaternoDoc) values("32852898", "18:40:00", "09:20:00", "Tecnológico de Monterrey campus CDMX", "Oftalmólogo", "Mariana", "Sánchez", "Peña");
+
+insert into Cuenta(Usuario, Pass, TipoCuenta, CedulaDocFK) values("Mar32852898", "hola123", 1, "32852898");
+
+insert into Medicina(NombreMed, ComponenteAct, GramajeMed) values("virueramol", "Omeprazol", "50");
+
+insert into Alumnos(NombreAl, ApPaternoAl, ApMaternoAl, FechaNacAl, CURPAl, NombreTut, ApPaternoTut, ApMaternoTut, NoTelefonoTut, Alergias, TipoSangre, NoControl) values("Eduardo", "López", "González", "2004-12-26", "L�GE041226HMNNRDA2", "Diego", "Guarnizo", "Fernández", "4437316223", "maní", "O+", 75912739777550);
+
+insert into Doctor(CedulaProf, HoraEntrada, HoraSalida, InstitutoEgreso, Especialidad, NombreDoc, ApPaternoDoc, ApMaternoDoc) values("91069628", "10:40:00", "03:10:00", "Tecnológico de Monterrey campus GDL", "Psiquiatra", "Mariana", "Mandela", "Revilla");
+
+insert into Cuenta(Usuario, Pass, TipoCuenta, CedulaDocFK) values("Mar91069628", "hola123", 1, "91069628");
+
+insert into Medicina(NombreMed, ComponenteAct, GramajeMed) values("mitotribamato", "Azitromicina", "93");
+
+insert into Alumnos(NombreAl, ApPaternoAl, ApMaternoAl, FechaNacAl, CURPAl, NombreTut, ApPaternoTut, ApMaternoTut, NoTelefonoTut, Alergias, TipoSangre, NoControl) values("Oliver", "Revilla", "Revilla", "2000-03-02", "RERO000302HMNNRDA5", "Sofía", "Pino", "Meza", "4433683387", "camarón", "O+", 71137321395034);
+
+insert into Doctor(CedulaProf, HoraEntrada, HoraSalida, InstitutoEgreso, Especialidad, NombreDoc, ApPaternoDoc, ApMaternoDoc) values("52847506", "00:30:00", "00:40:00", "Tecnológico de Monterrey campus MTY", "Neurocirujano", "Alexis", "Pino", "Martínez");
+
+insert into Cuenta(Usuario, Pass, TipoCuenta, CedulaDocFK) values("Ale52847506", "hola123", 1, "52847506");
+
+insert into Medicina(NombreMed, ComponenteAct, GramajeMed) values("cefalpacepam", "Omeprazol", "16");
+
+insert into Alumnos(NombreAl, ApPaternoAl, ApMaternoAl, FechaNacAl, CURPAl, NombreTut, ApPaternoTut, ApMaternoTut, NoTelefonoTut, Alergias, TipoSangre, NoControl) values("Leonardo", "Aguilar", "Molina", "2000-11-17", "AGML001117HMNNRDA8", "Alexis", "García", "Guzmán", "4431096368", "tierra", "AB-", 33276917670348);
+
+insert into Doctor(CedulaProf, HoraEntrada, HoraSalida, InstitutoEgreso, Especialidad, NombreDoc, ApPaternoDoc, ApMaternoDoc) values("84864532", "02:20:00", "08:50:00", "UNIMO", "Gastroenterólogo", "Mariana", "Valles", "Mandela");
+
+insert into Cuenta(Usuario, Pass, TipoCuenta, CedulaDocFK) values("Mar84864532", "hola123", 1, "84864532");
+
+insert into Medicina(NombreMed, ComponenteAct, GramajeMed) values("prostissantel", "VitaminaA", "26");
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(34210310653842, "35880485", "Sangrado en la nariz", "Desnutrición", "Resposo en cama por 2 días, tomar dialgin cada 4 horas por 2 días, luego cada 12 por 3 días", 36, 76, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (3, 12, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (10, 40, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(48562460738716, "51440822", "Dolor de muelas", "Sobreextensión muscilar", "Compresas con hielpo x2 horas", 36, 38, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (9, 19, 2);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(99563596303041, "34005130", "Dolor de brazo", "Diarrea", "Tener cabeza normal y apretar nariz por 1 minuto", 37, 44, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (1, 41, 3);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (3, 25, 3);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(64432968030374, "29913728", "Dolor de brazo", "Diarrea", "Comer más", 37, 46, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (5, 3, 4);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (9, 15, 4);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(53204970272725, "34005130", "Desmayo", "Sobreextensión muscilar", "Tener cabeza normal y apretar nariz por 1 minuto", 38, 49, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (1, 50, 5);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (4, 1, 5);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(75458704112608, "63862969", "Sangrado en la nariz", "Golpe en la cabeza que provocó contusión", "Tener cabeza normal y apretar nariz por 1 minuto", 37, 79, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(29879708926299, "13032828", "Desmayo", "Caries", "Tener cabeza normal y apretar nariz por 1 minuto", 36, 63, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(29117301115309, "22511406", "Dolor de barriga", "Golpe en la cabeza que provocó contusión", "Tener cabeza normal y apretar nariz por 1 minuto", 37, 37, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (9, 33, 8);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(94542083608280, "03969782", "Desmayo", "Sobreextensión muscilar", "Dormir en casa", 37, 49, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (10, 20, 9);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (9, 29, 9);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(51005540719407, "34427129", "Dolor de cabeza", "Sobreextensión muscilar", "Resposo en cama por 2 días, tomar dialgin cada 4 horas por 2 días, luego cada 12 por 3 días", 37, 62, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(18485742465292, "91069628", "Sangrado en la nariz", "Desnutrición", "Dormir en casa", 38, 84, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (6, 20, 11);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (6, 16, 11);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(58716043491712, "64264117", "Sangrado en la nariz", "Golpe en la cabeza que provocó contusión", "Tener cabeza normal y apretar nariz por 1 minuto", 36, 37, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(32194971714853, "29679571", "Sangrado en la nariz", "Sobreextensión muscilar", "Tener cabeza normal y apretar nariz por 1 minuto", 38, 52, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(58716043491712, "42138197", "Dolor de muelas", "Sobreextensión muscilar", "Resposo en cama por 2 días, tomar dialgin cada 4 horas por 2 días, luego cada 12 por 3 días", 36, 40, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(75912739777550, "03621963", "Desmayo", "Desnutrición", "Dormir en casa", 38, 61, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (3, 9, 15);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (6, 22, 15);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(39405941181024, "52200092", "Dolor de cabeza", "Desnutrición", "Dormir en casa", 37, 36, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (8, 10, 16);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(71415945941710, "29913728", "Dolor de brazo", "Caries", "Dormir en casa", 38, 47, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(65759335058702, "32852898", "Sangrado en la nariz", "Sobreextensión muscilar", "Comer más", 38, 71, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (9, 41, 18);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (1, 34, 18);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(96342392726735, "51440822", "Dolor de brazo", "Diarrea", "Tener cabeza normal y apretar nariz por 1 minuto", 38, 47, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (9, 34, 19);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(27958450751545, "21239836", "Dolor de barriga", "Desnutrición", "Dormir en casa", 38, 69, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (4, 43, 20);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (8, 47, 20);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(61083279163747, "32852898", "Desmayo", "Desnutrición", "Dormir en casa", 37, 57, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (7, 48, 21);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (9, 3, 21);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(61083279163747, "93484972", "Sangrado en la nariz", "Sobreextensión muscilar", "Compresas con hielpo x2 horas", 37, 69, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (9, 1, 22);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(29117301115309, "87998352", "Dolor de barriga", "Sobreextensión muscilar", "Compresas con hielpo x2 horas", 38, 84, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (3, 18, 23);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (6, 12, 23);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(29117301115309, "16069975", "Dolor de cabeza", "Desnutrición", "Dormir en casa", 36, 60, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(96342392726735, "66520796", "Dolor de barriga", "Diarrea", "Tener cabeza normal y apretar nariz por 1 minuto", 37, 42, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(69103302605978, "30739327", "Desmayo", "Migraña", "Tener cabeza normal y apretar nariz por 1 minuto", 38, 89, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (1, 21, 26);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(96555332236000, "77840481", "Dolor de cabeza", "Caries", "Resposo en cama por 2 días, tomar dialgin cada 4 horas por 2 días, luego cada 12 por 3 días", 36, 69, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (6, 30, 27);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (10, 44, 27);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(60166304896023, "52847506", "Desmayo", "Golpe en la cabeza que provocó contusión", "Dormir en casa", 38, 71, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(64432968030374, "56256359", "Dolor de cabeza", "Sobreextensión muscilar", "Resposo en cama por 2 días, tomar dialgin cada 4 horas por 2 días, luego cada 12 por 3 días", 37, 89, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (10, 49, 29);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(55131807505122, "30739327", "Dolor de brazo", "Golpe en la cabeza que provocó contusión", "Tener cabeza normal y apretar nariz por 1 minuto", 36, 56, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (8, 34, 30);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(77222166996107, "34427129", "Dolor de cabeza", "Migraña", "Dormir en casa", 38, 64, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (8, 4, 31);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(28760690397708, "38206418", "Dolor de cabeza", "Caries", "Tener cabeza normal y apretar nariz por 1 minuto", 38, 56, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (7, 8, 32);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(94542083608280, "97982868", "Dolor de cabeza", "Migraña", "Comer más", 36, 49, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (7, 37, 33);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (8, 27, 33);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(96555332236000, "42512454", "Dolor de muelas", "Golpe en la cabeza que provocó contusión", "Compresas con hielpo x2 horas", 38, 79, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(51005540719407, "74905200", "Dolor de brazo", "Caries", "Dormir en casa", 36, 55, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (2, 45, 35);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(61083279163747, "13032828", "Dolor de muelas", "Sobreextensión muscilar", "Comer más", 36, 84, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(75912739777550, "03621963", "Dolor de barriga", "Caries", "Tener cabeza normal y apretar nariz por 1 minuto", 38, 70, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (4, 44, 37);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (9, 42, 37);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(39762277610711, "38206418", "Dolor de barriga", "Diarrea", "Tener cabeza normal y apretar nariz por 1 minuto", 36, 41, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (3, 40, 38);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(28544765696552, "54222363", "Dolor de muelas", "Desnutrición", "Tener cabeza normal y apretar nariz por 1 minuto", 38, 30, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(58716043491712, "21239836", "Dolor de muelas", "Sobreextensión muscilar", "Comer más", 37, 77, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (9, 40, 40);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (1, 21, 40);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(28760690397708, "46729667", "Dolor de cabeza", "Caries", "Comer más", 38, 55, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(39762277610711, "52200092", "Dolor de cabeza", "Caries", "Dormir en casa", 37, 89, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(96555332236000, "13840897", "Dolor de cabeza", "Sobreextensión muscilar", "Tener cabeza normal y apretar nariz por 1 minuto", 37, 80, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(36226466916962, "52847506", "Dolor de brazo", "Caries", "Dormir en casa", 37, 78, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (6, 7, 44);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (4, 36, 44);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(72251955790405, "32852898", "Dolor de brazo", "Desnutrición", "Compresas con hielpo x2 horas", 37, 42, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (3, 5, 45);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(71415945941710, "56256359", "Sangrado en la nariz", "Desnutrición", "Compresas con hielpo x2 horas", 38, 74, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(61083279163747, "03969782", "Dolor de brazo", "Diarrea", "Dormir en casa", 38, 57, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(32194971714853, "42138197", "Dolor de cabeza", "Caries", "Resposo en cama por 2 días, tomar dialgin cada 4 horas por 2 días, luego cada 12 por 3 días", 37, 43, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (5, 39, 48);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(55131807505122, "32852898", "Dolor de brazo", "Caries", "Tener cabeza normal y apretar nariz por 1 minuto", 36, 68, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (4, 49, 49);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (3, 23, 49);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(74746775960313, "21239836", "Dolor de muelas", "Caries", "Compresas con hielpo x2 horas", 38, 84, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (3, 38, 50);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (2, 37, 50);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(84451629886213, "42512454", "Dolor de cabeza", "Sobreextensión muscilar", "Comer más", 36, 39, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (3, 28, 51);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (10, 17, 51);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(89207347226530, "42512454", "Dolor de brazo", "Diarrea", "Dormir en casa", 36, 76, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(64432968030374, "21222101", "Dolor de brazo", "Migraña", "Resposo en cama por 2 días, tomar dialgin cada 4 horas por 2 días, luego cada 12 por 3 días", 37, 44, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (8, 7, 53);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (10, 15, 53);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(96342392726735, "78671182", "Dolor de cabeza", "Sobreextensión muscilar", "Compresas con hielpo x2 horas", 38, 74, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(77222166996107, "89131841", "Desmayo", "Migraña", "Comer más", 37, 83, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(77222166996107, "61760131", "Dolor de cabeza", "Diarrea", "Dormir en casa", 38, 70, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (2, 46, 56);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (4, 9, 56);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(51005540719407, "03049801", "Dolor de barriga", "Desnutrición", "Dormir en casa", 37, 69, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (10, 26, 57);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (1, 24, 57);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(28544765696552, "64264117", "Dolor de brazo", "Sobreextensión muscilar", "Compresas con hielpo x2 horas", 37, 75, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (9, 40, 58);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (3, 3, 58);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(34210310653842, "05524582", "Dolor de cabeza", "Caries", "Compresas con hielpo x2 horas", 36, 40, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (10, 37, 59);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (5, 17, 59);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(23355155634796, "54222363", "Dolor de brazo", "Migraña", "Resposo en cama por 2 días, tomar dialgin cada 4 horas por 2 días, luego cada 12 por 3 días", 36, 38, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (4, 44, 60);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(28760690397708, "46729667", "Dolor de cabeza", "Diarrea", "Resposo en cama por 2 días, tomar dialgin cada 4 horas por 2 días, luego cada 12 por 3 días", 36, 43, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (1, 44, 61);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (5, 8, 61);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(94542083608280, "51440822", "Dolor de muelas", "Diarrea", "Tener cabeza normal y apretar nariz por 1 minuto", 38, 57, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (4, 1, 62);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(65759335058702, "38206418", "Desmayo", "Sobreextensión muscilar", "Comer más", 36, 67, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(33276917670348, "66520796", "Sangrado en la nariz", "Sobreextensión muscilar", "Compresas con hielpo x2 horas", 37, 75, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(32497772357639, "21239836", "Dolor de brazo", "Migraña", "Compresas con hielpo x2 horas", 37, 78, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(61083279163747, "30739327", "Dolor de cabeza", "Golpe en la cabeza que provocó contusión", "Resposo en cama por 2 días, tomar dialgin cada 4 horas por 2 días, luego cada 12 por 3 días", 38, 39, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (9, 23, 66);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(18485742465292, "42138197", "Dolor de muelas", "Caries", "Dormir en casa", 36, 43, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (1, 37, 67);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (10, 35, 67);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(96342392726735, "03621963", "Dolor de barriga", "Golpe en la cabeza que provocó contusión", "Resposo en cama por 2 días, tomar dialgin cada 4 horas por 2 días, luego cada 12 por 3 días", 36, 88, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(65759335058702, "52200092", "Sangrado en la nariz", "Sobreextensión muscilar", "Comer más", 37, 81, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (3, 48, 69);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (9, 10, 69);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(10504470618603, "60063285", "Sangrado en la nariz", "Caries", "Resposo en cama por 2 días, tomar dialgin cada 4 horas por 2 días, luego cada 12 por 3 días", 37, 89, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(79820674447460, "64264117", "Dolor de cabeza", "Diarrea", "Dormir en casa", 38, 84, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(61083279163747, "89131841", "Desmayo", "Golpe en la cabeza que provocó contusión", "Comer más", 36, 50, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (6, 31, 72);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(69904432649003, "03049801", "Sangrado en la nariz", "Caries", "Compresas con hielpo x2 horas", 36, 33, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (5, 7, 73);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(84451629886213, "33594829", "Sangrado en la nariz", "Sobreextensión muscilar", "Comer más", 37, 78, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(60166304896023, "42512454", "Dolor de brazo", "Diarrea", "Comer más", 38, 64, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (3, 49, 75);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(29879708926299, "42138197", "Desmayo", "Sobreextensión muscilar", "Comer más", 38, 30, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(94542083608280, "34005130", "Desmayo", "Golpe en la cabeza que provocó contusión", "Compresas con hielpo x2 horas", 37, 48, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (6, 9, 77);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (9, 7, 77);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(28353777079151, "83660720", "Desmayo", "Sobreextensión muscilar", "Resposo en cama por 2 días, tomar dialgin cada 4 horas por 2 días, luego cada 12 por 3 días", 37, 58, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (4, 11, 78);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (6, 33, 78);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(64432968030374, "52847506", "Dolor de barriga", "Sobreextensión muscilar", "Tener cabeza normal y apretar nariz por 1 minuto", 36, 41, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(48562460738716, "30739327", "Dolor de barriga", "Golpe en la cabeza que provocó contusión", "Dormir en casa", 36, 48, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (7, 4, 80);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (8, 10, 80);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(55131807505122, "03621963", "Dolor de cabeza", "Sobreextensión muscilar", "Tener cabeza normal y apretar nariz por 1 minuto", 38, 56, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(34210310653842, "58445444", "Dolor de barriga", "Diarrea", "Compresas con hielpo x2 horas", 37, 81, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (7, 3, 82);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(43994257345285, "34427129", "Sangrado en la nariz", "Golpe en la cabeza que provocó contusión", "Resposo en cama por 2 días, tomar dialgin cada 4 horas por 2 días, luego cada 12 por 3 días", 38, 46, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(71137321395034, "58445444", "Dolor de brazo", "Golpe en la cabeza que provocó contusión", "Tener cabeza normal y apretar nariz por 1 minuto", 37, 80, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(99563596303041, "42512454", "Dolor de muelas", "Sobreextensión muscilar", "Dormir en casa", 38, 38, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (6, 6, 85);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(72251955790405, "00308662", "Desmayo", "Migraña", "Compresas con hielpo x2 horas", 37, 60, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (9, 47, 86);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(29879708926299, "03049801", "Dolor de barriga", "Caries", "Dormir en casa", 38, 53, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (4, 7, 87);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(27958450751545, "81001420", "Dolor de barriga", "Golpe en la cabeza que provocó contusión", "Compresas con hielpo x2 horas", 37, 34, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (7, 12, 88);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(96555332236000, "61760131", "Dolor de muelas", "Sobreextensión muscilar", "Comer más", 37, 66, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(28544765696552, "38206418", "Dolor de barriga", "Migraña", "Comer más", 38, 78, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (3, 9, 90);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (2, 8, 90);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(00248755630394, "93484972", "Desmayo", "Desnutrición", "Tener cabeza normal y apretar nariz por 1 minuto", 37, 44, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (5, 26, 91);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(84451629886213, "91069628", "Dolor de muelas", "Caries", "Dormir en casa", 36, 78, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (8, 36, 92);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (9, 24, 92);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(39405941181024, "29679571", "Dolor de muelas", "Desnutrición", "Resposo en cama por 2 días, tomar dialgin cada 4 horas por 2 días, luego cada 12 por 3 días", 38, 69, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (4, 22, 93);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (7, 31, 93);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(64432968030374, "97982868", "Dolor de barriga", "Caries", "Compresas con hielpo x2 horas", 36, 65, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (9, 4, 94);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (6, 3, 94);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(69103302605978, "29679571", "Sangrado en la nariz", "Migraña", "Resposo en cama por 2 días, tomar dialgin cada 4 horas por 2 días, luego cada 12 por 3 días", 37, 67, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(10504470618603, "77840481", "Sangrado en la nariz", "Golpe en la cabeza que provocó contusión", "Compresas con hielpo x2 horas", 37, 46, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(69904432649003, "64264117", "Dolor de barriga", "Diarrea", "Resposo en cama por 2 días, tomar dialgin cada 4 horas por 2 días, luego cada 12 por 3 días", 37, 34, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (7, 30, 97);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(69103302605978, "64264117", "Dolor de muelas", "Sobreextensión muscilar", "Comer más", 36, 40, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (9, 38, 98);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (5, 40, 98);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(89207347226530, "89131841", "Desmayo", "Caries", "Comer más", 36, 63, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (10, 27, 99);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(94542083608280, "78671182", "Dolor de cabeza", "Golpe en la cabeza que provocó contusión", "Comer más", 38, 54, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (5, 29, 100);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(39762277610711, "63862969", "Dolor de muelas", "Migraña", "Dormir en casa", 36, 67, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (10, 9, 101);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (2, 21, 101);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(21136148938055, "21222101", "Dolor de barriga", "Diarrea", "Tener cabeza normal y apretar nariz por 1 minuto", 38, 84, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (9, 38, 102);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(39113212334147, "03969782", "Dolor de brazo", "Golpe en la cabeza que provocó contusión", "Comer más", 37, 44, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (8, 28, 103);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (1, 49, 103);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(29117301115309, "01518663", "Dolor de brazo", "Desnutrición", "Resposo en cama por 2 días, tomar dialgin cada 4 horas por 2 días, luego cada 12 por 3 días", 38, 50, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (10, 32, 104);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (7, 29, 104);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(61083279163747, "81001420", "Dolor de cabeza", "Golpe en la cabeza que provocó contusión", "Resposo en cama por 2 días, tomar dialgin cada 4 horas por 2 días, luego cada 12 por 3 días", 38, 46, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(32194971714853, "21222101", "Desmayo", "Diarrea", "Dormir en casa", 36, 47, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (1, 6, 106);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(21136148938055, "77840481", "Dolor de cabeza", "Migraña", "Dormir en casa", 36, 73, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(71137321395034, "21239836", "Sangrado en la nariz", "Sobreextensión muscilar", "Comer más", 37, 57, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (3, 49, 108);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (6, 15, 108);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(00248755630394, "32852898", "Dolor de barriga", "Desnutrición", "Comer más", 36, 86, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (2, 50, 109);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(39405941181024, "60063285", "Desmayo", "Golpe en la cabeza que provocó contusión", "Compresas con hielpo x2 horas", 37, 71, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (4, 41, 110);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(23355155634796, "89131841", "Dolor de cabeza", "Diarrea", "Comer más", 36, 64, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (2, 28, 111);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (5, 2, 111);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(55131807505122, "56256359", "Dolor de barriga", "Desnutrición", "Dormir en casa", 37, 52, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(72905318918163, "35880485", "Dolor de cabeza", "Migraña", "Dormir en casa", 36, 43, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(79820674447460, "83524840", "Desmayo", "Diarrea", "Resposo en cama por 2 días, tomar dialgin cada 4 horas por 2 días, luego cada 12 por 3 días", 36, 66, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(23355155634796, "56256359", "Sangrado en la nariz", "Golpe en la cabeza que provocó contusión", "Tener cabeza normal y apretar nariz por 1 minuto", 38, 76, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (5, 24, 115);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(64432968030374, "13840897", "Desmayo", "Golpe en la cabeza que provocó contusión", "Dormir en casa", 36, 49, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (6, 29, 116);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(60166304896023, "21222101", "Dolor de barriga", "Golpe en la cabeza que provocó contusión", "Tener cabeza normal y apretar nariz por 1 minuto", 38, 47, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (8, 35, 117);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (6, 44, 117);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(00248755630394, "22511406", "Dolor de barriga", "Caries", "Comer más", 37, 31, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (6, 48, 118);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(53204970272725, "89131841", "Desmayo", "Caries", "Tener cabeza normal y apretar nariz por 1 minuto", 36, 76, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(89207347226530, "38206418", "Dolor de cabeza", "Caries", "Resposo en cama por 2 días, tomar dialgin cada 4 horas por 2 días, luego cada 12 por 3 días", 38, 87, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(32497772357639, "83660720", "Dolor de muelas", "Migraña", "Comer más", 37, 47, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (9, 13, 121);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (1, 50, 121);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(32497772357639, "54222363", "Dolor de cabeza", "Sobreextensión muscilar", "Dormir en casa", 37, 49, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (9, 29, 122);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(29117301115309, "21239836", "Desmayo", "Desnutrición", "Resposo en cama por 2 días, tomar dialgin cada 4 horas por 2 días, luego cada 12 por 3 días", 37, 39, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(28353777079151, "03049801", "Dolor de barriga", "Golpe en la cabeza que provocó contusión", "Comer más", 36, 45, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (3, 31, 124);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(33276917670348, "34005130", "Desmayo", "Caries", "Tener cabeza normal y apretar nariz por 1 minuto", 36, 88, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(75458704112608, "03049801", "Dolor de muelas", "Caries", "Compresas con hielpo x2 horas", 37, 78, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(23355155634796, "68323317", "Dolor de brazo", "Caries", "Compresas con hielpo x2 horas", 38, 35, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (6, 14, 127);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (4, 10, 127);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(28760690397708, "84864532", "Desmayo", "Migraña", "Resposo en cama por 2 días, tomar dialgin cada 4 horas por 2 días, luego cada 12 por 3 días", 37, 40, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(00248755630394, "01518663", "Dolor de brazo", "Migraña", "Tener cabeza normal y apretar nariz por 1 minuto", 38, 40, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(00248755630394, "64264117", "Dolor de barriga", "Desnutrición", "Resposo en cama por 2 días, tomar dialgin cada 4 horas por 2 días, luego cada 12 por 3 días", 36, 71, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (8, 49, 130);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(75458704112608, "42138197", "Sangrado en la nariz", "Diarrea", "Tener cabeza normal y apretar nariz por 1 minuto", 38, 54, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(71415945941710, "91069628", "Sangrado en la nariz", "Golpe en la cabeza que provocó contusión", "Compresas con hielpo x2 horas", 36, 31, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(39762277610711, "42138197", "Dolor de barriga", "Migraña", "Compresas con hielpo x2 horas", 36, 85, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(28544765696552, "00308662", "Dolor de cabeza", "Desnutrición", "Tener cabeza normal y apretar nariz por 1 minuto", 37, 43, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (1, 32, 134);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (8, 31, 134);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(84451629886213, "16069975", "Dolor de cabeza", "Desnutrición", "Comer más", 38, 54, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (6, 45, 135);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(32194971714853, "34427129", "Dolor de barriga", "Desnutrición", "Dormir en casa", 37, 67, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (5, 23, 136);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(18485742465292, "22511406", "Dolor de brazo", "Caries", "Dormir en casa", 38, 48, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(28353777079151, "54222363", "Dolor de muelas", "Diarrea", "Comer más", 36, 49, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (1, 30, 138);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (3, 24, 138);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(60166304896023, "83660720", "Desmayo", "Diarrea", "Comer más", 38, 31, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(32497772357639, "97982868", "Sangrado en la nariz", "Desnutrición", "Compresas con hielpo x2 horas", 37, 61, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (9, 11, 140);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (1, 20, 140);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(72251955790405, "38990291", "Dolor de cabeza", "Caries", "Compresas con hielpo x2 horas", 36, 32, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(58716043491712, "77840481", "Dolor de brazo", "Caries", "Compresas con hielpo x2 horas", 38, 88, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (4, 3, 142);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(17284421756098, "42138197", "Desmayo", "Desnutrición", "Tener cabeza normal y apretar nariz por 1 minuto", 37, 34, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (6, 38, 143);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(28544765696552, "97982868", "Desmayo", "Migraña", "Resposo en cama por 2 días, tomar dialgin cada 4 horas por 2 días, luego cada 12 por 3 días", 36, 79, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (2, 34, 144);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(29879708926299, "68323317", "Sangrado en la nariz", "Golpe en la cabeza que provocó contusión", "Comer más", 37, 61, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (8, 22, 145);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(58716043491712, "54222363", "Desmayo", "Caries", "Tener cabeza normal y apretar nariz por 1 minuto", 38, 44, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(61083279163747, "58445444", "Dolor de cabeza", "Migraña", "Tener cabeza normal y apretar nariz por 1 minuto", 38, 66, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (6, 19, 147);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (8, 40, 147);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(58716043491712, "03969782", "Dolor de muelas", "Golpe en la cabeza que provocó contusión", "Tener cabeza normal y apretar nariz por 1 minuto", 37, 38, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(60166304896023, "38206418", "Dolor de cabeza", "Desnutrición", "Resposo en cama por 2 días, tomar dialgin cada 4 horas por 2 días, luego cada 12 por 3 días", 38, 32, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(39762277610711, "61760131", "Sangrado en la nariz", "Golpe en la cabeza que provocó contusión", "Compresas con hielpo x2 horas", 36, 34, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (4, 19, 150);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (2, 25, 150);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(71137321395034, "30739327", "Sangrado en la nariz", "Diarrea", "Compresas con hielpo x2 horas", 38, 69, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(39762277610711, "65727283", "Dolor de cabeza", "Desnutrición", "Comer más", 36, 41, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (2, 11, 152);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (2, 40, 152);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(94542083608280, "91069628", "Dolor de barriga", "Migraña", "Comer más", 36, 45, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (1, 43, 153);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (7, 27, 153);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(48562460738716, "65727283", "Dolor de brazo", "Golpe en la cabeza que provocó contusión", "Resposo en cama por 2 días, tomar dialgin cada 4 horas por 2 días, luego cada 12 por 3 días", 37, 85, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(61083279163747, "29679571", "Dolor de cabeza", "Golpe en la cabeza que provocó contusión", "Dormir en casa", 38, 30, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (10, 5, 155);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (5, 22, 155);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(36226466916962, "58445444", "Dolor de brazo", "Caries", "Resposo en cama por 2 días, tomar dialgin cada 4 horas por 2 días, luego cada 12 por 3 días", 38, 68, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(89207347226530, "52847506", "Sangrado en la nariz", "Golpe en la cabeza que provocó contusión", "Compresas con hielpo x2 horas", 37, 65, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(10504470618603, "61760131", "Dolor de barriga", "Desnutrición", "Dormir en casa", 38, 69, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (4, 21, 158);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (1, 43, 158);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(34210310653842, "38990291", "Dolor de barriga", "Sobreextensión muscilar", "Tener cabeza normal y apretar nariz por 1 minuto", 37, 57, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(79820674447460, "87998352", "Dolor de barriga", "Migraña", "Resposo en cama por 2 días, tomar dialgin cada 4 horas por 2 días, luego cada 12 por 3 días", 37, 68, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (2, 10, 160);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(96342392726735, "34427129", "Sangrado en la nariz", "Golpe en la cabeza que provocó contusión", "Resposo en cama por 2 días, tomar dialgin cada 4 horas por 2 días, luego cada 12 por 3 días", 38, 46, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(53204970272725, "34005130", "Dolor de cabeza", "Migraña", "Dormir en casa", 36, 69, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (3, 2, 162);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(65759335058702, "29679571", "Dolor de brazo", "Sobreextensión muscilar", "Tener cabeza normal y apretar nariz por 1 minuto", 38, 35, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(00248755630394, "03969782", "Dolor de muelas", "Desnutrición", "Compresas con hielpo x2 horas", 37, 77, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(65759335058702, "81001420", "Desmayo", "Sobreextensión muscilar", "Compresas con hielpo x2 horas", 38, 83, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(43994257345285, "51440822", "Sangrado en la nariz", "Golpe en la cabeza que provocó contusión", "Compresas con hielpo x2 horas", 37, 51, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (2, 11, 166);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (6, 8, 166);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(84451629886213, "29679571", "Sangrado en la nariz", "Desnutrición", "Resposo en cama por 2 días, tomar dialgin cada 4 horas por 2 días, luego cada 12 por 3 días", 36, 51, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(34210310653842, "56256359", "Dolor de barriga", "Caries", "Compresas con hielpo x2 horas", 36, 86, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (1, 46, 168);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (3, 23, 168);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(33276917670348, "61760131", "Sangrado en la nariz", "Migraña", "Comer más", 38, 63, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(00248755630394, "83524840", "Dolor de muelas", "Caries", "Resposo en cama por 2 días, tomar dialgin cada 4 horas por 2 días, luego cada 12 por 3 días", 38, 64, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (8, 5, 170);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(69103302605978, "81001420", "Dolor de brazo", "Migraña", "Compresas con hielpo x2 horas", 36, 73, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(79820674447460, "13032828", "Dolor de muelas", "Sobreextensión muscilar", "Dormir en casa", 38, 60, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (3, 47, 172);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(64432968030374, "97982868", "Dolor de muelas", "Caries", "Comer más", 36, 35, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (1, 24, 173);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (7, 37, 173);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(36226466916962, "05524582", "Dolor de cabeza", "Desnutrición", "Compresas con hielpo x2 horas", 37, 76, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (8, 18, 174);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(69103302605978, "42512454", "Dolor de barriga", "Caries", "Compresas con hielpo x2 horas", 37, 67, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (3, 41, 175);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(18485742465292, "03621963", "Dolor de barriga", "Desnutrición", "Compresas con hielpo x2 horas", 38, 54, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (3, 43, 176);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(75458704112608, "83524840", "Dolor de brazo", "Desnutrición", "Compresas con hielpo x2 horas", 37, 59, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(39762277610711, "74905200", "Dolor de cabeza", "Desnutrición", "Resposo en cama por 2 días, tomar dialgin cada 4 horas por 2 días, luego cada 12 por 3 días", 37, 47, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (7, 14, 178);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (10, 26, 178);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(28544765696552, "52200092", "Sangrado en la nariz", "Sobreextensión muscilar", "Comer más", 37, 73, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(99563596303041, "74905200", "Dolor de barriga", "Golpe en la cabeza que provocó contusión", "Resposo en cama por 2 días, tomar dialgin cada 4 horas por 2 días, luego cada 12 por 3 días", 38, 76, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (2, 40, 180);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (10, 14, 180);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(69904432649003, "42138197", "Dolor de muelas", "Desnutrición", "Dormir en casa", 37, 41, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(32497772357639, "93484972", "Dolor de barriga", "Sobreextensión muscilar", "Comer más", 37, 81, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(11242419235680, "00308662", "Desmayo", "Desnutrición", "Dormir en casa", 36, 74, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (6, 31, 183);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(00248755630394, "91069628", "Dolor de muelas", "Sobreextensión muscilar", "Comer más", 38, 57, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (10, 42, 184);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (5, 5, 184);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(94542083608280, "42138197", "Sangrado en la nariz", "Migraña", "Dormir en casa", 38, 72, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (5, 46, 185);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (1, 3, 185);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(69103302605978, "51440822", "Dolor de barriga", "Migraña", "Compresas con hielpo x2 horas", 36, 85, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(39113212334147, "56256359", "Dolor de barriga", "Sobreextensión muscilar", "Tener cabeza normal y apretar nariz por 1 minuto", 37, 75, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(11242419235680, "16069975", "Dolor de barriga", "Desnutrición", "Dormir en casa", 36, 37, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (4, 43, 188);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(55131807505122, "29679571", "Desmayo", "Migraña", "Tener cabeza normal y apretar nariz por 1 minuto", 38, 67, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (8, 36, 189);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (5, 47, 189);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(71137321395034, "83524840", "Dolor de barriga", "Caries", "Comer más", 37, 53, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (8, 48, 190);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (9, 43, 190);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(48562460738716, "42138197", "Dolor de barriga", "Golpe en la cabeza que provocó contusión", "Comer más", 38, 63, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(94542083608280, "64264117", "Dolor de cabeza", "Sobreextensión muscilar", "Resposo en cama por 2 días, tomar dialgin cada 4 horas por 2 días, luego cada 12 por 3 días", 36, 30, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (6, 27, 192);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (5, 32, 192);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(99563596303041, "32852898", "Dolor de barriga", "Diarrea", "Dormir en casa", 38, 56, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (8, 6, 193);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (8, 9, 193);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(72251955790405, "00308662", "Dolor de barriga", "Caries", "Resposo en cama por 2 días, tomar dialgin cada 4 horas por 2 días, luego cada 12 por 3 días", 37, 36, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (3, 37, 194);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (3, 6, 194);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(53204970272725, "42138197", "Dolor de muelas", "Golpe en la cabeza que provocó contusión", "Resposo en cama por 2 días, tomar dialgin cada 4 horas por 2 días, luego cada 12 por 3 días", 37, 59, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (1, 19, 195);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (9, 31, 195);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(28760690397708, "52200092", "Dolor de muelas", "Desnutrición", "Resposo en cama por 2 días, tomar dialgin cada 4 horas por 2 días, luego cada 12 por 3 días", 38, 48, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(99563596303041, "32852898", "Dolor de brazo", "Migraña", "Tener cabeza normal y apretar nariz por 1 minuto", 36, 33, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(34210310653842, "63862969", "Dolor de muelas", "Desnutrición", "Comer más", 38, 37, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (5, 21, 198);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (2, 1, 198);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(34210310653842, "00308662", "Dolor de cabeza", "Desnutrición", "Dormir en casa", 37, 49, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (6, 7, 199);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(18485742465292, "35880485", "Dolor de barriga", "Diarrea", "Compresas con hielpo x2 horas", 36, 74, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (7, 44, 200);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(61083279163747, "13032828", "Sangrado en la nariz", "Sobreextensión muscilar", "Resposo en cama por 2 días, tomar dialgin cada 4 horas por 2 días, luego cada 12 por 3 días", 38, 81, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (8, 33, 201);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(29879708926299, "29679571", "Desmayo", "Diarrea", "Comer más", 36, 64, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(75912739777550, "42138197", "Sangrado en la nariz", "Sobreextensión muscilar", "Compresas con hielpo x2 horas", 37, 66, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (4, 44, 203);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(10504470618603, "52847506", "Dolor de barriga", "Caries", "Compresas con hielpo x2 horas", 38, 80, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (6, 31, 204);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(18485742465292, "97982868", "Dolor de barriga", "Diarrea", "Tener cabeza normal y apretar nariz por 1 minuto", 37, 72, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(11242419235680, "32852898", "Dolor de brazo", "Diarrea", "Comer más", 37, 71, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (5, 47, 206);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(33276917670348, "89131841", "Dolor de brazo", "Migraña", "Tener cabeza normal y apretar nariz por 1 minuto", 36, 69, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (3, 32, 207);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (6, 39, 207);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(48562460738716, "34005130", "Dolor de muelas", "Migraña", "Tener cabeza normal y apretar nariz por 1 minuto", 38, 52, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (2, 21, 208);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(96342392726735, "29913728", "Dolor de muelas", "Desnutrición", "Comer más", 37, 35, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (2, 50, 209);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(53204970272725, "64264117", "Dolor de barriga", "Desnutrición", "Compresas con hielpo x2 horas", 36, 63, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(69103302605978, "46729667", "Dolor de brazo", "Golpe en la cabeza que provocó contusión", "Resposo en cama por 2 días, tomar dialgin cada 4 horas por 2 días, luego cada 12 por 3 días", 37, 86, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(74746775960313, "03969782", "Dolor de barriga", "Caries", "Comer más", 38, 70, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(21136148938055, "77840481", "Dolor de muelas", "Sobreextensión muscilar", "Resposo en cama por 2 días, tomar dialgin cada 4 horas por 2 días, luego cada 12 por 3 días", 36, 57, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (4, 27, 213);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(18485742465292, "22511406", "Dolor de brazo", "Sobreextensión muscilar", "Resposo en cama por 2 días, tomar dialgin cada 4 horas por 2 días, luego cada 12 por 3 días", 38, 60, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(51005540719407, "22511406", "Sangrado en la nariz", "Golpe en la cabeza que provocó contusión", "Compresas con hielpo x2 horas", 38, 84, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (1, 50, 215);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(41823491851678, "21239836", "Dolor de cabeza", "Golpe en la cabeza que provocó contusión", "Resposo en cama por 2 días, tomar dialgin cada 4 horas por 2 días, luego cada 12 por 3 días", 36, 43, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(72905318918163, "58445444", "Dolor de brazo", "Caries", "Tener cabeza normal y apretar nariz por 1 minuto", 38, 58, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(11422271881903, "22511406", "Desmayo", "Migraña", "Dormir en casa", 38, 82, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (4, 3, 218);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (8, 38, 218);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(27958450751545, "78671182", "Dolor de barriga", "Caries", "Compresas con hielpo x2 horas", 36, 48, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(69103302605978, "34005130", "Sangrado en la nariz", "Desnutrición", "Tener cabeza normal y apretar nariz por 1 minuto", 37, 76, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (6, 37, 220);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (8, 6, 220);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(34210310653842, "33594829", "Dolor de barriga", "Desnutrición", "Compresas con hielpo x2 horas", 36, 86, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(60166304896023, "38206418", "Dolor de barriga", "Desnutrición", "Resposo en cama por 2 días, tomar dialgin cada 4 horas por 2 días, luego cada 12 por 3 días", 37, 44, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (7, 2, 222);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (7, 8, 222);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(99563596303041, "93484972", "Desmayo", "Desnutrición", "Resposo en cama por 2 días, tomar dialgin cada 4 horas por 2 días, luego cada 12 por 3 días", 38, 36, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (5, 29, 223);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (3, 38, 223);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(17284421756098, "29913728", "Dolor de cabeza", "Desnutrición", "Comer más", 38, 68, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (3, 35, 224);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(65759335058702, "63862969", "Dolor de muelas", "Desnutrición", "Dormir en casa", 36, 71, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(27958450751545, "34427129", "Dolor de brazo", "Sobreextensión muscilar", "Compresas con hielpo x2 horas", 38, 37, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (8, 2, 226);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(29117301115309, "46729667", "Desmayo", "Caries", "Comer más", 38, 89, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (6, 5, 227);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(32194971714853, "13840897", "Dolor de muelas", "Migraña", "Dormir en casa", 38, 73, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (6, 14, 228);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (7, 5, 228);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(79820674447460, "77840481", "Dolor de cabeza", "Diarrea", "Resposo en cama por 2 días, tomar dialgin cada 4 horas por 2 días, luego cada 12 por 3 días", 38, 63, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (9, 12, 229);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(79820674447460, "03049801", "Sangrado en la nariz", "Migraña", "Dormir en casa", 37, 70, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (5, 44, 230);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(21136148938055, "29913728", "Dolor de brazo", "Sobreextensión muscilar", "Compresas con hielpo x2 horas", 38, 37, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(27958450751545, "84864532", "Dolor de cabeza", "Sobreextensión muscilar", "Dormir en casa", 38, 34, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(41823491851678, "68323317", "Dolor de barriga", "Diarrea", "Comer más", 37, 64, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (10, 36, 233);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(48562460738716, "84864532", "Dolor de muelas", "Golpe en la cabeza que provocó contusión", "Comer más", 37, 76, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (7, 41, 234);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (6, 36, 234);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(34210310653842, "32852898", "Dolor de brazo", "Caries", "Comer más", 38, 39, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(33276917670348, "16069975", "Dolor de muelas", "Golpe en la cabeza que provocó contusión", "Compresas con hielpo x2 horas", 37, 71, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (8, 3, 236);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (7, 46, 236);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(94542083608280, "01518663", "Desmayo", "Caries", "Tener cabeza normal y apretar nariz por 1 minuto", 37, 41, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (7, 47, 237);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(41823491851678, "01518663", "Sangrado en la nariz", "Sobreextensión muscilar", "Resposo en cama por 2 días, tomar dialgin cada 4 horas por 2 días, luego cada 12 por 3 días", 38, 71, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (8, 29, 238);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(55131807505122, "29913728", "Desmayo", "Migraña", "Comer más", 36, 67, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (5, 10, 239);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(32194971714853, "05524582", "Dolor de cabeza", "Golpe en la cabeza que provocó contusión", "Tener cabeza normal y apretar nariz por 1 minuto", 38, 40, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (1, 36, 240);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (9, 18, 240);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(17284421756098, "03621963", "Dolor de brazo", "Desnutrición", "Comer más", 37, 61, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (4, 3, 241);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (1, 17, 241);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(94542083608280, "56256359", "Dolor de muelas", "Sobreextensión muscilar", "Compresas con hielpo x2 horas", 36, 63, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (2, 9, 242);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (6, 29, 242);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(18485742465292, "21222101", "Dolor de brazo", "Golpe en la cabeza que provocó contusión", "Resposo en cama por 2 días, tomar dialgin cada 4 horas por 2 días, luego cada 12 por 3 días", 37, 49, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (9, 32, 243);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(75912739777550, "29679571", "Sangrado en la nariz", "Migraña", "Dormir en casa", 38, 31, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (2, 26, 244);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (2, 3, 244);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(69103302605978, "03621963", "Desmayo", "Diarrea", "Dormir en casa", 36, 55, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(11242419235680, "29913728", "Dolor de barriga", "Caries", "Dormir en casa", 38, 32, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (4, 11, 246);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(71137321395034, "60063285", "Desmayo", "Golpe en la cabeza que provocó contusión", "Dormir en casa", 37, 34, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (4, 24, 247);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(99563596303041, "30739327", "Desmayo", "Diarrea", "Dormir en casa", 36, 79, 1);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(55131807505122, "21239836", "Dolor de barriga", "Caries", "Resposo en cama por 2 días, tomar dialgin cada 4 horas por 2 días, luego cada 12 por 3 días", 38, 76, 1);
+
+insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values (2, 28, 249);
+
+insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values(89207347226530, "00308662", "Dolor de muelas", "Migraña", "Dormir en casa", 38, 67, 1);
+

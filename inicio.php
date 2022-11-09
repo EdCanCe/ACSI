@@ -84,9 +84,10 @@ include("variablesglobales.php");
                                 <td><center><?php echo $row["CedulaProf"];?></center></td>
                                 <td><center><?php echo $row["NombreDoc"];?> <?php echo $row["ApPaternoDoc"];?> <?php echo $row["ApMaternoDoc"];?> </center></td>
                                 <td><center><a href="doctor.php?id=<?php echo $row["CedulaProf"];?>">Mostrar datos</a></center></td>
-                        </tr> </table><?php } }?>
+                        </tr><?php } }?>
+                        </table>
 
-	</div>
+	                </div>
         
     <?php //ESTE HACE EL FOOTER
         echo $footer;

@@ -100,7 +100,7 @@ $id = $_GET["id"];
                         <center><h2>Consultas Médicas</h2></center><?php }
                     $fechaAntigua = date('y-m-d', strtotime('-32 days'));
                     $resultado = mysqli_query($conexion, "SELECT * FROM Receta WHERE NoControlFK = $id");
-                    $resultado2 = mysqli_query($conexion, "select count(*) as Cantidad, DATE_FORMAT(Fecha,'%y-%m-%d') as FechaS FROM Receta where Fecha >= '$fechaAntigua' GROUP BY Fecha");
+                    $resultado2 = mysqli_query($conexion, "select count(*) as Cantidad, DATE_FORMAT(Fecha,'%y-%m-%d') as FechaS FROM Receta where Fecha >= '$fechaAntigua' and NoControlFK = $id GROUP BY Fecha");
                     if (mysqli_num_rows($resultado) == 0) { 
                         ?>
                         <center><p>SIN DATOS REGISTRADOS</p></center>
@@ -120,6 +120,11 @@ $id = $_GET["id"];
                             $fechaMeter = $row["FechaS"];
                             $cantidadMeter = $row["Cantidad"];
                             $linea = ", \n['".$fechaMeter."',  ".$cantidadMeter."]";
+                            $meterJS.= $linea;
+                            $ultima = date('y-m-d', strtotime($ultima.'+1 days'));
+                        }
+                        while($ultima < date('y-m-d')){
+                            $linea = ", \n['".$ultima."',  0]";
                             $meterJS.= $linea;
                             $ultima = date('y-m-d', strtotime($ultima.'+1 days'));
                         }
@@ -167,7 +172,7 @@ $id = $_GET["id"];
                             ?>
                                 <tr>
                                     <td><center><?php echo $fechaConsulta ?></center></td>
-                                    <td><a href="consulta_medica.php?id=<?php echo $row["NoConsulta"];?>">Mostrar Consulta Médica</a></td>
+                                    <td><a href="consulta.php?id=<?php echo $row["NoConsulta"];?>">Mostrar Consulta Médica</a></td>
                                 </tr>
                             <?php
                         }

@@ -15,7 +15,7 @@
 #define pb push_back
 using namespace std;
 
-int iteraciones=50;
+int iteraciones=20;
 
 int contadorReceta=0, medicinas=0;
 
@@ -237,11 +237,11 @@ void generarAlumno(){
 	saux+=gaux.NombreAl[0];
 	fore(i,0,saux.size()){
 
-		if(saux[i]=='Á'||saux[i]=='á') saux[i]='A';
-		if(saux[i]=='É'||saux[i]=='é') saux[i]='A';
-		if(saux[i]=='Í'||saux[i]=='í') saux[i]='A';
-		if(saux[i]=='Ó'||saux[i]=='ó') saux[i]='A';
-		if(saux[i]=='Ú'||saux[i]=='ú') saux[i]='A';
+		if(saux[i]==160||saux[i]==181) saux[i]='A';
+		if(saux[i]==130||saux[i]==144) saux[i]='E';
+		if(saux[i]==161||saux[i]==214) saux[i]='I';
+		if(saux[i]==162||saux[i]==224) saux[i]='O';
+		if(saux[i]==163||saux[i]==233) saux[i]='U';
 
 		if(saux[i]>'Z'){
 			saux[i]-=('a'-'A');
@@ -351,6 +351,18 @@ void generarCantidadMed(){
 	cout<<"insert into CantidadesMed(Cantidad, MedicinaIDFK, NoConsultaFK) values ("<<gaux.Cantidad<<", "<<gaux.MedicinaIDFK<<", "<<gaux.NoConsultaFK<<");\n\n";
 }
 
+string generaraFecha(){
+	int i=(rand() % 4);
+	string fecha="2022-", mins=" 06:49:31";
+	if(i==1){
+		fecha = fecha + "12-" + to_string( (rand() % 4) + 1 );
+	}else{
+		fecha = fecha + to_string( (rand() % 3 ) + 9 ) + "-" + to_string( (rand() % 29 ) + 1 );
+	}
+	fecha+=mins;
+	return fecha;
+}
+
 void generarReceta(){
 	Receta gaux;
 	contadorReceta++;
@@ -363,7 +375,7 @@ void generarReceta(){
 	gaux.PesoPaciente = to_string((rand() % 60)+30);
 	gaux.Altura = to_string((rand() % 100)/100 + 1);
 
-	cout<<"insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura) values("<<gaux.NoControlFK<<", \""<<gaux.CedulaProfFK<<"\", \""<<gaux.Padecimientos<<"\", \""<<gaux.Diagnostico<<"\", \""<<gaux.Dosis<<"\", "<<gaux.TempPaciente<<", "<<gaux.PesoPaciente<<", "<<gaux.Altura<<");\n\n";
+	cout<<"insert into Receta(NoControlFK, CedulaProfFK, Padecimientos, Diagnostico, Dosis, TempPaciente, PesoPaciente, Altura, Fecha) values("<<gaux.NoControlFK<<", \""<<gaux.CedulaProfFK<<"\", \""<<gaux.Padecimientos<<"\", \""<<gaux.Diagnostico<<"\", \""<<gaux.Dosis<<"\", "<<gaux.TempPaciente<<", "<<gaux.PesoPaciente<<", "<<gaux.Altura<<", \""<<generaraFecha()<<"\");\n\n";
 
 	int naux = rand() % 3;
 	fore(i,0,naux){
@@ -440,17 +452,19 @@ int main(){
 	tipossangre.push_back("AB-");
 	tipossangre.push_back("AB+");
 
-	fore(i,0,iteraciones){
-		//cout<<rfc;
+	fore(i,0,100){
 		generarAlumno();
-		//cout<<bfc;
-		generarDoctor();
-		//cout<<pfc;
+	}
+
+	fore(i,0,50){
 		generarMedicina();
 	}
 
-	fore(i,0,((iteraciones*5))){
-		//cout<<yfc;
+	fore(i,0,5){
+		generarDoctor();
+	}
+
+	fore(i,0,200){
 		generarReceta();
 	}
 

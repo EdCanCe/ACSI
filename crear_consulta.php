@@ -59,10 +59,10 @@ include("variablesglobales.php");
             <select name="NoControlFK" class="lectura" required>
                 <option value="" selected disabled>--</option>
                 <?php 
-                $resultado = mysqli_query($conexion, "SELECT NoControl, NombreAl FROM Alumnos");
+                $resultado = mysqli_query($conexion, "SELECT NoControl, NombreAl, ApPaternoAl, ApMaternoAl FROM Alumnos");
                 while($row=mysqli_fetch_assoc($resultado)) {
                     ?>
-                    <option value="<?php echo $row["NoControl"] ?>"><?php echo $row["NoControl"] ?> - <?php echo $row["NombreAl"] ?></option>
+                    <option value="<?php echo $row["NoControl"] ?>"><?php echo $row["NoControl"] ?> - <?php echo $row["NombreAl"] ?> <?php echo $row["ApPaternoAl"] ?> <?php echo $row["ApMaternoAl"] ?></option>
                     <?php }
                 ?>
             </select>

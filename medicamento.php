@@ -68,7 +68,7 @@ $id = $_GET["id"];
                 while($row=mysqli_fetch_assoc($resultado)) { ?> 
                     <?php
                     if($row["FotoMed"]!=""){
-                        echo'<div class="imagen_inventario"><img src="data:image/jpeg;base64,'.base64_encode($row["FotoMed"]).'"/></div>';
+                        echo'<div class="imagen_inventario" style="background-image:url(data:image/jpeg;base64,'.base64_encode($row["FotoMed"]).');"></div>';
                         }
                     ?>
                     <h2>Nombre: <?php echo $row["NombreMed"]?></h2>

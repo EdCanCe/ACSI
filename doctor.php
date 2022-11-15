@@ -66,13 +66,18 @@ $id = $_GET["id"];
                                     <h2><center>ÚLTIMAS CONSULTAS</center></h2>
                                 <?php
 
-                                    $resultado = mysqli_query($conexion, "SELECT * FROM Receta WHERE CedulaProfFK = '$id'");
+                                    $resultado = mysqli_query($conexion, "SELECT * FROM Receta WHERE CedulaProfFK = '$id' order by Fecha DESC");
                                     if (mysqli_num_rows($resultado) == 0) { 
                                         ?>
                                         <center><p>NO HA TENIDO CITAS</p></center>
                                         <?php
                                     }else{
+                                        $fechaHoy = date("y-m-d");
+                                        $fechaAntigua = date('y-m-d', strtotime('-32 days'));
+                                        $resultado2 = mysqli_query($conexion, "select count(*) as Cantidad, DATE_FORMAT(Fecha,'%y-%m-%d') as FechaS FROM Receta where Fecha >= '$fechaAntigua' and '$fechaHoy' >= Fecha and CedulaProfFK = '$id'GROUP BY DATE_FORMAT(Fecha,'%y-%m-%d')");
                                         ?>
+                                        
+                                        <center><h4>Ha tenido: <?php echo mysqli_num_rows($resultado2) ?> citas este mes</h4></center>
                                         <table>
                                             <tr>
                                                 <th>Fecha</th>

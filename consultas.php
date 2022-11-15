@@ -62,7 +62,7 @@ $id = '';
                 <th>Fecha</th>
                 <th></th>
             </tr>
-            <?php $resultado = mysqli_query($conexion, "SELECT * FROM Receta");
+            <?php $resultado = mysqli_query($conexion, "SELECT * FROM Receta order by Fecha DESC");
                 while($row=mysqli_fetch_assoc($resultado)) { 
                     $meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
                     $fechaConsulta = date('j', strtotime($row['Fecha']))." de ".$meses[date('n', strtotime($row['Fecha']))-1]." de ".date('Y', strtotime($row['Fecha']));

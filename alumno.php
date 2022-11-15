@@ -100,7 +100,7 @@ $id = $_GET["id"];
                         <center><h2>Consultas Médicas</h2></center><?php }
                     $fechaAntigua = date('y-m-d', strtotime('-32 days'));
                     $resultado = mysqli_query($conexion, "SELECT * FROM Receta WHERE NoControlFK = $id");
-                    $resultado2 = mysqli_query($conexion, "select count(*) as Cantidad, DATE_FORMAT(Fecha,'%y-%m-%d') as FechaS FROM Receta where Fecha >= '$fechaAntigua' and NoControlFK = $id GROUP BY Fecha");
+                    $resultado2 = mysqli_query($conexion, "select count(*) as Cantidad, DATE_FORMAT(Fecha,'%y-%m-%d') as FechaS FROM Receta where Fecha >= '$fechaAntigua' and NoControlFK = '$id' GROUP BY DATE_FORMAT(Fecha,'%y-%m-%d')");
                     if (mysqli_num_rows($resultado) == 0) { 
                         ?>
                         <center><p>SIN DATOS REGISTRADOS</p></center>
@@ -111,6 +111,7 @@ $id = $_GET["id"];
                         $ultima = $fechaAntigua;
                         $linea =  "";
                         while($row=mysqli_fetch_assoc($resultado2)) {
+                            
                             while($ultima < date('y-m-d', strtotime($row["FechaS"].'+0 days'))){
                                 $linea = ", \n['".$ultima."',  0]";
                                 $meterJS.= $linea;
@@ -165,7 +166,7 @@ $id = $_GET["id"];
                             </tr>
                             
                         <?php
-                        $resultado = mysqli_query($conexion, "SELECT * FROM Receta WHERE NoControlFK = $id");
+                        $resultado = mysqli_query($conexion, "SELECT * FROM Receta WHERE NoControlFK = $id order by Fecha DESC");
                         while($row=mysqli_fetch_assoc($resultado)) {
                             $meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
                             $fechaConsulta = date('j', strtotime($row['Fecha']))." de ".$meses[date('n', strtotime($row['Fecha']))-1]." de ".date('Y', strtotime($row['Fecha']));

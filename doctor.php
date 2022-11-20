@@ -74,10 +74,10 @@ $id = $_GET["id"];
                                     }else{
                                         $fechaHoy = date("y-m-d");
                                         $fechaAntigua = date('y-m-d', strtotime('-32 days'));
-                                        $resultado2 = mysqli_query($conexion, "select count(*) as Cantidad, DATE_FORMAT(Fecha,'%y-%m-%d') as FechaS FROM Receta where Fecha >= '$fechaAntigua' and '$fechaHoy' >= Fecha and CedulaProfFK = '$id'GROUP BY DATE_FORMAT(Fecha,'%y-%m-%d')");
+                                        $resultado2 = mysqli_query($conexion, "select * FROM Receta where Fecha >= '$fechaAntigua' and '$fechaHoy' >= Fecha and CedulaProfFK = '$id' order by Fecha DESC");
                                         ?>
                                         
-                                        <center><h4>Ha tenido: <?php echo mysqli_num_rows($resultado2) ?> citas este mes</h4></center>
+                                        <center><h4>Ha tenido: <?php echo mysqli_num_rows($resultado2) ?> citas los últimos 30 días</h4></center>
                                         <table>
                                             <tr>
                                                 <th>Fecha</th>

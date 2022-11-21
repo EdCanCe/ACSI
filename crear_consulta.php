@@ -56,7 +56,7 @@ include("variablesglobales.php");
         <h1>Nueva consulta</h1>
         <form action="insertarconsulta.php" method="post" class="registrardatos">
             <label class="lectura_label" for="">No. Control</label>
-            <select name="NoControlFK" class="lectura" required>
+            <select name="NoControlFK" class="lectura" id="selectNoControl" required>
                 <option value="" selected disabled>--</option>
                 <?php 
                 $resultado = mysqli_query($conexion, "SELECT NoControl, NombreAl, ApPaternoAl, ApMaternoAl FROM Alumnos");
@@ -127,7 +127,6 @@ include("variablesglobales.php");
     ?>
     
 </body>
-
 <script>
     
     var boton = document.getElementById("botonMed");
@@ -146,7 +145,18 @@ include("variablesglobales.php");
         }
     });
 
-    
+    document.getElementById('selectNoControl').addEventListener('change',function() {
+
+        <?php
+
+            $pruebeishon = $_POST["NoControlFK"];
+
+        ?>
+
+        alert("Alertese paidrino <?php echo $pruebeishon ?>");
+
+    });
+
 </script>
     
 </html>

@@ -358,7 +358,7 @@ form{
     flex-wrap: wrap;
 }
 
-form * {
+form * , #showData{
     flex: 50%;
 }
 
@@ -450,8 +450,6 @@ input::file-selector-button:hover{
 	padding: 20px;
 	width: 240px;
 	background: var(--color_obscuro);
-    background-image: url(imgs/blanqueador.png);
-    background-blend-mode:overlay;
 	height: 354px;
 	margin-left: auto;
 	margin-right: auto;
@@ -463,6 +461,8 @@ input::file-selector-button:hover{
 .datos_objeto *{
     text-overflow: ellipsis;
     overflow: hidden;
+    color: var(--color_fondos);
+    text-shadow: 0 0 3px var(--color_principal);
 }
 
 .datos_objeto div{
@@ -581,6 +581,12 @@ input::file-selector-button:hover{
     margin: 1cm;
 }
 
+#showData{
+    width: 100%;
+    height: 1px;
+    border: none;
+}
+
 @media only screen and (max-width: 1050px){
     nav * {
         text-align: center;
@@ -611,7 +617,7 @@ input::file-selector-button:hover{
         height: fit-content;
     }
     
-    form * {
+    form * , form #showData{
         flex: 100%;
         margin-left: 0;
     }

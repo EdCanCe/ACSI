@@ -160,7 +160,6 @@ $id = $_GET["id"];
     <?php //ESTE HACE EL FOOTER
         echo $footer;
     ?>
-    
 </body>
     
 </html>

@@ -67,6 +67,9 @@ include("variablesglobales.php");
                 ?>
             </select>
             <label class="desaparece"></label>
+            <label class="desaparece"></label>
+            <iframe id="showData"></iframe>
+            <label class="desaparece"></label>
             <label class="lectura_label" for="">Temperatura Actual</label>
             <input name="Temperatura" class="lectura" type="number" step="0.01" min="25" placeholder="En grados celsius" required>
             <label class="desaparece"></label>
@@ -138,23 +141,21 @@ include("variablesglobales.php");
         if(tipo.value=="" || cantidad.value==""){
             alert("El tipo de medicina o su cantidad está vacía");
         }else{
-            document.getElementById("contenedor_number").insertAdjacentHTML("beforeend","<p>"+tipo.value+" - "+cantidad.value+"</p>");
-            pasar.value=""+pasar.value+" "+tipo.value+"-"+cantidad.value;
-            cantidad.value="";
-            tipo.value="";
+            
+            if (confirm('¿Ya revisaste que no sea alérgico a eso o estás seguro en añadirlo?')) {
+                document.getElementById("contenedor_number").insertAdjacentHTML("beforeend","<p>"+tipo.value+" - "+cantidad.value+"</p>");
+                pasar.value=""+pasar.value+" "+tipo.value+"-"+cantidad.value;
+                cantidad.value="";
+                tipo.value="";
+            }
         }
     });
 
     document.getElementById('selectNoControl').addEventListener('change',function() {
 
-        <?php
-
-            $pruebeishon = $_POST["NoControlFK"];
-
-        ?>
-
-        alert("Alertese paidrino <?php echo $pruebeishon ?>");
-
+        let prueba = document.getElementById('selectNoControl').value;
+        document.getElementById("showData").style = "height: 6cm;";
+        document.getElementById("showData").src=("rawData.php?id="+prueba);
     });
 
 </script>

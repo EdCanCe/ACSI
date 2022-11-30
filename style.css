@@ -305,6 +305,7 @@ tr a:hover, a:hover, .boton_a:hover, input::file-selector-button:hover, p button
     color: var(--color_principal);
     box-shadow: 0 0 0.1cm var(--color_principal);
     transform: scale() 0.2s;
+    text-shadow: none;
 }
 
 tr a:active, a:active, .boton_a:active, input::file-selector-button:active, p button:active{
@@ -450,6 +451,9 @@ input::file-selector-button:hover{
 	padding: 20px;
 	width: 240px;
 	background: var(--color_obscuro);
+    background-image: url("imgs/uo.png");
+    background-position: center;
+    background-size: cover;
 	height: 354px;
 	margin-left: auto;
 	margin-right: auto;
@@ -462,7 +466,7 @@ input::file-selector-button:hover{
     text-overflow: ellipsis;
     overflow: hidden;
     color: var(--color_fondos);
-    text-shadow: 0 0 3px var(--color_principal);
+    text-shadow: 0 0 10px var(--color_principal), 0 0 5px var(--color_principal), 0 0 3px var(--color_principal);
 }
 
 .datos_objeto div{

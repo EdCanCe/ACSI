@@ -16,6 +16,7 @@ include("variablesglobales.php");
 	<link rel="stylesheet" href="style.css?v=<?php echo time(); ?>">
 	<link rel="icon" href="imgs/icon.png">
 	<script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
@@ -71,13 +72,13 @@ include("variablesglobales.php");
             <iframe id="showData"></iframe>
             <label class="desaparece"></label>
             <label class="lectura_label" for="">Temperatura Actual</label>
-            <input name="Temperatura" class="lectura" type="number" step="0.01" min="25" placeholder="En grados celsius" required>
+            <input name="Temperatura" class="lectura" type="number" step="0.01" min="25" max="45" placeholder="En grados celsius" required>
             <label class="desaparece"></label>
             <label class="lectura_label" for="">Peso Actual</label>
-            <input name="Peso" class="lectura" type="number" step="0.01" min="25" placeholder="En kilogramos" required>
+            <input name="Peso" id="pesoAux" class="lectura" type="number" step="0.01" min="25" max="250" placeholder="En kilogramos" required>
             <label class="desaparece"></label>
-            <label class="lectura_label" for="">Altura Actual</label>
-            <input name="Altura" class="lectura" type="number" step="0.01" placeholder="En metros" required>
+            <label class="lectura_label" for="">Estatura Actual</label>
+            <input name="Altura" id="alturaAux" class="lectura" type="number" step="0.01" placeholder="En metros" min="1.2" max="2.3" required>
             <label class="desaparece"></label>
             
             
@@ -87,27 +88,25 @@ include("variablesglobales.php");
             <label class="lectura_label" for="">Diagnóstico</label>
             <input name="Diagnostico" class="lectura" type="text" required>
             <label class="desaparece"></label>
-            <label class="lectura_label" for="">Tratamiento</label>
-            <input name="Tratamiento" class="lectura" type="text" required>
-            <label class="desaparece"></label>
+            
             
             
             <label class="lectura_label" for="">Medicamento administrado</label>
             <select name="MedicinaFK" id="tipomed" class="lectura">
                 <option value="" selected disabled>--</option>
                 <?php 
-                $resultado = mysqli_query($conexion, "SELECT NombreMed FROM Medicina");
+                $resultado = mysqli_query($conexion, "SELECT NombreMed, CantidadMedicina FROM Medicina");
                 while($row=mysqli_fetch_assoc($resultado)) {
                     ?>
-                    <option value="<?php echo $row["NombreMed"] ?>"><?php echo $row["NombreMed"] ?></option>
+                    <option value="<?php echo $row["NombreMed"] ?>"><?php echo $row["NombreMed"] ?> - Cantidad: <?php echo $row["CantidadMedicina"] ?></option>
                     <?php }
                 ?>
             </select>
             <label class="desaparece"></label>
-            <label class="lectura_label" for="">Cantidad administrada</label>
-            <input class="lectura" id="cantidadId" type="number" step="0.01">
+            <label class="lectura_label" for="">Unidades administradas</label>
+            <input class="lectura" id="cantidadId" type="number" step="1">
             <input name="Cantidad" id="cantidadAdd" type="text" readonly style="display: none">
-            <label class="desaparece"></label>
+            <label class="desaparece"></label>            
             <label class="desaparece"></label>
             <center><button class="boton_a" id="botonMed" >Añadir a la lista</button></center>
             <label class="desaparece"></label>
@@ -120,6 +119,10 @@ include("variablesglobales.php");
             </div>
             <label class="desaparece"></label>
             
+            <label class="lectura_label" for="">Tratamiento</label>
+            <input name="Tratamiento" class="lectura" type="text" required>
+            <label class="desaparece"></label>
+
             <center><input type="submit" value="Registrar" class="boton_a"></center>
         </form>
         <?php } ?>
@@ -143,19 +146,45 @@ include("variablesglobales.php");
         }else{
             
             if (confirm('¿Ya revisaste que no sea alérgico a eso o estás seguro en añadirlo?')) {
-                document.getElementById("contenedor_number").insertAdjacentHTML("beforeend","<p>"+tipo.value+" - "+cantidad.value+"</p>");
-                pasar.value=""+pasar.value+" "+tipo.value+"-"+cantidad.value;
+                let redondeado = Math.ceil( cantidad.value );
+                document.getElementById("contenedor_number").insertAdjacentHTML("beforeend","<p>"+tipo.value+" - "+redondeado+"</p>");
+                pasar.value=""+pasar.value+" "+tipo.value+"-"+redondeado;
                 cantidad.value="";
                 tipo.value="";
             }
         }
     });
 
+    function buscar(NoControlFK){
+        var datos = {"NoControlFK":NoControlFK};
+        $.ajax({
+            data:datos,
+            type: 'POST',
+            url:'inicializarDatosConsulta.php',
+            success: function(data){
+                var peso="", altura="";
+                let usar = ""+data;
+                for(let i=0; i<usar.length;i++){
+                    peso=peso+=usar[i];
+                    if(usar[i]==' '){
+                        for(; i<usar.length;i++){
+                            altura=altura+usar[i];
+                        }
+                    }
+                }
+                document.getElementById("pesoAux").value = parseFloat(peso);
+                document.getElementById("alturaAux").value = parseFloat(altura);
+            }
+        });
+    }
+
     document.getElementById('selectNoControl').addEventListener('change',function() {
 
         let prueba = document.getElementById('selectNoControl').value;
         document.getElementById("showData").style = "height: 6cm;";
         document.getElementById("showData").src=("rawData.php?id="+prueba);
+
+        buscar(document.getElementById('selectNoControl').value);
     });
 
 </script>

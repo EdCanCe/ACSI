@@ -38,7 +38,7 @@ while($row=mysqli_fetch_assoc($resultado)){
     }
     $pdf->Cell(0,10,utf8_decode("Temperatura del paciente: ".$row['TempPaciente']." °C"),0,1,'L');
     $pdf->Cell(0,10,utf8_decode("Peso del paciente: ".$row['PesoPaciente']." kg"),0,1,'L');
-    $pdf->Cell(0,10,utf8_decode("Altura del paciente: ".$row['Altura']." mts"),0,1,'L');
+    $pdf->Cell(0,10,utf8_decode("Estatura del paciente: ".$row['Altura']." mts"),0,1,'L');
     $pdf->Ln(10);
     $pdf->SetX(15);
     $pdf->Cell(0,10,utf8_decode("Padecimientos:"),0,1,'L');
@@ -59,12 +59,36 @@ while($row=mysqli_fetch_assoc($resultado)){
     $pdf->SetFont('Helvetica','B',10);
     $pdf->SetX(20);
     $pdf->Multicell(180,6,utf8_decode($row['Dosis']),0,1);
+    $pdf->Ln(7);
+    $pdf->SetX(15);
+    $pdf->SetFont('Helvetica','B',15);
+    $pdf->Cell(0,10,utf8_decode("Medicinas administradas:"),0,1,'L');
+    $pdf->SetFont('Helvetica','B',10);
+    $resultado2 = mysqli_query($conexion, "SELECT * from CantidadesMed where NoConsultaFK = $idpag");
+    if(mysqli_num_rows($resultado2) != 0){
+        while($row2=mysqli_fetch_assoc($resultado2)){
+            $aux;
+            $resultado3 = mysqli_query($conexion, "SELECT * from Medicina where MedicinaID = '$row2[MedicinaIDFK]'");
+            while($row3=mysqli_fetch_assoc($resultado3)){
+                $aux=$row3['NombreMed'];
+            }
+            $pdf->SetX(20);
+            $pdf->Multicell(180,6,utf8_decode($aux.": ".$row2['Cantidad']), 0, 1);
+        }
+    }else{
+        $pdf->SetX(20);
+        $pdf->Multicell(180,6,utf8_decode("NINGUNA"), 0, 1);
+    }
+            
+
     $resultado2 = mysqli_query($conexion, "SELECT * from Doctor where CedulaProf = '$row[CedulaProfFK]'");
     while($row2=mysqli_fetch_assoc($resultado2)){
         $pdf->SetFont('Helvetica','B',10);
         $pdf->SetY(265);
         $pdf->Cell(0,12,utf8_decode("Firma: ".$row2['NombreDoc']." ".$row2['ApPaternoDoc']." ".$row2['ApMaternoDoc']." - Cédula Prof: ".$row['CedulaProfFK']),0,1,'C');
     }
+
+
     $pdf->Line(55, 265, 165, 265);
 }
 $pdf->Output();

@@ -28,11 +28,13 @@ $headerdoc = "
                     <li><a href='crear_doctor.php?id='>Registrar</a></li>
                 </ul>
             </li>
+            <li class='menuHijo'><a href='imc.php'>Calculadora de IMC</a>
+            <li class='menuHijo'><a href='calorias.php'>Calculadora de Calorías</a>
             <li class='menuHijo'><a href='cierra.php'>Cerrar Sesión</a></li>
         </ul>
     <nav>
 </div>
-<div class='auxCuerpo'>            
+<div class='auxCuerpo'>            <li class='menuHijo'><a href='index.php'>Inicio</a></li>
 
 ";
 
@@ -42,6 +44,8 @@ $headersin = "
         <ul class='menu'>
             <li class='menuHijo'><a href='inicio.php'>Inicio</a></li>
             <li class='menuHijo'><a href='index.php'>Iniciar Sesión</a></li>
+            <li class='menuHijo'><a href='imc.php'>Calculadora de IMC</a>
+            <li class='menuHijo'><a href='calorias.php'>Calculadora de Calorías</a>
             <li class='menuHijo'><a href='doctores.php'>Doctores</a>
                 <ul class='submenu'>
                     <li><a href='doctores.php'>Ver todos</a></li>
@@ -58,7 +62,9 @@ $headeralm = "
     <nav>
         <ul class='menu'>
             <li class='menuHijo'><a href='inicio.php'>Inicio</a></li>
-            <li class='menuHijo'><a href='doctores.php'>Doctores</a>
+            <li class='menuHijo'><a href='imc.php'>Calculadora de IMC</a>
+            <li class='menuHijo'><a href='calorias.php'>Calculadora de Calorías</a>
+            <li class='menuHijo'><a href='doctores.php'>Doctores</a>    
                 <ul class='submenu'>
                     <li><a href='doctores.php'>Ver todos</a></li>
                     <li><a href='crear_doctor.php?id='>Registrar</a></li>
@@ -226,3 +232,29 @@ $headerdoc = "
 <div class='auxCuerpo'>
 ";
 */
+
+$IMC1="
+<center><img src='imgs/grafica 4.png' width='30%' height='30%'></center>
+  <center><h1>Visita un nutriólogo</h1></center>
+  <center><p>Deberías de visitar al nutriólogo, pues tu IMC (Índice de Masa Corporal) está fuera de lo recomendado</p></center>
+";
+
+$IMC2="
+<center><img src='imgs/grafica 2.png' width='30%' height='30%'></center>
+  <center><h1>Tu IMC está bien</h1></center>
+  <center><p>Parece ser que tu IMC (Índice de Masa Corporal) está dentro de lo correcto</p></center>
+";
+
+$IMC3="
+<center><img src='imgs/grafica 3.png' width='30%' height='30%'></center>
+<center><h1>Tienes algo de Sobrepeso</h1></center>
+  <center><p>Parece ser que tu IMC (Índice de Masa Corporal) indica que tienes algo de sobre peso, 
+  deberías de comer más saludable, además recuerda hacer por lo menos 30 minutos de ejercicio diario</p></center>
+";
+
+$IMC4="
+<center><img src='imgs/grafica 1.png' width='30%' height='30%'></center>
+<center><h1>Tienes Obesidad</h1></center>
+<center><p>Parece ser que tu IMC (Índice de Masa Corporal) indica que tienes una de las enfermedades mas famosas de los últimos años, la obesidad, 
+se recomienda asistir con un nutriólogo, además de hacer 30 minutos de ejercicio diario </p></center>
+";

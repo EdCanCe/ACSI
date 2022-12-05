@@ -101,7 +101,7 @@ $id = $_GET["id"];
                         }else{
                             echo "<script> window. location='/ACSI/registro_denegado.php?id=Archivo de imagen inválido'</script>";
                         }
-                        $insertar = "UPDATE medicina SET NombreMed = '$nombre', ComponenteAct = '$componente', GramajeMed = '$gramaje', FotoMed = '$datosImagen' where MedicinaID = '$id'";       }
+                        $insertar = "UPDATE Medicina SET NombreMed = '$nombre', ComponenteAct = '$componente', GramajeMed = '$gramaje', FotoMed = '$datosImagen' where MedicinaID = '$id'";       }
                     mysqli_query($conexion, "SET GLOBAL max_allowed_packet=1073741824");
                     $resultado = mysqli_query($conexion, $insertar);
                     

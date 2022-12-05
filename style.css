@@ -591,6 +591,10 @@ input::file-selector-button:hover{
     border: none;
 }
 
+#graph_3, #graph_4{
+    height: fit-content !important;
+}
+
 @media only screen and (max-width: 1050px){
     nav * {
         text-align: center;

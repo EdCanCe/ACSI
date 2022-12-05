@@ -28,8 +28,13 @@ $headerdoc = "
                     <li><a href='crear_doctor.php?id='>Registrar</a></li>
                 </ul>
             </li>
-            <li class='menuHijo'><a href='imc.php'>Calculadora de IMC</a>
-            <li class='menuHijo'><a href='calorias.php'>Calculadora de Calorías</a>
+            <li class='menuHijo'><a href='calorias.php'>Calorías</a>
+                <ul class='submenu'>
+                    <li><a href='calorias.php'>Calculadora de Calorías</a></li>
+                    <li><a href='imc.php?id='>Calculadora de IMC</a></li>
+                </ul>
+            </li>
+            <li class='menuHijo'><a href='graphs.php'>Gráficas</a></li>
             <li class='menuHijo'><a href='cierra.php'>Cerrar Sesión</a></li>
         </ul>
     <nav>
@@ -44,13 +49,18 @@ $headersin = "
         <ul class='menu'>
             <li class='menuHijo'><a href='inicio.php'>Inicio</a></li>
             <li class='menuHijo'><a href='index.php'>Iniciar Sesión</a></li>
-            <li class='menuHijo'><a href='imc.php'>Calculadora de IMC</a>
-            <li class='menuHijo'><a href='calorias.php'>Calculadora de Calorías</a>
+            <li class='menuHijo'><a href='calorias.php'>Calorías</a>
+                <ul class='submenu'>
+                    <li><a href='calorias.php'>Calculadora de Calorías</a></li>
+                    <li><a href='imc.php?id='>Calculadora de IMC</a></li>
+                </ul>
+            </li>
             <li class='menuHijo'><a href='doctores.php'>Doctores</a>
                 <ul class='submenu'>
                     <li><a href='doctores.php'>Ver todos</a></li>
                     <li><a href='crear_doctor.php?id='>Registrar</a></li>
                 </ul>
+            
         </ul>
     <nav>
 </div>
@@ -62,8 +72,12 @@ $headeralm = "
     <nav>
         <ul class='menu'>
             <li class='menuHijo'><a href='inicio.php'>Inicio</a></li>
-            <li class='menuHijo'><a href='imc.php'>Calculadora de IMC</a>
-            <li class='menuHijo'><a href='calorias.php'>Calculadora de Calorías</a>
+            <li class='menuHijo'><a href='calorias.php'>Calorías</a>
+                <ul class='submenu'>
+                    <li><a href='calorias.php'>Calculadora de Calorías</a></li>
+                    <li><a href='imc.php?id='>Calculadora de IMC</a></li>
+                </ul>
+            </li>
             <li class='menuHijo'><a href='doctores.php'>Doctores</a>    
                 <ul class='submenu'>
                     <li><a href='doctores.php'>Ver todos</a></li>

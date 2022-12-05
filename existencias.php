@@ -93,7 +93,7 @@ $id = $_GET["id"];
                 
                 $final = $_POST['Cantidad'] + $anterior;
                 
-                $insertar = "UPDATE Medicina SET CantidadMedicina = '$final';";
+                $insertar = "UPDATE Medicina SET CantidadMedicina = '$final' WHERE MedicinaID = '$id'";
                 
                 $resultado = mysqli_query($conexion, $insertar);
                 if($resultado) {
@@ -114,7 +114,7 @@ $id = $_GET["id"];
                 
                 $final = $anterior - $_POST['Cantidad'];
                 
-                $insertar = "UPDATE Medicina SET CantidadMedicina = '$final';";
+                $insertar = "UPDATE Medicina SET CantidadMedicina = '$final' WHERE MedicinaID = '$id';";
                 
                 $resultado = mysqli_query($conexion, $insertar);
                 if($resultado) {
